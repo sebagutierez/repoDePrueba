@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definición de HTML</title>
+</head>
+<body>
+<h1>HTML5</h1>
+    <h2>1. ESTRUCTURA BASICA</h2>
+        <header><b>Header:</b> Academia Numen</header>    
+        <nav><b>Nav:</b> Inicio Cursos Enterprise contacto</nav>
+        <section><b>Sectión 1:</b> Capacitates Hoy con Certificación Oficial</section>
+        <section><b>Section 2:</b> Calidad Educativa Tutores Asignados Certificación Oficial</section>
+        <footer><b>Footer:</b> Cursos</footer>
+
+    <h2>2. LISTAS ANIDADAS</h2>
+    <ol>
+        <li>Transporte</li>
+        <ul>
+            <li>Aéreo</li>
+            <ol>
+                <li>Aviones</li>
+                <li>Helicópteros</li>
+            </ol>
+            <li>Marítimo</li>
+            <ol>
+                <li>Barcos</li>
+                <li>Canoas</li>
+            </ol>
+            <li>Terrestre</li>
+            <ul>
+                <li>Autos</li>
+                <li>Motos</li>
+            </ul>
+        </ul>
+    </ol>
+
+    <h2>3. MANEJO DE IMÁGENES</h2>
+    <img src="img/browser-engine.png" alt="Ingenieria detras de un navegador web" title="Ingenieria de los Navegadores" width="600"/>
+    <img src="https://ar.academianumen.com/wp-content/uploads/2020/08/cropped-LOGO-NUMEN-academy-01-200x56.png" alt="Logo Numen" title="logo numen"/><br>
+    <img src="https://ar.academianumen.com/wp-content/uploads/2020/08/cropped-LOGO-NUMEN-academy-01-200x56.png" alt="Logo Numen" title="logo numen" width="300"/>
+
+    <h2>4. ETIQUETAS SEMANTICAS</h2>
+    <ul>
+        <li><b>(main):</b> Especifica la parte principal del documento.</li>
+        <li><b>(sumary):</b> Se utiliza para mostrar un extracto de la información, que al darle click se expande con el contenido dentro de (details)</li>
+    </ul>
+    <details><summary>Academia Numen</summary><p>Escritor</p> <p>más información</p></details>
+    <ul>
+        <li><b>(time):</b> Se utiliza para indicar tiempo y fechas.</li>
+        <li><b>(mark):</b> Para resaltar una palabra o frase.</li>
+    </ul>
+
+    <h2>TABLAS</h2>
+    <table border="1">
+        <tr>
+            <th>Tabla 1</th>
+            <th>Producto</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <td>com001</td>
+            <td>computador</td>
+            <td>100.000</td>
+        </tr>
+        <tr>
+            <td>mou001</td>
+            <td>mouse</td>
+            <td>20.000</td>
+        </tr>
+        <tr>
+            <th colspan="2">Total</th>
+            <td>135.000</td>
+        </tr>
+
+        <table border="2">
+            <thead>
+            <tr>
+                <tr>Tabla 2</tr>
+                <tr>Producto</th>
+                <tr>Valor</tr>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>com001</td>
+                <td>computador</td>
+                <td>100.000</td>
+            </tr>
+            <tr>
+                <td>mou001</td>
+                <td>mouse</td>
+                <td>20.000</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td></td>
+                <td>Total</td>
+                <td>135.000</td>
+            </tr>
+            </tfoot>
+
+            <table border="3">
+                <thead>
+                <tr>
+                    <th>Tabla 3</th>
+                    <th>Producto</th>
+                    <th>Valor</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>com001</td>
+                    <td>computador</td>
+                    <td>100.000</td>
+                </tr>
+                <tr>
+                    <td>mou001</td>
+                    <td>mouse</td>
+                    <td>20.000</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="2">Total</th>
+                    <td>135.000</td>
+                </tr>
+                </tfoot>
+            </table>
+
+            <table border="4">
+                <thead>
+                <tr>
+                    <th>Tabla 4</th>
+                    <th>Producto</th>
+                    <th>Valor</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>com001</td>
+                    <td rowspan="2">computador</td>
+                    <td>100.000</td>
+                </tr>
+                <tr>
+                    <td>mou001</td>
+                    <td>20.000</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="2">Total</th>
+                    <td>135.000</td>
+                </tr>
+                </tfoot>
+            </table>
+
+            <h2>ENTIDADES HTML</h2>
+            <ul>
+                <li>Las entidades son estructuras que proporcionan un forma de representar símbolos.</li>
+                <li>Hay dos maneras de codificar una entidad HTML.</li>
+                <ol>
+                <li>&nombre_entidad;</li>
+                <li>&#número_entidad;</li>
+                </ol>
+            </ul>
+            <p>Esta bicicleta tiene un costo de &dolar;40</p>
+            <p>Esta bicicleta tiene un costo de $40</p>
+            <p>El per&#237;metro de un c&iacute;rculo es 2&Pi;</p>
+            <p>El perímetro de un círculo es 2n</p>
+            <p>Nuestro corres electr&oacute;nico:test&#64;test.com</p>
+            <p>Este es mi correo electrónico: test@test.com</p>
+
+            <h2>ETIQUETAS DE FORMATO ADICIONALES</h2>
+            <table border="1">
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>abbr</td>
+                    <td>Para abreviaciones</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>En negrita</td>
+                </tr>
+                <tr>
+                    <td>blockquote</td>
+                    <td>Referencia de un texto</td>
+                </tr>
+                <tr>
+                    <td>cite</td>
+                    <td>cita</td>
+                </tr>
+                <tr>
+                    <td>del</td>
+                    <td>Texto eliminado (tachado)</td>
+                </tr>
+                <tr>
+                    <td>em</td>
+                    <td>Énfasis</td>
+                </tr>
+                <tr>
+                    <td>ins</td>
+                    <td>Texto insertado</td>
+                </tr>
+                <tr>
+                    <td>meter</td>
+                    <td>Medida</td>
+                </tr>
+                <tr>
+                    <td>q</td>
+                    <td rowspan="2">Cita corta</td>
+                </tr>
+                <tr>
+                    <td>small</td>
+                </tr>
+                <tr>
+                    <td>strong</td>
+                    <td>texto importante</td>
+                </tr>
+                <tr>
+                    <td>sub</td>
+                    <td>Subíndice</td>
+                </tr>
+                <tr>
+                    <td>sup</td>
+                    <td>Supraíndice</td>
+                </tr>
+            </table>
+
+            <h2>ETIQUETAS DE CÓDIGO</h2>
+            <ul>
+                <li><b>(code):</b> se emplea para representar un código fuente usando un tipo y tamaño de letra para proporcionar un formato adecuado a una pieza de programa de computación.</li>
+                <li><b>(pre):</b> se usa para que todos los espacios, saltos, tabulaciones, etc que estén dentro de ella sean interpretados literalmente.</li>
+                <li><b>(var):</b> se emplea para definir variables.</li>
+                <li><b>(samp):</b> se usa para definir la salida de un programa.</li>
+                <li><b>(kbd):</b> define una combinación de teclas.</li>
+                <li><b>(template):</b> es usada para colocar código HTML y no interpretar las etiquetas.</li>
+            </ul>
+
+            <h2>ETIQUETAS DE DIAGRAMACIÓN</h2>
+            <P>Sirve como contenedor genérico de una parte de la pagina.</P>
+            <P>Proporciona un estilo específico usando CSS</P>
+            <ul>
+                <li><b>(DIV):</b> Agrupa un bloque de código HTML e inserta saltos de línea antes y después su contenido.</li>
+                <p>
+                    Ejemplo de uso de la etiqueta <div style="background-color: lightgreen">div</div> para ilustrar suuso.
+                </p>
+                <li><b>(SPAN):</b> Agrupa una porción de una línea de código HTML.</li>
+                <p>
+                    Ejemplo de uso de la etiqueta <span style="background-color: lightblue">span></span> para ilustrar su uso.
+                </p>
+            </ul>
+
+            <h2>INFOGRAFÍA: MODO DE COLOR WEB</h2>
+
+            <h2>ETIQUETA FIGURE</h2>
+            <ul>
+                <li><b>(figure):</b> representa un elemento autocontenido perteneciente al contenedor principal.</li>
+                <li>Es usada para encerrar imágenes, tablas, código, etc.</li>
+            </ul>
+            <figure>
+                <img src="https://free-images.com/sm/cede/lion_head_male_lion.jpg" alt="León">
+                <figcaption>Imagen 1.1: León</figcaption>
+            </figure>
+
+            <h2>ETIQUETA IFRAME</h2>
+            <iframe src="https://ar.academianumen.com" 
+                height="500" 
+                width="500"
+                scrolling="auto"
+                frameborder="1">
+            </iframe>
+            <ul>
+                <li>Representa un contexto de navegación anidado.</li>
+                <li>El comportamiento de iframe es parecido a la etiqueta image y admiten el atributo align para su posicionamiento o pueden ser posicionadas mediante CSS.</li>
+                <li><b> Atributos:</b></li>
+                <ul>
+                    <li><b>height</b>="altura" Altura en pixeles de la ventana donde se muestra el iframe.</li>
+                    <li><b>width</b>="anchura" Anchura en pixeles o en %. De no especificarlo, debenderá del navegador.</li>
+                    <li><b>scrolling</b>="yes" "no" "auto" Barras de desplazamiento. El valor por defecto es auto.</li>
+                    <li><b>name</b>="nombre" Da nombre a la etiqueta, lo que será imprescindible si queremos direccionar los enlaces hacia la ventana del iframe.</li>
+                </ul>
+            </ul>
+
+            <h2>ETIQUETAS SCRIPT Y LINK</h2>
+            <p>Etiquetas para integrar CSS y JavaScript en el código.</p>
+            <h3>PARA ENLAZAR CSS</h3>
+            <ul>
+                <li><b>(style):</b> para insertar código CSS dentro de (head)</li>
+                <li><b>(link):</b> para enlazar un archivo con un CSS externo dentro de (head)</li>
+                <li>(link rel="stylesheet" type="text/css" href="estilo.css"> </li>
+                <li><link rel="stylesheet" type="text/css" href="estilo.css">Enlaza el archivo CSS estilo.css </li>
+            </ul>
+            <h3>PARA ENLAZAR JAVASCRIPT</h3>
+            <ul>
+                <li><b>(script):</b> para insertar código escrito en JavaScript</li>
+                <li><b>(script con atributo src):</b> para enlazar un archivo con JavaScript externo</li>
+                <ul>
+                    <li>(script src="funciones.js")(/script)</li>
+                    <li><script src="funciones.js"></script>Enlaza el archivo JavaScript funciones.js</li>
+                </ul>
+                <li><b>JavaScript en etiquetas:</b>Podemos asociar código JavaScript que responda a ciertos eventos. </li>
+                <ul>
+                    <li>Por ejemplo se emplea cuando deseamos ejecutar un código JavaScript al hacer click en un enlace.</li>
+                    <a onclick="alert(1)">Presiona</a>
+                    <li> (a onclick="alert(1)")Presiona(/a)</li>
+                    <li>Al darle click  ejecuta alert(1) que despliega una ventana con el contenido 1.</li>
+                </ul>
+            </ul>
+
+            <h2>ETIQUETAS DE VIDEO</h2>
+            <ul>
+                <li><b>Source: (scr)</b> dirección_url del video a reproducir.</li>
+                <li><b>poster="dirección_url"</b> Muestra una imágen a modo de presentación. </li>
+                <li><b>preload="auto" "metadata" "none"</b> Indica como realizar la precarga del video.</li>
+                <li><b>mediagroup="nombre"</b> Establece un nombre para un grupo de contenidos multimedia.</li>
+                <li><b>autoplay="boolean"</b> Comienza a reproducir el video automaticamente.</li>
+                <li><b>muted="boolean"</b> Muestra los controles de reproducción.</li>
+                <li><b>controls="boolean"</b> Muestra los controles de reproducción.</li>
+                <li><b>width="tamaño"</b> Indica el tamaño de ancho del video.</li>
+                <li><b>hight="tamaño"</b> Indica el tamaño de alto del video.</li>
+                <li><b>Ejemplo:</b> (video src="numen.mp4" width="1920" hight="1080")(/video)</li>
+                <li>Mostrará el primer fotograma del video con el tamaño especificado, pero se verá como una imagen porque no muestra los controles del video y tampoco tiene la reproducción automática activada. Se deberá aguregar los atributos controls o autoplay.</li>
+            </ul>
+            <h3>FORMATOS DE VIDEO</h3>
+            <ul>
+                <li>Un archivo de video  tiene 2 partes. El formato contenedor, el formato de video, y en su interior puede tener múltiples componentes codificados con diferentes codecs.</li>
+                <li>Un video básico suele tener como mínimo un componente de video y otro de audio, pero puede tener muchos más.</li>
+                <ul>
+                    <li>subtítulos</li>
+                    <li>imágenes, etc.</li>
+                </ul>
+                <li>Dependiendo del formato de un video, puede que sea factible utilizarlo para web o no.</li>
+                <li><b>(source):</b> Puede tener los atributos src, type y establece un archivo de video o lo añade como alternativa.</li>
+                <li><b>(track)</b> tiene los atributos src, srclang, label, king, default y establece un archivo de subtítulos o lo añade como alternativa.</li>
+                <li><b>(video)</b> La etiqueta como contenedora nos permite incluir etiquetas <b>(source)</b> en su interior para proporcionar formatos alternativos y tener mayor compatibilidad con otros navegadores</li>
+                <ul>
+                    <li><b>(video</b> width="640" height="480")</li>
+                    <li><b>(source</b> src="video.mp4" type="video/mp4" /)</li>
+                    <li><b>(source</b> src="video.webm" type="video/webm" /)</li>
+                    <li><b>(source</b> src="image.png" alt="Video no soportado"/) Su navegador no soporta contenido multimedia(/video)</li>
+                </ul>
+                <li>Los navegadores no mostrarán todos los contenidos a la vez, sino que seguirán el siguente procedimiento:</li>
+                <ol>
+                    <li>intenta mostrar el primer formato MP4. Si el navegador no lo soporta, salta al siguiente.</li>
+                    <li>intenta mostrar el 2º formato WEBM. Si el naveador no lo soporta, salta al siguiente.</li>
+                    <li>intenta mostrar el 3º formato OGV. Si el navegador no lo soporta, salta al siguiente.</li>
+                    <li>si se trata de un navegador que no soporta HTML5, intentará mostrar la imágen.</li>
+                    <li>si se trata de un navegador de terminal de texto o sin capacidades gráficas, mostrará el texto: "Su navegador no soporta contenido multimedia"</li>
+                    <li>De esta manera tendremos soporte completo para todo tipo de dispositivos.</li>
+                </ol>
+            </ul>
+
+            <h2>ETIQUETA AUDIO</h2>
+            <ul>
+                <li><b>Source: src="dirección_url"</b> Audio que va a reproducirse.</li>
+                <li><b> preload="auto" "metadata" "none"</b> Indica como realizar la precarga del audio.</li>
+                <li><b>mediagroup="nombre"</b> Establece el nombre para un grupo de contenidos multimedia.</li>
+                <li><b>autoplay="boolean"</b> Comienza a reproducir el audio automáticamente.</li>
+                <li><b>muted="boolean"</b> Muestra los controles de reproducción.</li>
+                <li><b>controls="boolean"</b> Muestra los controles de reproducción.</li>
+                <li><b>loop="boolean"</b> Vuelve a iniciar el audio cuando finaliza su reproducción.</li>
+                <li>(audio src="audio.mp3")(/audio)</li>
+                <li>(audio src="audio.mp3" preload="none" controls)(/audio)</li>
+                <ul>
+                    <li>cargamos un audio mp3, pero indicamos que no precargue nada.</li>
+                    <li>empezará a descargarse sólo cuando el usuario pulse en los controles de reproducción.</li>
+                    <li>para evitar consumo de ancho de banda de archivos que es probable que el usuario no escuche o en dispositivos móviles donde las tarifas de datos tiene costo.</li>
+                </ul>
+                <li>(audio src="audio.ogg" autoplay loop)(/audio)</li>
+                <ul>
+                    <li>carga un archivo de audio OGG y lo reproduce automáticamente y en bucle, de modo que vuelve a empezar cuando termina.</li>
+                </ul>
+            </ul>
+            <h3>FORMATOS DE AUDIO</h3>
+            <ul>
+                <li>Listado de formatos o codecs de audio más utilizados:</li>
+                <ul>
+                    <li><b>MP3 (MPEG Layer-3):</b> tiene buena calidad y soporte.</li>
+                    <li><b>ACC (Advanced Audio Coding):</b> mejora el MP3. usado como audio en MP4, tiene buen soporte.</li>
+                    <li><b>OGG (Ogg Vorbis):</b> Buena calidad, alternativa a MP3. soporte medio.</li>
+                    <li><b>Opus (Opus):</b> Buena calidad, alternativa a MP3. soporte medio.</li>
+                    <li><b>FLAC (FLAC Audio Lossless):</b> Compresión sin pérdidas. Alto tamaño. Buen suporte.</li>
+                    <li><b>WAV (Wave sound):</b> Formato de Microsoft. Está soportado pero es muy pesado.</li>
+                </ul>
+            </ul>
+            <h3>AUDIO (AVANZADO)</h3>
+            <ul>
+                <li>Audio puede ser utilizada como etiqueta contenedora e incluir varias etiquetas HTML para tener capacidades adicionales.</li>
+                <li><b>(source):</b> tiene los atributos src y type. Establece un audio o lo añade como alternativa.</li>
+                <li><b>(track):</b> Tiene los atributos src, srclang, label, kind, default. Establece un archivo de subtítulos o lo añade como alternativa.</li>
+                <li>Pasamos de un esquema donde sólo usabamos una etiqueta (audio) a otro un poco más avanzado, donde (audio) contiene multiples etiquetas que actúan sobre ese audio en cuestión.</li>
+            </ul>
+            <h3>AUDIO ALTERNATIVO (FALLBACK)</h3>
+                <p>si utilizamos la etiqueta (audio) como etiqueta contenedora, podemos incluir etiquetas (source) en su interior para proporcionar formatos alternativos y tener mayor compatibilidad con otros navegadores.</p>
+            <p>(audio)</p>
+            <p>(source src="audio.opus"/)</p>
+            <p>(source src="audio.ogg"/)</p>
+            <p>(source src="audio.mp3"/)</p>
+            <p>(/audio)</p>
+            <p>En este ejemplo el navegador intentará reproducir el archivo de audio de formato OPUS.</p>
+            <p>En caso de no estar soportado por el navegador intentará reproducir el formato Ogg vorbis</p>
+            <p>En caso de tampoco soportarlo, reproducirá el formato MP3.</p>
+
+            <h2>QUE ES UN SVG</h2>
+            <ul>
+                <li><b>Gráficos Vectoriales Redimensionables (Scalable Vector Graphic)</b></li>
+                <li>Son una especificación recomendada por el Word Web Consortum, W3C, desde 2001 como estándar para describir gráficas de 2 dimensiones en formato XML.</li>
+                <li>Generar un formato de archivo para describir elementos gráficos vectoriales.</li>
+                <li>Varias empresas como Microsoft con el VML, Vector Markup Language y Adobe en coordinación con IBM, Netscape y SUN con su PGML (Precision Graphic Markup Language), participaron en las versiones previas de lo que se convirtió en SVG.</li>
+                <LI>VENTAJAS</LI>
+                <ul>
+                    <li>generar archivos que ocupen poco espacio en la memoria y puedan comprimirse de manera óptima.</li>
+                    <li>permitir que las imágenes puedan escalarse a cualquier tamaño sin perder nitidez.</li>
+                    <li>facilitar la creación de gráficas tanto estáticas como animadas.</li>
+                    <li>pueden ser del siguiente tipo:</li>
+                    <ul>
+                        <li>figuras vectoriales</li>
+                        <ul>
+                        <li>trazos que consisten en líneas rectas y curvas</li>
+                        </ul>
+                        <li>imágenes</li>
+                        <li>textos</li>
+                    </ul>
+                    <li>las imágenes SVG pueden agruparse, estilizarse, transformarse y componerse de objetos renderizados.</li>
+                    <li>Dentro de sus características principales se encuentran las transformaciones anidadas, trazos recortados, capas de transparencia, efectos de filtro y objetos de pantilla.</li>
+                    <li>los dibujos SVG pueden ser interactivos y dinámicos,</li>
+                    <li>sus animaciones se declaran o utilizando lenguages script como JavaScript.</li>
+                </ul>
+            </ul>
+            
+            <h2>CANVAS</h2>
+            <ul>
+                <li><b>(canvas)</b> es una etiqueta que permite definir un lienzo para dibujar imágenes usando algún lenguaje de script.</li>
+                <li>en general se utiliza javascript.</li>
+                <li>instrucciones para dibujar:</li>
+                <ul>
+                    <li>Figuras (círculos, rectángulos, etc)</li>
+                    <li>Texto</li>
+                    <li>Imágenes</li>
+                    <li>Colores de fondo, etc.</li>
+                </ul>
+                <li><b>Canvas es una alternativa a SVG</b> y generalmente se utiliza para generar gráficos dinámicos en el momento.</li>
+            </ul>
+
+            <canvas id="miCanvas" width="200" height="100"></canvas>
+            <script>
+                var c = document.getElementById("miCanvas");
+                var ctx = c.getContext("2d");
+                ctx.moveTo(0,100);
+                ctx.lineTo(200,0);
+                ctx.stroke();
+            </script>
+            <p>Canvas también es usado ara dibujar en 3D con la tecnología WebGL</p>
+</body>
+</html>

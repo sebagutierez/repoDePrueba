@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02</title>
+
+    <style>
+        section {
+            height: 500px;
+            width: 100%;
+            background-color: cyan;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CLASE 2</h1>
+    <h2>1. ETIQUETAS SEMÁNTICAS</h2>
+    <p><b>(div class="valor")(/div):</b> Permite seleccionar un objeto para cambiar individualmente su diseño.</p>
+    <p>Los siguientes valores de class también tienen su propia etiqueta desde HTML5.</p>
+    <div class="header"></div>
+    <div class="nav"></div>
+    <div class="main"></div>
+    <div class="aside"></div>
+    <div class="article"></div>
+    <div class="section"></div>
+    <div class="footer"></div>
+
+    <H3>1.1 TIPOS DE DIV CLASS</H3>
+    <ul>
+        <li>(div class="header")(/div)</li>
+        <li>(div class="nav")(/div)</li>
+        <li>(div class="main")(/div)</li>
+        <li>(div class="aside")(/div)</li>
+        <li>(div class="article")(/div)</li>
+        <li>(div class="section")(/div)</li>
+        <li>(div class="footer")(/div)</li>
+    </ul>
+
+    <h3>1.2 VALORES CLASS CON SUS PROPIAS ETIQUETAS</h3>
+    <ul>
+        <li>(header)(/header)</li>
+        <li>(main)(/main)</li>
+        <li>(footer)(/footer)</li>
+        <li>(nav)(/nav)</li>
+        <li>(aside)(/aside)</li>
+        <li>(article)(/article)</li>
+    </ul>
+
+    <header>header</header>
+    <nav>nav</nav>
+    <main>main</main>
+    <aside>aside</aside>
+    <article>
+        <header>header</header>
+        <main>main</main>
+        <footer>footer</footer>
+    </article>
+
+    <div>div</div>
+
+    <h2>2. MULTIMEDIA</h2>
+    <p> https://pixabay.com</p>
+
+    <h3>2.1 (img) IMAGEN EN HTML</h3>
+    <p>(img src="nombre-de-la-imagen.jpg" alt="valor-del-atributo")</p>
+    <p><B>alt:</B> Descripción alternativa de la imagen para que los invidentes puedan saber de que se trata o para
+        explicar el objeto en caso de no poderse visualizar. </p>
+    <p>Mejora el posicionamiento SEO.</p>
+
+    <h4>FORMATOS:</h4>
+    <ul>
+        <li><B>JPEG:</B></li>
+        <li><B>GIF:</B> Baja calidad con animaciones. </li>
+        <li><B>PNG:</B> De gran calidad, transparencias, logos, iconos. </li>
+        <li><B>SVG:</B> Vectoriales para que no se pixeles, transparencias, portada, logos, iconos, son lo ideal porque
+            pesan menos y no pixelan.</li>
+    </ul>
+    <img src="img/img-1.jpg" alt="Rio movido">
+
+    <h3>2.2 AUDIO EN HTML</h3>
+    <p><b> Etiqueta:</b> (audio)(/audio)</p>
+    <p>(audio src="audio/audio-1.mp3" controls)(audio)</p>
+    <audio src="audio/audio-1.mp3" controls></audio>
+    <h4>FORMATOS:</h4>
+    <p>mp3 es el más eficiente</p>
+
+    <h3>2.3 (video) VIDEO EN HTML</h3>
+    <p><b> Etiqueta:</b> (video)(/video)</p>
+    <p>(video src="video/video-1.mp4" controls autoplay)(/video)</p>
+    <h4>FORMATOS:</h4>
+    <p>mp4 es el más eficiente</p>
+    <video src="video/video-1.mp4" controls autoplay>
+        <source src="video/video-1.mp4">
+    </video>
+    <p>(source src="video/video-1.mp4") No se visualiza porque el navegador no soporta este formato</p>
+
+    <h3>2.4 IFRAME</h3>
+    <p><b> Etiqueta:</b> (iframe)(/iframe)</p>
+    <P>Insertar contenido de otras webs</P>
+    <p>google maps, youtuve, cotización del dolar, etc</p>
+
+    <h4>IFRAME YOUTUBE</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MQaf0qamKo0" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <h4>IFRAME GOOGLE MAPS</h4>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.54989235223!2d-58.44624102115631!3d-34.619647359797156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca4725cd3259%3A0x27b9678ac86718!2sCaballito%20Shopping%20Center!5e0!3m2!1sen!2sar!4v1648044372247!5m2!1sen!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <h2>3. TABLAS</h2>
+    <p>tr: table row; th: table head; td: table data</p>
+    <table border="2" cellspacing="10" cellpadding="20">
+        <tr>
+            <th>lunes</th>
+            <th>martes</th>
+            <th>miercoles</th>
+            <th>jueves</th>
+            <th>viernes</th>
+        </tr>
+        <tr>
+            <td>no hay clases</td>
+            <td>no hay clases</td>
+            <td>hay clases</td>
+            <td>no hay clases</td>
+            <td>no hay clases</td>
+        </tr>
+    </table>
+
+    <h2>ENLACES</h2>
+
+    <h3>ENLACES RELATIVOS</h3>
+    <a href="img/img-1.jpg">ir a Rio Movido</a><br>
+    <a href="pages/contacto.html">Ir a Contacto</a>
+
+    <h3>ENLACES ABSOLUTOS</h3>
+    <a href="https://pixabay.com">ir a pixabay</a>
+
+
+    <h3>IR A UNA CARPETA SUPERIOR</h3>
+    <a href="../clase001/img/imag-1.png">../ para ir a una carpeta superior</a>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+                <a href="pages/contacto.html">Contacto</a><br>
+            </li>
+            <li>(a href="#">Inicio(/a)</li>
+            <li>(a href="enlace">texto(/a)</li>
+        </ul>
+    </nav>
+
+    <h2>FORMULARIOS</h2>
+    <section class="nombre1 nombre2"></section>
+    <section></section>
+    <section id="contacto"></section>
+
+    <form action="enviar.php" method="post" enctype="text/plain">
+        <fieldset>
+            <legend><b> FORMULARIO</b></legend>
+            <label for="nombre">Nombre:</label>
+            <input name="nombre" type="text" placeholder="Nombre" required><br>
+
+            <label for="tel">Teléfono:</label>
+            <input name="tel" type="number" placeholder="Teléfono" required><br>
+
+            <label for="pass">Password:</label>
+            <input name="pass" type="password" placeholder="Password" required><br>
+
+            <label for="">Comentarios:</label><br>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Escribe tu comentario" required></textarea>
+
+            <p><b> GENERO</b></p>
+            <label for="">Femenino:</label>
+            <input name="sexo" type="radio"><br>
+            <label for="">Masculino:</label>
+            <input name="sexo" type="radio"><br>
+            <label for="">No Binario:</label>
+            <input name="sexo" type="radio"><br>
+
+            <p><b> CIUDAD</b></p>
+            <label for="">CABA:</label>
+            <input type="checkbox"><br>
+            <label for="">Otra Provincia:</label>
+            <input type="checkbox" checked><br>
+
+            <p><b> BOTONES</b></p>
+            <input type="submit"><br>
+            <input type="reset"><br>
+            <input type="button" value="sin accion"><br>
+        </fieldset>
+    </form>
+</body>
+
+</html>

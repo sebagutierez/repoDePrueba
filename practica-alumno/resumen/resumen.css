@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto:ital,wght@1,100&display=swap');
+font-family: 'Grape Nuts', cursive;
+font-family: 'Roboto', sans-serif;
+*{
+    margin: 125;
+    padding: 125;
+}
+:root{
+    --mifont1: 'Grape Nuts', cursive;
+    --mifont2: 'Roboto', sans-serif;
+    --mifont3: center;
+    --mifont4: blue;
+}
+h1, h2, h3{
+    color: darkgoldenrod !important;
+}
+h3{
+    color: chocolate;
+}
+.dim{
+    /* height: 350px; */
+    min-height: 1500%;
+    max-height: 200%;
+    max-width: 100%;
+    line-height: 25px;
+    font-size: 18px;
+    color:brown;
+    text-align: center;
+    background-color: darkkhaki;
+    border: 3px solid black;
+}
+.lineal {
+    width: auto;
+    height: 100%;
+    background: linear-gradient(red, yellow, blue, green);
+    color: aliceblue;
+}
+.cero{
+    height: auto;
+    background-image: linear-gradient(red, orange);
+}
+.uno{
+    height: auto;
+    background-image: linear-gradient(to left, red, orange);
+}
+.dos{
+    height: auto;
+    background-image: linear-gradient(to top, red, orange);
+}
+.tres{
+    height: auto;
+    background-image: linear-gradient(to top left, red, orange);
+}
+.cuatro{
+    height: auto;
+    background-image: linear-gradient(70deg, red, orange);
+}
+.cinco{
+    height: auto;
+    background-image: linear-gradient(360deg, red, orange);
+}
+.seis{
+    height: auto;
+    background-image: linear-gradient(red, orange 70%);
+}
+.siete{
+    height: auto;
+    background-image: url(flowers.jpg);
+}
+.ocho{
+    height: auto;
+    background-image: url(flowers.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.nueve{
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(255, 255, 255,1), rgba(255, 255, 255,0)), url(flowers.jpg);
+}
+.diez{
+    height: auto;
+    color: black;
+    background: repeating-linear-gradient(45deg, red, red 5px, white 5px, white 10px);
+}
+.once{
+    height: auto;
+    color: whitesmoke;
+    background: repeating-linear-gradient(-135deg, red 40%, blue 50%, white 10%);
+}
+.doce{
+    height: auto;
+    color: whitesmoke;
+    background: repeating-radial-gradient(red 40%, blue 50%, white 10%);
+}
+.trece{
+    height: auto;
+    color: black;
+    background-image: radial-gradient(red 40%, blue 50%, white 10%);
+}
+.catorce{
+    height: auto;
+    color: black;
+    background: radial-gradient(red 40%, blue 50%, white 10%);
+}
+.quince{
+    height: auto;
+    color: black;
+background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+.dieciseis{
+    height: auto;
+    background-image: url(flowers.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+.diecisiete{
+    height: auto;
+    background-image: url(flowers.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+}
+.dieciocho{
+    height: auto;
+    background-image: url(flowers.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.diecinueve{
+    height: 160px;
+    width: 480px;
+    background-image: url(flowers.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+p{
+    opacity: 0.7;
+}
+.veinte{
+    height: 160px;
+    background-image: url(flowers.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    visibility: hidden;
+    /* display: none; */
+}
+.veintiuno{
+    height: 160px;
+    background-image: url(flowers.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    /* visibility: hidden; (lo oculta pero sigue ocupando el lugar) */
+    /* display: none; (lo oculta pero sin ocupar lugar) */
+}
+@media screen and (max-width: 490px){
+    div{
+        display: none;
+    }
+}
+.veintidos{
+    height: 160px;
+    width: 480px;
+    background-image: url(flowers.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.veintitres{
+    height: 160px;
+    width: 480px;
+    background-image: url(flowers.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.veinticuatro{
+    height: 160px;
+    width: 480px;
+    background-image: url(flowers.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.veinticinco{
+    height: 160px;
+    width: 480px;
+    background-image: url(flowers.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+.veintiseis{
+    height: 360px;
+    width: 100%;
+    background-image: url(flowers.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.veintisiete{
+    color:#41dfff;
+    text-shadow: 0 0 2px black;
+    font-size: 23px;
+    font-family: sans-serif;
+    font-family: cursive;
+}
+.veintiocho{
+    color:#41dfff;
+    text-shadow: 0 0 2px black;
+    font-size: 23px;
+    font-family: sans-serif;
+    font-family: cursive;
+    font-family: monospace;
+}
+.veintinueve{
+    color:#41dfff;
+    text-shadow: 0 0 2px black;
+    font-size: 23px;
+    font-family: sans-serif;
+    font-family: cursive;
+    font-family: fantasy;
+}
+.treinta{
+    color:darkgoldenrod;
+    text-shadow: 0 0 2px black;
+    font-size: 23px;
+    font-family: 'Grape Nuts', cursive;
+}
+.treintiuno{
+    color:darkgoldenrod;
+    text-shadow: 0 0 2px black;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+}
+.treintidos{
+    color:darkgoldenrod;
+    text-shadow: 0 0 2px black;
+    font-size: 23px;
+    font-family: var(--mifont1);
+}
+.treintitres{
+    color:darkgoldenrod;
+    text-shadow: 0 0 2px black;
+    font-size: 23px;
+    font-family: var(--mifont1);
+    font-variant: small-caps;
+}
+.treinticuatro{
+    color:darkgoldenrod;
+    text-shadow: 0 0 2px black;
+    font-size: 23px;
+    font-family: var(--mifont1);
+    text-transform: uppercase;
+}
+.treinticinco{
+    background-color: #c777b9;
+    width: 150px;
+    height: 150px;
+    visibility: hidden;
+}
+.treintiseis{
+    background-color:#46eefa;
+    width: 150px;
+    height: 150px;
+}
+.treintisiete{
+    background-image: url(flowers.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+}
+.treintiocho{
+    background-image: url(flowers.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.treintinueve{
+    background-image: url(flowers.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cuarenta{
+    background-image: url(flowers.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cuarentiuno{
+    background-image: url(flowers.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}

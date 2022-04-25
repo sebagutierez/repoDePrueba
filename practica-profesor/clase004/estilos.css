@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Nanum+Gothic:wght@400;800&family=Nunito:ital,wght@0,400;0,500;1,200&family=Open+Sans:ital,wght@0,600;1,600&family=Oswald:wght@200;600&family=PT+Serif:ital@1&family=Palette+Mosaic&family=Poppins&family=Roboto:ital,wght@1,300;1,400&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&family=Work+Sans:wght@300;800&display=swap');
+
+
+/* font-family: 'Grape Nuts', cursive;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik Moonrocks', cursive;
+font-family: 'Rubik Wet Paint', cursive;
+font-family: 'Work Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-size: 25px; */
+}
+
+:root{
+    --mifont1: 'Rubik Moonrocks', cursive;
+    --mifont2: 'Open Sans', sans-serif;
+}
+
+div{
+    /* min-height: 400px; */
+    /* max-height: 200px; */
+    height: 400px;
+    width: 100%;
+    /* line-height: 400px; */
+    text-align: center;
+    background-color: rgba(19, 84, 58, 0.96);
+    background-image: url(img/mountain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* opacity: 0.1; */
+    /* visibility: visible; */
+    /* display: none; */
+}
+p{
+    opacity: 1;
+    color: yellow;
+    text-shadow: 0 0 10px #000;
+    /* font-size: 30px; */
+    font-family: serif;
+    font-family: sans-serif;
+    font-family: cursive;
+    /* font-family: fantasy; */
+    /* font-family: monospace; */
+    /* font-family: 'Grape Nuts', cursive; */
+    /* font-family: 'Rubik Wet Paint', cursive; */
+    font-size: 16px;
+    font-size: 100%;
+    font-size: 1rem;
+    font-size: 2em;
+    /* font-size: 50px; */
+    font-style: normal;
+    font-weight: lighter;
+    font-family: var(--mifont2);
+    font-variant: small-caps;
+    /* text-transform: uppercase; */
+
+}

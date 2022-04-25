@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>formularios</title>
+</head>
+
+<body>
+
+    <h1>FORMULARIOS</h1>
+    
+
+    <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+        <h2>Contacto</h2>
+        nombre<input type="text" required> <br>
+        contraseña<input type="password"><br>
+        email<input type="email"> <br>
+        edad<input type="number"> <br>
+        fecha<input type="date"> <br>
+        adjuntar archivo<input type="file"> <br>
+        <!--implementar placeholder -->
+        telefono<input type="text" required placeholder="escribe tu tel"> <br>
+        <!--implementar placeholder -->
+        <!--------Area de texto-------------------------------------------->
+        <textarea name="areadetexto" id="" cols="30" rows="5" placeholder="escribe tu comentario"></textarea> <br>
+
+        <!--------tipo de-botones en formularios--------------------------->
+        <input type="submit" value="enviar">
+        <!--envia el formulario-->
+        <input type="reset" value="borrar"><br>
+        <!--resetea el formulario-->
+        <input type="button" value="boton1"><br>
+        <!--sin acciones-->
+        <!--------botones de radio----------------------------------------->
+        <h2>Selecciona tu genero</h2>
+        
+        <input type="text"> <br>
+        
+        <label for="sexo1">genero:</label>
+        hombre<input type="radio" name="sexo" value="hombre"><br>
+        mujer<input type="radio" name="sexo" value="mujer" ><br>
+        sin especificar<input type="radio" name="sexo" value="sin especificar" checked><br>
+        <!--------check box o casillas de verificacion--------------------->
+        <h2>Elige tu estacion preferida</h2>
+        otoño<input type="checkbox"><br>
+        invierno<input type="checkbox"><br>
+        primavera<input type="checkbox"><br>
+        verano<input type="checkbox" checked><br>
+
+        <!------------------------------------------------------------------------>
+        <fieldset>
+            <legend>mi leyendas</legend>
+
+
+            <h5>Elige tu estacion preferida</h5>
+            otoño<input type="checkbox" id="estacion"><br>
+            invierno<input type="checkbox"><br>
+            primavera<input type="checkbox"><br>
+            verano<input type="checkbox" checked><br>
+            
+            <label for="nombre">nombre</label>
+            <input name="nombre" type="text" placeholder="escribe tu nombre">
+            <label for="">nombre</label>
+        </fieldset>
+
+    </form>
+    <br>
+
+    <!-------menu desplegable---------->
+
+    <select name="Lenguajes">
+        <option>Html</option>
+        <option>Css</option>
+        <option>Javascript</option>
+        <option>Jquery</option>
+        <option>php</option>
+        <option>react</option>
+    </select>
+    
+<!--  mas input  -->
+<br>
+<label for="price">Choose a maximum house price: </label>
+<input type="range" name="price" id="price" min="50000" max="500000" step="100" value="250000">
+<output class="price-output" for="price"></output>
+<br>
+
+
+<br><input type="datetime-local" name="datetime" id="datetime">
+<br><input type="month" name="month" id="month"><br>
+<input type="time" name="time" id="time">
+<br><input type="week" name="week" id="week">
+<br><label for="myDate">When are you available this summer?</label>
+<input type="date" name="myDate" min="2013-06-01" max="2013-08-31" step="7" id="myDate">
+<br><input type="color" name="color" id="color">
+<br><input type="search" id="search" name="search">
+<br><input type="tel" id="tel" name="tel">
+<br><input type="url" id="url" name="url">
+
+</body>
+
+</html>

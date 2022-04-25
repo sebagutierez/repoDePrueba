@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>CLASE 003 CSS</title>
+</head>
+
+<body>
+    <h1>QUE ES CSS</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <ul>
+        <li><b>CSS:</b> Cascading Style Sheets. hojas de estilo en cascada.</li>
+        <li>Es el lenguaje que define el estilo de los elementos de un documento HTML.</li>
+        <li>Es el lenguaje para controlar el diseño y apariencia de las webs hechas en HTML.</li>
+        <li>En 1998 se publica CSS NIVEL 2. </li>
+        <li>La Versión (2009) 2.1 es la que utilizan hoy en día todos los navegadores</li>
+        <li>Por el momento ningún navegador tiene soporte completo de CSS 2.1</li>
+    </ul>
+    <h2>VENTAJAS DE USAR CSS</h2>
+    <h3>1. SEPARACIÓN DEL CONTENIDO Y PRESENTACIÓN</h3>
+    <ul>
+        <li>Las hojas de estilo generalmente se encuentran en archivos separados del código principal.</li>
+        <li>Esto permite que un equipo de trabajo pueda hacer tareas del código principal independientemente del diseño.
+        </li>
+    </ul>
+    <h3>2. FLEXIBILIDAD</h3>
+    <ul>
+        <li>Se puede modificar el archivo de estilo y diseño sin cambiar el contenido.</li>
+    </ul>
+    <h3>UNIFICACIÓN DEL DISEÑO DE LAS PAGINAS DEL SITIO</h3>
+    <ul>
+        <li>Permite mantener una misma apariencia en cada una de las páginas y modificarlas en un mismo proceso.</li>
+        <li>Ya que todas las paginas están enlazadas a la hoja de estilo, agilizando el proceso y minimizando el
+            trabajo.</li>
+    </ul>
+    <h3>4. OPTIMIZACIÓN DE LOS TIEMPOS DE CARGA Y DE TRAFICO EN EL SERVIDOR</h3>
+    <ul>
+        <li>Al haber dividido contenido se obtienen archivos más ligeros, reportando:</li>
+        <ol>
+            <li>reducir notablemente el tiempo de carga del sitio en el navegador.</li>
+            <li>reducir el volumen de tráfico del servidor</li>
+        </ol>
+    </ul>
+    <h3>5. PRECISIÓN O ELASTICIDAD</h3>
+    <ul>
+        <li>el tamaño y posicionamiento de los elementos podrá ser exacto.</li>
+        <li>se puede indicar al navegador en que píxel debe colocar un diseño.</li>
+        <li>se puede usar medidas variables o relativas que permitan expandir o reducir el contenido de la ventana
+            dennavegación.</li>
+    </ul>
+    <h3>6. ACCESIBILIDAD Y ESTRUCTURACIÓN</h3>
+    <ul>
+        <li>la combinación de CSS y marcadores descriptivos permite que la página se vea corectamente con o sin hoja de
+            estilos, ya que la información se mantendrá estructurada y ordenada.</li>
+        <li>será accesible sin ningún tipo de problemas tanto por navegadores antiguos o sin soporte CSS, como para
+            personas con algún tipo de discapacidad.</li>
+    </ul>
+    <h3>7. LIMPIEZA DEL CÓDIGO FUENTE</h3>
+    <ul>
+        <li>si escribimos una hoja de estilo independiente, el código fuente va a resultar más agil las tareas de
+            localización de las líneas que busquemos.</li>
+    </ul>
+    <h3>8. COMPATIBILIDAD Y CONTINUIDAD</h3>
+    <ul>
+        <li>las reglas establecidad en CSS-1 se mantienen en CSS-2.</li>
+        <li>Por lo que la compatibilidad de las especificaciones CSS anteriores estará siempre garantizada.</li>
+    </ul>
+    <h3>9. ESTANDARIZACIÓN</h3>
+    <ul>
+        <li>la adopción de estándares por la W3C ofrece la ventaja de la compatibilidad del código entre los diferentes
+            navegadores web.</li>
+        <li>el uso del estándar CSS de la W3C evita visualizaciones incorectas de las web en los distintos navegadores.
+        </li>
+    </ul>
+    <h3>10. PERMITE LA DIFERENCIACIÓN DE ESTILOS PARA IMPRIMIR (VISUALIZAR EN PANTALLA)</h3>
+    <ul>
+        <li>CSS permite maquetar separadamente el contenido de la web para mostrarlo en la pantalla.</li>
+    </ul>
+
+    <h2>COMO UTILIZO CSS</h2>
+    <p>Existen 3 maneras de utilizar CSS</p>
+    <ol>
+        <li><b> CSS en línea empleando un atributo (método menos recomendado</b></li>
+        <ul>
+            <li>(p style="color: blue;") Ese es un párrafo(/p)</li>
+        </ul>
+        <li><b> CSS incrustado en el documento HTML</b></li>
+        <p>(style)</p>
+        <p>p{</p>
+        <p>text-align: center;</p>
+        <p>color: red;</p>
+        <p>}</p>
+        <p>(/style)</p>
+        </ul>
+        <li><b>CSS en un documento CSS externo</b></li>
+        <p><b>HTML</b></p>
+        <P>(html)</P>
+        <p>(head)</p>
+        <p>(title)MI TITULO(/title)</p>
+        <p style="color: red;">(link rel="stylesheet" href="estilos.css"</p>
+        <p>(/head)</p>
+        <p>(/body)</p>
+        <P>(/html)</P>
+        <p><b>CSS</b></p>
+        <p>p{</p>
+        <p>text-align: center;</p>
+        <p>color: red;</p>
+        <p>}</p>
+    </ol>
+    <style>
+        h2 {
+            color: blueviolet;
+        }
+    </style>
+
+    <h2>CUAL ES LA SINTAXIS CSS</h2>
+    <h3 class="violet">h3 class="violet"</h3>
+    <p class="violet">Se considera sintaxis al orden y relación de los elementos que componen una correcta instrucción
+        CSS así como las funciones que cumples.</p>
+    <p><b>Selector:</b> (h2) </p>
+    <p><b>Declaración:</b> (color:red) </p>
+    <p><b>Declaración:</b> (font-size:10px)</p>
+    <p><b>Propiedadades:</b> (color=valor, font-size=valor) </p>
+    <p><b>Valores:</b> (propiedades=red, propiedades=10px</p>
+    <p><b>Ejemplo:</b> h2 {color:red; font-size:10px;}</p>
+
+    <h2>QUE ES UNA REGLA CSS</h2>
+    <ul>
+        <li>Es una forma adecuada de escribir una instrucción mediante código CSS</li>
+        <li>La manera en que se debe escribir código CSS para que sea interpretado en un navegador.</li>
+        <li>Formada por dos partes:</li>
+        <ol>
+            <li>un sector</li>
+            <li>una declaración: donde se encuentran las propiedades con su respectivo valor.</li>
+        </ol>
+        <li>Partes de una regla CSS</li>
+        <ol>
+            <li>EL SELECTOR: quien indica a que elemento HTML se aplica el código CSS.</li>
+            <li>LA PROPIEDAD: la característica que se desea definir. Ejemplo: color.</li>
+            <li>EL VALOR: es el valor que tomará la propiedad. Ejemplo: green.</li>
+            <li>PUNTO Y COMA: una declaración siempre debe terminar con ;</li>
+            <li>EJEMPLO DE UNA REGLA CSS: h1 {color: red;}</li>
+            <li>(h1): el selector h1 apunta a un elemento de HTML.</li>
+            <li>{color: red;}: la declaración siempre va dentro de llaves y contiene a la propiedad y su valor cerrada
+                con un ;</li>
+            <li>(color): se define la pripiedad de color</li>
+            <li>(red): el valor del color es red.</li>
+        </ol>
+    </ul>
+
+    <h2>SELECTORES CSS</h2>
+    <h3 class="etiqueta">SELECTOR DE TIPO ETIQUETA</h3>
+    <p>selecciona todos los elementos que coinciden con el nombre del elemento especificado.</p>
+    <p class="etiqueta">Ejemplo: h1{propiedad: valor;}</p>
+    <p class="etiqueta">Ejemplo: (p class=""etiqueta)</p>
+    <div class="titulo1">
+        <h3>SELECTOR DE CLASE</h3>
+        <p>selecciona todos los elementos que tiene el atributo de class especificado.</p>
+        <p>Ejemplo: .nombreDeLaClase {propiedad: valor;}</p>
+    </div>
+    <h3>SELECTOR DE ID</h3>
+    <p>selecciona un elemento basándose en un valor de su atributo ID.</p>
+    <p>sólo puede haber un elemento con un determinado ID dentro de un documento.</p>
+    <p>no se puede repetir.</p>
+    <p>ejemplo: #nombreDeID {propiedad: valor;}</p>
+    <div id="box1">
+        <h3>SELECTORES CSS BÁSICOS:</h3>
+        <ul>
+            <li><b>SELECTOR UNIVERSAL</b></li>
+            <ul>
+                <li>selecciona todos los elementos.</li>
+                <li>opcionalmente puede estar restringido a un espacio de nombre espefífico o a todos los espacios de
+                    nombres.</li>
+                <li>Ejemplo: *{propiedad: valor;}</li>
+            </ul>
+            <li><b>SELECTOR DE ATRIBUTO</b> </li>
+            <ul>
+                <li>selecciona elementos basándose en el valor de un determinado atributo.</li>
+                <li>Ejemplo: [autoplay]{propiedad: valor;} seleccionará todos los elementos que tengan el atributo
+                    autoplay establecido.</li>
+            </ul>
+        </ul>
+    </div>
+    <h3>SELECTORES SOMBINADOS</h3>
+    <ul>
+        <li><b> COMBINADOR DE HERMANOS ADYACENTES</b></li>
+        <ul>
+            <li>el combinador + selecciona hermanos adyacentes.</li>
+            <li>el segundo elementos sigue directamente al primero y ambos comparten el mismo elemento padre.</li>
+            <li>Sintaxis: A + B</li>
+            <li>Ejemplo: La regla h2 + p se aplicará a todos los elementos (p) que siguen directamente a un elemento(h2)
+            </li>
+        </ul>
+        <li><b>COMBINADOR GENERAL DE HERMANOS</b></li>
+        <ul>
+            <li>el combinador - selecciona hermanos.</li>
+            <li>el segundo elemento sigue al primero, no necesariamente de forma inmediata, y ambos comparten el mismo
+                elemento padre.</li>
+            <li>Sintaxis: A - B </li>
+            <li>Ejemplo: La regla p - span se aplicará a todos los elementos (span) que siguen un elemento (p).</li>
+        </ul>
+        <li><b>COMBINADOR DE HIJO</b></li>
+        <ul>
+            <li>el combinador > selecciona los elementos que son hijos directos del primer elemento.</li>
+            <li>Sintaxis: A > B</li>
+            <li>Ejemplo: La regla ul > li se aplicará a todos los elementos (li) que son hijos directos de un
+                elemento(ul).</li>
+        </ul>
+        <li><b>COMBINADOR DE DESCENDIENTES</b></li>
+        <ul>
+            <li>el combinador (espacio) selecciona los elementos que son descendientes del primer elemento.</li>
+            <li>Sintaxis: A B</li>
+            <li>Ejemplo: la regla div span se aplicará a todos los elementos (span) que están dentro de un
+                elemento(div).</li>
+        </ul>
+        <li><b>COMBINADOR DE COLUMNA</b> </li>
+        <ul>
+            <li>el combinador || selecciona los elementos especificados pertenecientes a una columna. </li>
+            <li>Sintaxis: A || B</li>
+            <li>Ejemplo: col || td seleccionará todos los elementos (td) que pertenezcan al ámbito de (col).</li>
+        </ul>
+    </ul>
+    <h2>SELECTORES CSS</h2>
+    <ul>
+        <li>(p) p</li>
+        <li>(div) (p) div p</li>
+        <li>(p class="claseParrafo") .claseParrafo </li>
+        <li>(p id="idParrafo") #idParrafo</li>
+        <li>(div id="idCapa")(p) #idCapa p</li>
+    </ul>
+
+
+
+    <h3 class="">h3 class="orange"</h3>
+    <p class=""><b>CSS FUNCIONA EN CASCADA:</b> la ultima declaración será la que tenga mayor importancia si dos
+        codigos se contradicen</p>
+    <section class="brown">
+        <h3>section class="brown"</h3>
+        <p>anidación entre padre e hijo</p>
+        <p>para determinar que párrafo quiero seleccionar</p>
+        <p>determino una class en un section para seleccionar el estilo a un section determinado</p>
+        <p>en class tengo que agregar un punto antes del valor de class</p>
+    </section>
+    <section class="sizes" id="id">
+        <h3>section class="sizes"</h3>
+        <p>el ID no se puede repetir</p>
+        <p>en ID debo utilizar #</p>
+    </section>
+    <section class="">
+        <h3>section class=""</h3>
+        <p>puedo combinar id y class</p>
+        <p>ademas puedo determinar a que etiquetas con la propiedad class quiero dar estilo </p>
+        <p></p>
+    </section>
+    <h3>!important</h3>
+    <p>es el estilo que prevalece sobre todos los demas selectores no importa que no sea el ultimo declarado</p>
+    <p>h1{ color: blueviolet !important;}</p>
+    <h3>SIZES</h3>
+    <p>para modificar el tamaño de la fuente</p>
+    <h3>SELECTOR UNIVERSAL</h3>
+    <p>*{</p>
+    <p>margin: 0;</p>
+    <p>padding: 0;</p>
+    }
+    <p>para modificar la visualización los valores por defecto del navegador.</p>
+    <p>tambien se puede utilizar normalize</p>
+
+    <div class="titulo">
+        <h2>INSERTAR COMENTARIOS</h2>
+        <!-- COMENTARIOS -->
+        <P>SHIFT+COMMAND+7</P>
+        <p><b> Comentarios en HTML:</b> (!--COMENTARIO--)</p>
+        <p><b> Comentarios en CSS:</b> /*COMENTARIO*/</p>
+    </div>
+
+    <div id="box2">
+        <div class="items">
+            <h2>DIMENSIONES EN CSS</h2>
+            <p>text-align: center; alinea el texto</p>
+            <p>line-height: 50px; espaciado entre lineas</p>
+            <p>border: agrega un borde al background</p>
+            <p>background-color: black;</p>
+            <p>min-height: 150px;</p>
+            <p>width: 100%;</p>
+            <p>height: 100%;</p>
+            <p>max-width: 520px;</p>
+            <p>color: cyan !important ;</p>
+            <p>text-align: center;</p>
+            <p>line-height: 50px;</p>
+            <p>border: 5px solid aqua;</p>
+            <p>font-size: 16px;</p>
+            <p>100% son 16 pixeles es el estandar</p>
+            <p>px es la medida más utilizada</p>
+        </div>
+    </div>
+    <h2>EJEMPLOS COMBINADOS</h2>
+
+    <h3>1) Etiqueta .clase = p .orange</h3>
+    <h4>HTML</h4>
+    <p><span class="orange">(p)(span class="orange")(/span)(/p)</span></p>
+    <h4>CSS</h4>
+    <p><span class="orange"> p .orange {color: orange;} </span></p>
+
+    <h3>2) .clase Etiqueta = .titulo1 p</h3>
+    <h3>HTML</h3>
+    <div class="titulo1">
+        <p>(div class=""titulo1)(p)texto(/p)(/div)</p>
+    </div>
+    <h3>CSS</h3>
+    <div class="titulo1">
+        <p>.titulo p {color: blue}</p>
+    </div>
+
+    <h3>3) #id .clase Etiqueta = #box1 .items p</h3>
+    <h3>HTML</h3>
+    <div id="box1">
+        <div class="items">
+            <p>(div id="box1")(div class="items")(p)texto(/p)(/div)(/div)</p>
+        </div>
+    </div>
+    <h3>CSS</h3>
+    <div id="box1">
+        <div class="items">
+            <p> #box1 .items p {color: cornflowerblue}</p>
+        </div>
+    </div>
+
+    <h3>4) Etiqueta.clase = div.box</h3>
+    <h3>HTML</h3>
+    <div id="box1" class="box">
+        <div class="items" id="item1">
+            <p>(div id="box1" class="box")(div class="items" id="item1")(p)texto(/p)(/div)(/div)</p>
+        </div>
+    </div>
+    <h3>CSS</h3>
+    <div id="box1" class="box">
+        <div class="items" id="item1">
+            <p>#box1.box p{color:brown;}</p>
+        </div>
+    </div>
+
+    <h2>! IMPORTANT</h2>
+    <ul id="important">
+        <li>la palabra clave ! important se utiliza para dar mayor prioridad a una instrucción.</li>
+        <li>las instrucciones siguientes no pueden sobreescribirla.</li>
+        <li>le da prioridad frente a todas las demás especificaciones.</li>
+        <li>para utilizar la regla ! important hay que escribir al lado del valor la palabra !important dejando un
+            espacio.</li>
+        <li>de esta manera tendrá mayor jerarquía que cualquier otra.</li>
+    </ul>
+
+    <h2>CASCADA Y HERENCIA CSS</h2>
+    <h3>CASCADA</h3>
+    <p>las fuentes de código CSS pueden ser:</p>
+    <ul>
+        <li>la hoja de estilos creada por el desarrollador de la página.</li>
+        <li>los estilos predeterminados del navegador.</li>
+        <li>los estilos especificados por el usuario.</li>
+    </ul>
+    <h3>HERENCIA</h3>
+    <ul>
+        <li>los elementos hijos adoptan los estilos determinados para los elementos padre en caso que no se determine
+            uno específico para el elemento hijo.</li>
+        <li>ejemplo: diseño en (body) afectará a todos los elementos dentro, incluyendo párrafos, subtítulos o cualquier
+            otro elemento dentro de (body).</li>
+    </ul>
+    <h2>RESETEO DE CSS</h2>
+    <p>la visualización de los elementos estará condicionada por el navegador, motivo por el cual se utilizan
+        herramientas como NORMALIZE O RESET para ajustarlo.</p>
+    <h3>RESETEO</h3>
+    <p>es una solución más agresiva a las diferencias entre los navegadores.</p>
+    <p>restablece todos los estilos que vienen con el agente de usuario del navegador.</p>
+    <h3>NORMALIZE</h3>
+    <p>es una solución suave.</p>
+    <p>normalize.css es un pequeño archivo que proporciona coherencia entre navegadores en el estilo de los elementos
+        HTML.</p>
+    <p>si hay una inconsistencia en uno de los navegadores, los estilos normalize.css arreglarán el estilo del
+        navegador.</p>
+
+    <h2>DIMENSIONES EN CSS</h2>
+    <h3>min o max-height</h3>
+    <p>definimos un mínimo o máximo de altura de un elemento</p>
+    <p>div{min-height:200px;}</p>
+    <h3>min o max-width</h3>
+    <p>definimos un mínimo o máximo de ancho de un elemento</p>
+    <p>div{max-width:350px;}</p>
+
+    <h3>LINE-HEIGHT</h3>
+    <p><b> content-area:</b> el área mínima que ocupa una letra con un aire superior e inferior.</p>
+    <p><b>line-height:</b> el área total que ocupa entre líneas.</p>
+    <div class="lineheightpx">
+        <p>La propiedad CSS line-height establece la altura de una casilla remarcada por líneas.</p>
+        <p>Comúnmente se usa para establecer la distancia entre líneas de texto.</p>
+    </div>
+    <div class="lineheightporcentaje">
+        <p>Define la altura mínima de las casillas encuadradas por líneas dentro del elemento.</p>
+        <p>En elementos de línea no reemplazables, especifica la altura que se usa para calcular la altura de la casilla
+            encuadrada por líneas.</p>
+    </div>
+
+    <h3>UNIDADES DE MEDIDA</h3>
+    <h4>UNIDADES DE LONGITUD ABSOLUTA</h4>
+    <p>Pixeles 1px=1/96 de 1in</p>
+    <p>Centímetros 1cm=96px/2.54=38px</p>
+    <p>Milímetros 1mm=1/10 de 1cm</p>
+    <p>Cuartos de milímetros 1Q=1/40 de 1cm</p>
+    <p>Pulgadas 1in=2.54cm=96px</p>
+    <p>Picas 1pc=1/16 de 1in</p>
+    <p>Puntos 1pt=1/72 de 1in</p>
+    <p>PX son los más utilizados.</p>
+    <h4>UNIDADES DE LONGITUD RELATIVA</h4>
+    <p>Son relativas a algo más.</p>
+    <p>Se puede lograr que el tamaño del texto se escalen en relación con todo lo demás.</p>
+    <p>em: Tamaño de letra del elemento padre.</p>
+    <p>ex: Altura x de la fuente del elemento.</p>
+    <p>ch: La medida de avance (ancho) del glifo 0 de la letra del elemento.</p>
+    <p>rem: Tamaño de la letra del elemento raíz.</p>
+    <p>lh: Altura de la línea del elemento.</p>
+    <p>vw: 1% del ancho de la ventana gráfica.</p>
+    <p>vh: 1% de la altura de la ventana gráfica.</p>
+    <p>vmin: 1% de la dimensión más pequeña de la ventana gráfica.</p>
+    <p>vmax: 1% de la dimensión más grande de la ventana gráfica.</p>
+    <p>Los más utilizados son: em, rem, vh, vw y los porcentajes.</p>
+
+    <h2>COLORES</h2>
+    <ul>
+        <li><b>HEXADECIMALES:</b> #f10a9c = Red Green Blue (rangos combinables entre A-F y 0-9)</li>
+        <li><b>RGB:</b> rgb(255, 255, 255) = Red Green Blue (rangos combinables entre 0-255)</li>
+        <li><b>RGBA:</b> rgb(255, 255, 255, 0.1) = Red Green Blue Alpha (rangos combinables entre 0-255 y alfa entre 0 y
+            1)</li>
+        <li><b>Colores en inglés:</b> Red, Green, Blue, Yellow, etc.</li>
+        <li><b>HSL:</b> HUE(matiz) Saturation(saturación) Lightness(brillo) (rangos Hue entre 0 y 360 Sat. entre 0% y
+            100% y lightness 0% y 100%)</li>
+    </ul>
+    <p>div{
+
+        color:#76e37f;
+        color: blue;
+        color: rgba(255,255,255,0.7);
+        }</p>
+    <h3>COLOR PICKER EXTENTION</h3>
+    <p>VSC Extention: Color Picker. Helper with GUI to generate color codes such as CSS COLOR NOTATIONS. And, a command
+        Convert Color to change the color notation.</p>
+
+    <h2>DEGRADADOS - gradients</h2>
+    <ul id="radialgradient">
+        <li>Rango de colores dispuestos en forma.</li>
+        <li>Pueden ser lineales, radiales u otra forma.</li>
+        <li><b>el efecto es una transición suave entre colores distintos, de a poco se degrada el color.</b></li>
+        <li>Función: linear-gradient() para degradados lineales.</li>
+        <li>Función: radial-gradient() para degradados radiales.</li>
+        <li>Dentro de los paréntesis establecemos los colores deseados, las paradas de color, la dirección, etc.</li>
+    </ul>
+    <div id="linealgradient">
+        <h3>Ejemplo:</h3>
+        <p>.lineal {</p>
+        <p> width: 250px;</p>
+        <p> height:200px;</p>
+        <p> background: linear-gradient(red, yellow, blue, green);</p>
+        <p>}</p>
+    </div>
+    <h3>SITIOS DE COLORES</h3>
+    <p><b>www.mycolor.space</b> Sitio donde se pueden generar degradados.</p>
+    <p><b>www.material.io</b> Sitio para generar materiales de diseño para webs y otros.</p>
+    <p><b>www.toptal.com/designers/colourcode</b> Códigos de paleta de colores.</p>
+    <p><b>www.colorsupplyyy.com/app</b> Códigos de paleta de colores.</p>
+    <p><b>www.design-seeds.com</b> Combinación de colores por emoción o material.</p>
+    <p><b>www.encycolorpedia.es</b> Enciclopedia de colores.</p>
+    <p><b>www.color.adobe.com/es/create/color-wheel</b> Rueda cromática.</p>
+    <p><b>www.khroma.co.com/es/create/color-wheel</b> Make colors work for you.</p>
+    <p><b>www.patternify.com</b> CSS Pattern Generator.</p>
+
+    <h3>PROPIEDAD OPACITY</h3>
+    <ul>
+        <li>Nos permite ponerle opacidad o transparencia en valores de 0 a 1</li>
+    </ul>
+    <h3>PROPIEDAD VISIBILITY</h3>
+    <p>Es similar a la propiedad display pero mucho más limitada.</p>
+    <p>Display permite cambiar el tipo de caja de un elemento.</p>
+    <p>Visibility sólo permite hacer visible o invisible una caja.</p>
+    <p><b>VALORES PARA VISIBILITY:</b></p>
+    <ul>
+        <li><B> VISIBLE:</B> indica que elemento es mostrado</li>
+        <li><B> HIDDEN:</B> Establece que elemento se esconde, pero los demás elementos de la página se comportan como
+            si el elemento estuviese presente.</li>
+        <li><B> COLLAPSE:</B> pensada para controlar la visibilidad de elementos de tabla, filas y columnas.</li>
+    </ul>
+    <h2>FONT</h2>
+    <p><b>PROPIEDADES:</b> valores</p>
+    <p><b>FONT-FAMILY:</b> cursive / fantasy / monospace / serif / sans-serif / etc</p>
+    <p><b>FONT-SIZE:</b> % / em / rem / pt / px</p>
+    <p><b>FONT-weight:</b> bold/bolder/lighter/100/200/300/400/500/600/700/800/900</p>
+    <p><b>FONT-STYLE:</b> italic / normal</p>
+    <p><b>FONT-VARIANT:</b> small-caps / normal</p>
+    <p><b>FONT-FAMILY:</b> La propiedad font-family define una lista de fuentes o familias de fuentes, con un orden de
+        prioridad. A diferencia de la mayoría de las propiedades de CSS, los valores se separan con comas para indicar
+        que son valores alternativos (red, yellow, blue, green).</p>
+    <div id="fontfamily">
+        <h3>FONT-FAMILY</h3>
+        <p> div{</p>
+        <p> font-family:sans-serif;</p>
+        <p>}</p>
+    </div>
+    <div class="em">
+        <h3>FONT-SIZE</h3>
+        <p>Establece el tamaño del texto.</p>
+        <p>TOP: Aire sobre la fuente.</p>
+        <p>BOTTOM: Aire debajo de la fuente.</p>
+        <p>ASCENT: Límite superior de las fuentes mayúsculas.</p>
+        <p>DESCENT: Límite inferior de las fuentes mayúsculas.</p>
+        <p>FONT SIZE: Espacio entre ascent y descent.</p>
+        <p>LINE HEIGHT: Espacio entre top y bottom.</p>
+        <p>TAMAÑO ABSOLUTO: No permite que el usuario cambie el tamaño.</p>
+        <p>TAMAÑO RELATIVO: Permite al usuario cambiar el tamaño del texto en los navegadores.</p>
+    </div>
+    <h3>FONT-WIGHT</h3>
+    <p>Establece el grosor del texto, como la etiqueta (strong).</p>
+    <p class="uno">font-weight: 100; Thin</p>
+    <p class="dos">font-weight: 200; Extra-Light</p>
+    <p class="tres">font-weight: 300; Light</p>
+    <p class="cuatro">font-weight: 400; Regular</p>
+    <p class="cinco">font-weight: 500; Medium</p>
+    <p class="seis">font-weight: 600; Semi-Bold</p>
+    <p class="siete">font-weight: 700; Bold</p>
+    <p class="ocho">font-weight: 800; Extra-Bold</p>
+    <p class="nueve">font-weight: 900; Black</p>
+    <p class="normal">font-weight: normal; normal</p>
+    <p class="bold">font-weight: bold; bold</p>
+    <p class="bolder">font-weight: bolder; bolder</p>
+    <p class="lighter">font-weight: lighter; lighter</p>
+    <p class="inherit">font-weight: inherit; inherit</p>
+
+    <h3>FONT-STYLE</h3>
+    <p>Define el aspecto de una familia tipográfica entre valores:</p>
+    <ul>
+        <li class="normals">Normal</li>
+        <li>elige un tipo de letra clasificada como normal</li>
+        <li class="italics">Italic</li>
+        <li>elige una letra etiquetada como italic o de no haber, oblique.</li>
+        <li class="obliques">Oblique</li>
+        <li>elige una letra etiquetada como oblique o de no haber, italic.</li>
+        <li class="inherits">inherit</li>
+    </ul>
+
+    <h3>FONT-VARIANT</h3>
+    <p>Propiedad en la que todas las letras minúsculas se convierten en letras mayúsculas.</p>
+    <p>Además las letras mayúsculas convertidas aparecen en un tamaño más pequeño que las mayúsculas originales en el
+        texo.</p>
+    <p>VALORES:</p>
+    <ul>
+        <li>normal</li>
+        <li>small-caps</li>
+        <li>inherit</li>
+    </ul>
+    <h3>TEXT</h3>
+    <ul>
+        <li><b>TEXT-ALIGN:</b></li>
+        <ul>
+            <li>LEFT: Alinea el texto a la izquierda.</li>
+            <li>RIGHT: Alinea el texto a la derecha.</li>
+            <li>CENTER: Centra el texto.</li>
+            <li>JUSTIFY: Se estira las líneas para que todas las líneas tenga el mismo ancho.</li>
+            <li>INITIAL: Establece esta propiedad a su valor por defecto.</li>
+            <li>INHERIT: Hereda esta propiedad de su elemento padre.</li>
+        </ul>
+        <li><b>TEXT-DECORATION:</b> dashed, dotted, solid, wavy, double</li>
+        <ul>
+            <li>UNDERLINE: subraya todas las líneas de texto.</li>
+            <li>OVERLINE: subraya por arriba de cada línea de texto.</li>
+            <li>LINE-THROUGH: todas las líneas de texto se muestran tachadas.</li>
+            <li>BLINK: el texto parpadea apareciendo y desapareciendo.</li>
+            <li>NONE: el texto no muestra ninguna decoración, eliminando todas las decoraciones heredadas.</li>
+        </ul>
+        <li><b>TEXT-TRANSFORM:</b></li>
+        <ul>
+            <li>UPPERCASE: convierte los caracteres a mayúsculas.</li>
+            <li>LOWERCASE: convierte los caracteres a minúsculas.</li>
+            <li>CAPITALIZE: cambia a mayúscula la primera letra de cada palabra.</li>
+        </ul>
+        <li><b>TEXT-OVERFLOW:</b> </li>
+        <ul>
+            <li>determina como el contenido que se desborda y no es mostrado, va a hacerse notar.</li>
+            <li>CLIP: Es el valor predeterminado y quiere decir que el texto simplemente se recortará sin mostrar ningún
+                efecto.</li>
+            <li>ELLIPSIS: Coloca 3 puntos suspensivos.</li>
+            <li>STRING: reemplaza los puntos suspensivos por una cadena de guiones medios. No funciona en todos los
+                navegadores. </li>
+            <li>FADE: Efecto fade-out o desvanecimiento. Su valor puede ser una longitud y un porcentaje. Aún
+                experimental. </li>
+        </ul>
+        <li><b>TEXT-SHADOW:</b> eje-x, eje-y, blur, color</li>
+        <ul>
+            <li>H-SHADOW: La posición de la sombra es horizontal.</li>
+            <li>V-SHADOW: Sombra vertical.</li>
+            <li>BLUR-RADIUS: El radio de desenfoque. El valor predeterminado es 0.</li>
+            <li>COLOR: El color de la sombra.</li>
+        </ul>
+        <li><b>LA REGLA @FONT-FACE</b></li>
+        <ul>
+            <li>Es una regla que permite establecer una fuente tipográfica en especial que no esté disponible en el
+                dispositivo del usuario.</li>
+            <li>Dentro de la regla se establece el nombre personalizado de la tipografía.</li>
+            <li>y establecemos la ubicación de esa fuente.</li>
+        </ul>
+    </ul>
+    <h3>Codigo Regla @Font-face</h3>
+    <div class="font-face">
+        <h4>Regla en CSS</h4>
+        <p> @Font-face {</p>
+        <p> font-family: nombrepersonalizado;</p>
+        <p> src:url();</p>
+        <p> font-style: cursive;</p>
+        <p> font-weight:700;</p>
+        <P> }</p>
+        <h4>Definimos el selector deseado</h4>
+        <p>p {</p>
+        <p>font-size:30px;</p>
+        <p>font-family:nombrepersonalizado;</p>
+        <p>}</p>
+    </div>
+    <h3>WORD AND LETTER SPACING</h3>
+    <p>WORD-SPACING</p>
+    <p>Debe estar en formato longitud: cm, px, pt, em, %, normal (por defecto).</p>
+    <p>No se permiten valores negativos.</p>
+    <p>Un valor 0 evitará justificación.</p>
+    <h3>WORD-WRAP</h3>
+    <p>Propiedad para controlar las palabras largas que exceden el contenedor, para continuar en la siguiente línea.</p>
+    <p>VALORES:</p>
+    <ul>
+        <li>NORMAL: no modifica el texto.</li>
+        <li>BREAK-WORD: genera un corte y continúa en la siguiente línea.</li>
+    </ul>
+    <h3>LISTAS</h3>
+    <ol>
+        <li><b>LISTAS ORDENADAS (OL):</b> Ordenadas numérica o alfabéticamente.</li>
+        <li><b>LISTAS DESORDENADAS (UL):</b> Listadas por viñetas.</li>
+        <li><b>LISTAS DE DEFINICIÓN (DL):</b> Formato diccionario.</li>
+    </ol>
+    <h3>LIST-SYLE:</h3>
+    <ul>
+        <li><b>PROPIEDADES:</b>Valores</li>
+        <li><b>LIST-STYLE-TYPE:</b> disc, square, circle, decimal, lower-roman, upper-roman, lower-greek, lower-latin,
+            upper-lating, armenian, gregorian, none.</li>
+        <li><b>LIST-STYLE-POSITION:</b> inside, outside.</li>
+        <li><b>LIST-STYLE-IMAGE:</b> url()</li>
+    </ul>
+    <h3>ESTILOS PARA TABLAS</h3>
+    <ul>
+        <li><b>BORDER-COLLAPSE:</b> inherit, separate, collapse.</li>
+        <li><b>BORDER-SPACING:</b> puede tomar cualquier valor numérico, con su respectiva unidad de medida.</li>
+        <li><b>CAPTION-SIDE:</b> top, bottom.</li>
+        <li><b>EMPTY CELLS:</b> show, hidden.</li>
+        <li><b>TABLE-LAYOUT:</b> auto, fixed.</li>
+    </ul>
+    <h2>OVERFLOW</h2>
+    <p>Propiedad para el control de contenido excedente de elementos y contenedores.</p>
+    <ul>
+        <li><B>VISIBLE:</B> Valor por defecto, siendo todo visible aunque sea desbordado.</li>
+        <li><b>HIDDEN:</b> El contenido excedente se oculta.</li>
+        <li><b>SCROLL:</b> El contenido no se desborda y se controla con barras de desplazamiento vertical y horizontal.
+        </li>
+        <li><b>AUTO:</b> Aparecen automaticamente barras de desplazamiento de ser necesario.</li>
+        <li><b>INHERIT:</b> Hereda el estilo del elemento padre.</li>
+    </ul>
+    <h2>MULTIMEDIA EN HTML</h2>
+    <h3>AUDIO EN HTML</h3>
+    <ul>
+        <li><b>src</b> Valor: Dirección URL. Audio a reproducir. </li>
+        <li><b>preload</b> Valor: auto, metadata, none. Indica como realizar la precarga del audio.. </li>
+        <li><b>mediagroup</b> Valor: nombre. Establece el nombre para un grupo de contenidos multimedia. </li>
+        <li><b>autoplay</b> Valor: Boolean. Comienza a reproducir el audio automáticamente. </li>
+        <li><b>loop</b> Valor: Boolean. vuelve a iniciar el audio cuando finaliza su reproducción. </li>
+        <li><b>muted</b> Valor: Boolean. Establece el audio silenciado. </li>
+        <li><b>controls</b> Valor: Boolean. Muestra los controles de reproducción. Por defecto no se muestran. </li>
+    </ul>
+    <h4>FORMATOS DE AUDIO</h4>
+    <ul>
+        <li><b>MP3:</b> MPEG Layer-3. Buena calidad y soporte.</li>
+        <li><b>AAC:</b> Advance Audio Coding. Mejora el MP3, es el audio del MP4 y buen soporte.</li>
+        <li><b>OGG:</b> Ogg Vorbis. Buena calidad. Alternativa libre a MP3 y soporte medio.</li>
+        <li><b>OPUS:</b> Opus. Buena calidad. Alternativa libre a MP3 y soporte medio.</li>
+        <li><b>FLAC:</b> FLAC Audio Lossles. Compresión sin pérdidas. Alto tamaño y buen soporte.</li>
+        <li><b>WAV:</b> Wave sound. Formato Microsoft. No recomendado y muy pesado.</li>
+    </ul>
+    <h3>VIDEO EN HTML</h3>
+    <ul>
+        <li><b>src</b> Valor: Dirección URL. Video a reproducir. </li>
+        <li><b>poster</b> Valor: Dirección URL. Muestra una imagen a modo de presentación. </li>
+        <li><b>preload</b> Valor: auto, metadata, none. Indica como realizar la precarga del video. </li>
+        <li><b>mediagroup</b> Valor: nombre. Establece el nombre para un grupo de contenidos multimedia. </li>
+        <li><b>autoplay</b> Valor: Boolean. Comienza a reproducir el video automáticamente. </li>
+        <li><b>loop</b> Valor: Boolean. vuelve a iniciar el video cuando finaliza su reproducción. </li>
+        <li><b>muted</b> Valor: Boolean. Establece el video silenciado. </li>
+        <li><b>controls</b> Valor: Boolean. Muestra los controles de reproducción. Por defecto no se muestran. </li>
+        <li><b>width</b> Valor: tamaño. Indica el ancho del video.</li>
+        <li><b>height</b> Valor: tamaño. Indica el alto del video.</li>
+    </ul>
+    <h4>FORMATOS DE VIDEO</h4>
+    <ul>
+        <li><b>MP4:</b> CODEC: X264, DIVX H264. Alta calidad y soporte. Codec x264 libre.</li>
+        <li><b>WebM:</b> CODEC: VP8, VP9. Alternativa libre a MP4 de Google y soporte medio.</li>
+        <li><b>AV1:</b> CODEC: Basado en VP10, Daala y Thor. Compite con HEVC/H.265 y soporte bajo.</li>
+        <li><b>HEVC:</b> CODEC: X265, DivX HEVC. Futura evolución de MP4. Poco soporte.</li>
+        <li><b>OGV:</b> CODEC: Theora. Alternativa libre a MP4. Con precaución.</li>
+        <li><b>MKV:</b> CODEC: Matroska. Buena comresión. Potente. No recomendado alto consumo CPU.</li>
+        <li><b>AVI:</b> CODEC: XviD, DivX 3/5. Menor compresión que MP4. No recomendado, anticuado.</li>
+    </ul>
+    <h3>IMAGENES EN HTML</h3>
+    <p>La etiqueta (img) no posee cierre.</p>
+    <p>FORMATOS:</p>
+    <ul>
+        <li>JPEG</li>
+        <li>GIF</li>
+        <li>PNG</li>
+        <li>SVG</li>
+    </ul>
+
+    <h2>BOX MODEL</h2>
+    <p>Una manera de maquetar webs.</p>
+    <h3>PROPIEDADES:</h3>
+    <ul>
+        <li><b>MARGIN:</b> Margen entre elemento y elemento o margen si no lo hubiese.</li>
+        <li><b>BORDER:</b> Es el borde de cada elemento.</li>
+        <li><b>PADDING:</b> Es el relleno de cada elemento.</li>
+        <li><b>CONTENT:</b> Es el contenido del elemento. Imagen, texto, etc.</li>
+    </ul>
+    <h3>VALORES DEL BOX MODEL:</h3>
+    <ul>
+        <li>PROPIEDADES: Valores</li>
+        <li>VALORES PARA MARGIN, PADDING Y BORDERS: rem, em, %, pt, px, vh, vw.</li>
+        <li>VALORES PARA BORDER:</li>
+        <li class="dotted">dotted, </li>
+        <li class="dashed">dashed, </li>
+        <li class="solid">solid, </li>
+        <li class="double">double, </li>
+        <li class="dotted">dotted, </li>
+        <li class="groove">groove, </li>
+        <li class="ridge">ridge.</li>
+        <li class="inset">inset, </li>
+        <li class="outset">outset, </li>
+        <li class="wave">wave, </li>
+        <li class="dotdotdash">dot-dot-dash, </li>
+        <li>Cada una de las dimensiones a cada elemento se suman: 200px Ancho del contenido+ 10px Relleno izquierdo +
+            10px Relleno derecho + 10px Borde izquierdo + 10px Borde derecho + 20px Margenes = 260px</li>
+    </ul>
+    <h3>PROPIEDAD BORDER</h3>
+    <ul>
+        <li>border-top</li>
+        <li>border-right</li>
+        <li>border-bottom</li>
+        <li>border-left</li>
+    </ul>
+    <h3>BORDER-RADIUS</h3>
+    <p>Para redondear las esquinas de un elemento.</p>
+    <ul>
+        <li class="diez">border-radius: 5px;</li>
+        <li class="once">border-radius: 15px;</li>
+        <li class="doce">border-radius: 20px;</li>
+        <li class="trece">border-radius: 40px;</li>
+        <li class="catorce">border-radius: 60px;</li>
+        <li class="quince">border-radius: 13em/3em;</li>
+        <li class="dieciseis">border-top-left-radius: 40%;</li>
+        <li class="diecisiete">border-radius: 80px 20px;</li>
+        <li class="dieciocho">border-radius: 60px 20px 5px;</li>
+        <li class="diecinueve">border-radius: 60px 20px 5px 90px;</li>
+        <li class="veinte">border-radius: 60px/20px;</li>
+        <li class="veintiuno">border-radius: 50%;</li>
+        <li class="veintidos">moz-border-radius: 1em;</li>
+        <li class="veintitres">moz-border-radius-topright: 2em;moz-border-radius-topleft: 2em;</li>
+        <li class="veinticuatro">-moz-border-radius:2em 0;</li>
+        <li class="veinticinco">-moz-border-radius:3em 1em;</li>
+    </ul>
+    <h3>PROPIEDAD BOX-SHADOW</h3>
+    <p>Para poner sombra a las cajas</p>
+    <ul>
+        <li>Box Shadow: Sombra a la caja</li>
+        <li>Filter Drop Shadow: Sombra al objeto</li>
+    </ul>
+    <h4>Principales valores de box-shadow:</h4>
+    <div class="bloque">
+        <p>box-shadow: ejeX ejeY blur spread color;</p>
+        <p>.bloque</p>
+        <p>width: 250px;</p>
+        <p>height: 400px;</p>
+        <p>background: #f0f0f0;</p>
+        <p>border: 1px solid black;</p>
+        <p>box-shadow: 10px 10px 6px 3px #474747</p>
+    </div>
+    <ul class="bloquedos">
+        <li><B>SOMBRA EN X:</B> Especifica el tamaño de la sombra a lo largo del eje horizontal X en unidades de medida
+            longitudinal px, em etc. Los Valores positivos crean sombras hacia la derecha y los negativos hacia la
+            izquierda.</li>
+        <li><b>SOMBRA EN Y:</b> Especifica la dimensión de la sombra a lo largo del eje vertical Y. Valores positivos
+            crean sombra hacia abajo y valores negativos sombras hacia arriba de elemento. </li>
+        <li><b>COLOR DE SOMBRA:</b> Puede especificarse con palabras clave como: red, blue, etc, también con valores
+            hexadecimales o con los ya conocidos y admitidos.</li>
+        <li><b>DESENFOQUE (BLUR):</b> Especifica un desenfoque para la sombra. No admite valores negativos. Menores
+            valores, da menor desenfocado de la sombra.</li>
+        <li><b>PROPAGACIÓN (SPREAD):</b> Radio de propagación de la sombra. Mayores valores da mayor propagación,
+            permitiendo valores negativos</li>
+    </ul>
+    <div class="bloquetres">
+        <p>.bloquedos {</p>
+        <p> width: 750px;</p>
+        <p>height: 200px;</p>
+        <p>background: #f0f0f0;</p>
+        <p>border: 1px solid black;</p>
+        <p>box-shadow:</p>
+        <p>10px 10px 1px 3px #ff2317,</p>
+        <p>20px 20px 2px 4px #ffe417,</p>
+        <p>30px 30px 3px 5px #23ff17,</p>
+        <p>40px 40px 4px 6px #174dff;</p>
+        <p>}</p>
+    </div>
+    <div class="bloquecuatro">
+        <h3>FLOAT</h3>
+        <p>Ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo al texto aparecer a su lado</p>
+        <ul>
+            <li><b>NONE:</b> El elemento queda por debajo del texto superior y por encima del texto inferior.</li>
+            <li><b>LEFT:</b> El elemento queda en el margen izquierdo rodeado por el texto superior, inferior y por la
+                derecha.</li>
+            <li><b>RIGHT:</b> El elemento queda en el margen derecho rodeado por el texto superior, inferior y por la
+                izquierda.</li>
+        </ul>
+    </div>
+    <h2>ELEMENTOS DE LÍNEA Y BLOQUE</h2>
+    <h3>LA PROPIEDAD DISPLAY</h3>
+    <h4>BLOCK VS INLINE</h4>
+    <ul>
+        <li><b>Propiedad: Valor</b></li>
+        <li><b>display: block;</b> Block elements stack (in column), regardless of their width.</li>
+        <li><b>display: inline;</b> Inline (filas) elements flow from one line to the next.</li>
+    </ul>
+    <ul>
+        <li><b>Propiedad Display:</b> Permite elegir como se muestran los elementos. Como elementos de Línea o de
+            Bloque.</li>
+        <li><b>Elementos de línea:</b> Todos lo elementos se ubican en una misma línea sin hacer saltos de línea. Ej:
+            enlaces, imágenes, elementos span, textos sub o super, etc.</li>
+        <li><b>Elementos de bloque:</b> Ocupan el ancho máximo disponible. Realizan salto de línea. Párrafos, bloques
+            div, tablas, formularios, listas, etc.</li>
+    </ul>
+    <h3>VALORES PARA DISPLAY CSS</h3>
+    <ul>
+        <li><b>INLINE:</b> establece que el elemento debe comportarse como un elemento en línea</li>
+        <li><b>BLOCK:</b> establece que el elemento debe comportarse como un elemento de bloque.</li>
+        <li><b>INLINE-BLOCK:</b> El elemento genera una caja de elemento de bloque que fluye con el contenido
+            circundante como si fuera una sola caja en línea</li>
+        <li><b>NONE:</b> Indica que el elemento no debe ser mostrado.</li>
+        <li><b>INHERIT</b> Hereda del elemento padre.</li>
+        <li><b>INITIAL:</b> Indica que se cumpla la forma inicial o predeterminada.</li>
+        <li><b>ELEMENTOS EN LINEA (INLINE):</b> Elementos cuyo contenido se encuentra en una misma línea. Si no
+            expresamos un salto de línea, los elementos se presentarán uno seguido del otro.</li>
+        <li><b>ELEMENTOS DE BLOQUE (BLOCK):</b> Se comportan como bloques. Tras cada elemento, se realiza un salto de
+            línea aún sin su especificación.</li>
+    </ul>
+    <h3>PROPIEDADES DE POSICIONAMIENTO (CSS POSITION PROPERTY)</h3>
+    <p>Permite posicionar un elemento con respecto a los demás.</p>
+    <ul>
+        <li><b>STATIC:</b> Valor por defecto.</li>
+        <LI><b>RELATIVE</b> Podemos mover al elemento pero tomará como referencia su posición por defecto. Podemos usar
+            la propiedad top, left, right y botompara colocarlo donde queramos.</LI>
+        <li><b>ABSOLUTE:</b> Podemos romper el flujo del documento, definiendo top, bottom, right y left. La diferencia
+            con relative es que empieza desde el inicio del sitio web o del elemento que tenga una posición diferente.
+        </li>
+        <li><b>FIXED:</b> Quedan fuera del flujo normal de la página. Converte al elemento en flotante, no aceptando
+            ningua de las propiedades left, top, bottom o right. Al desplazarnos el elemento no desaparece. Se utiliza
+            para los menús fijos.</li>
+        <li><b>STICKY:</b> El elemento es posicionado de acuerdo al flujo normal del documento y luego es desplazado con
+            relación a su ancestro que se desplace más cercano y su bloque contenedor.</li>
+    </ul>
+    <h3>VALORES PARA LA PROPIEDAD POSITION:</h3>
+    <ul>
+        <li><b>TOP:</b> establece la distancia superior del elemento respecto a otro.</li>
+        <li><b>LEFT:</b> establece la distancia por el lado derecho del elemento respecto a otro.</li>
+        <li><b>BOTTOM:</b> establece la distancia inferior del elemento respecto a otro.</li>
+        <li><b>RIGHT:</b> establece la distancia por lado izquierdo del elemento respecto a otro.</li>
+    </ul>
+    <h2>LA PROPIEDAD Z-INDEX</h2>
+    <ul>
+        <li>Ordena elementos en el eje Z. El eje que sale del plano de la antalla.</li>
+        <li>Sirve para poner elementos uno sobre otros.</li>
+        <li>Actúa sobre elementos que posean la propiedad POSITION y valor distinto de STATIC.</li>
+    </ul>
+    <h3>VALORES PARA Z-INDEX</h3>
+    <p>Los elementos con z-index mayores se superponen sobre los de menor valor.</p>
+    <ul>
+        <li><b>AUTO:</b> El nivel de apilamiento de la caja generada es el mismo que el de la caja padre.</li>
+        <li><b>ENTERO:</b> Puede ser un número entero (no decimal).</li>
+        <li><b>INHERIT:</b> Hereda del elemento padre. </li>
+    </ul>
+    <h2>FLEXBOX</h2>
+    <ul>
+        <li>Es un sistema de elementos flexibles</li>
+        <li>Los elementos de HTML se adaptan y colocan automáticamente, siendo más fácil personalizar los diseños.</li>
+        <li>Especialmente diseñado para crear con CSS estructuras de una sóla dimensión.</li>
+    </ul>
+    <h3>Elementos básicos:</h3>
+    <ul>
+        <li><b>Contenedor:</b> Es el elemento padre que tendrá en su interior cada uno de los ítmes flexibles.
+            Establecemos las propiedades al elemento padre.</li>
+        <li><b>Eje principal:</b> Los contenedores tendrán una orientación por defecto horizontal (en fila).</li>
+        <li><b>Eje secundario:</b> Los contenedores tendrán una orientación secundaria, perpendicular a la principal. Si
+            la principal es horizontal, la secundaria será vertical.</li>
+        <li><b>Ítem:</b> Cada uno de los hijos que tendrá el contenedor en su interior.</li>
+    </ul>
+    <h3>PROPIEDAD DISPLAY</h3>
+    <ul>
+        <li>Define un contenedor flexible en línea o bloque según el valor.</li>
+        <li>Permite un contexto flexible para todos sus hijos.</li>
+        <li>Posibles valores:</li>
+        <ul>
+            <li>Flex</li>
+            <li>Block</li>
+            <li>Inline</li>
+            <li>Inline-Block</li>
+            <li>Table</li>
+            <li>Grid</li>
+        </ul>
+        <li>Para Flexbox siempre aplicaremos al contenedor la propiedad <b>display: flex;</b></li>
+    </ul>
+    <h3>DIRECCIÓN DE LOS EJES</h3>
+    <p>Existen 2 propiedades principales para manipular la dirección y comportamiento de los ítems a lo largo del eje
+        principal del contenedor.</p>
+    <ul>
+        <li><b>PROPIEDAD:</b> Valor. Significado</li>
+        <li><B>FLEX-DIRECION:</B> Row, Row-reverse, Column, Column-reverse. Cambia la orientación del eje principal.
+        </li>
+        <li>Podemos modificar la dirección del eje principal del contenedor para que se oriente en horizontal o
+            vertical. sufijo reverse indica que coloque los ítems en orden inverso.</li>
+        <li><b>FLEX-WRAP</b> Nowrap, Wrap, Wrap-reverse. Evita o permite el desbordamiento.</li>
+    </ul>
+    <h3>FLEX-DIRECION</h3>
+    <p>Permite tener control muy alto sobre el orden de los elementos en una página.</p>
+    <ul>
+        <li><b>ROW:</b> Establece la dirección del eje principal en horizontal.</li>
+        <li><b>ROW-REVERSE:</b> Establece la dirección del eje principal en horizontal invertido.</li>
+        <li><b>COLUMN:</b> Establece la dirección del eje principal en vertical.</li>
+        <li><b>COLUMN-REVERSE:</b> Establece la dirección del eje principal en vertical invertido.</li>
+    </ul>
+    <h3>FLEX-WRAP</h3>
+    <p>Para especificar el comportamiento del contenedor respecto a evitar que se desborde o permitir que lo haga.</p>
+    <ul>
+        <li><b>NOWRAP:</b> Establece los ítems en una sola línea no permitiendo que se desborde el contenedor.</li>
+        <li><b>WRAP:</b> Establece los ítems en modo multilínea permitiendo el desborde del contenedor.</li>
+        <li><b>WRAP-REVERSE:</b> Establece los ítems en modo multilínea, pero en dirección inversa.</li>
+    </ul>
+    <h3>FLEX-FLOW</h3>
+    <ul>
+        <li>Es una propiedad de atajo (short-hand)</li>
+        <li>Para resumir los valores de las propiedades flex-direction y flex-wrap.</li>
+        <li>Se especifica en una sola propiedad, ahorrándonos utilizar las propiedades.</li>
+        <li><b>FLEX-FLOW:</b> row, row-reverse, column, column-reverse</li>
+        <li><b>FLEX-FLOW:</b> nowrap, wrap, wrap-reverse</li>
+    </ul>
+    <h3>PROPIEDADES DE ALINEACIÓN</h3>
+    <h4>EJE PRIMARIO</h4>
+    <ul>
+        <li><b>JUSTIFY-CONTENT:</b> flex-start, flex-end, center, space-between, space-around, space-evenly</li>
+        <li>Se utiliza para alinear los ítems del eje principal, que por defecto es el horizontal.</li>
+    </ul>
+    <h4>EJE SECUNDARIO</h4>
+    <ul>
+        <li><b>ALIGN-CONTENT:</b> flex-start, flex-end, center, space-between, space-around, space-evenly, stretch.</li>
+        <li><b>ALIGN-ITEMS:</b> flex-start, flex-end, center, stretch, baseline.</li>
+        <li>Propiedad usada para alinear los ítems del eje secundario</li>
+        <li><b>ALIGN-SELF:</b> auto, flex-start, flex-end, center, stretch, baseline.</li>
+    </ul>
+    <h4>PROPIEDADES DE ALINEACIÓN</h4>
+    <p>La propiedad JUSTIFY-CONTENT coloca los ítems de un contenedor a lo largo del eje principal.</p>
+    <ul>
+        <li>VALOR: Descripción</li>
+        <li>FLEX-START: Agrupa los ítems al principio del eje principal (... )</li>
+        <li>FLEX-END: Agrupa los ítems al final del eje principal ( ...)</li>
+        <li>CENTER: Agrupa los ítems al centro del eje principal ( ... )</li>
+        <li>SPACE-BETWEEN: Distribuye los ítems dejando el máximo espacio para separarlos (. . .)</li>
+        <li>SPACE-AROUND: Distribuye los ítems dejando el mismo espiacio alrededor de ellos (izq/der) ( . . . )</li>
+        <li>SPACE-EVENLY: Distribuye los ítems dejando el mismo espacio (solapado) a la izq. y der ( . . . )</li>
+    </ul>
+    <h4>PROPIEDADES DE ALINEACIÓN (ALIGN-ÍTEMS)</h4>
+    <p>Alinea los ítems en el eje secundario del contenedor.</p>
+    <p>A diferencia de align-content que actúa sobre cada una de las líneas de un contenedor multilínea, align-ítems lo
+        hace sobre la línea actual.</p>
+    <ul>
+        <li>VALOR: Descripción</li>
+        <li>FLEX-START: Alinea los ítems al principio del eje secundario.</li>
+        <li>FLEX-END: Alinea los ítems al final del eje secundario.</li>
+        <li>CENTER: Alinea los ítems al centro del eje secundario.</li>
+        <li>STRETCH: Alinea los ítems estirándolos de modo que cubran desde el inicio hasta el final del contenedor</li>
+        <li>BASELINE: Alinea los ítems en el contenedor según la base del contenido de los ítems del contenedor.</li>
+    </ul>
+    <h3>PROPIEDAD DE ALINEACIÓN (ALIGN-SELF)</h3>
+    <ul></ul>
+    <li>Align-self Actúa igual que Align-items</li>
+    <li>Pero align-self se utiliza sobre un ítem hijo específico y no sobre el elemento contenedor.</li>
+    <li>Cambia el comportamiento de align-ítems y sobreescribe con comportamientos específicos para ítems concretos que
+        no queremos que se comporten igual que el resto.</li>
+    <ul>
+        <li>FLEX-START: Alinea los ítems al principio del contenedor.</li>
+        <li>FLEX-END: Alinea los ítems al final del contenedor.</li>
+        <li>CENTER: Alinea los ítems al centro del contenedor.</li>
+        <li>STRETCH: Alinea los ítems estirándolos al tamaño del contenedor.</li>
+        <li>BASELINE: Alinea los ítems en el contenedor según la base de los ítems.</li>
+        <li>AUTO: Hereda el valor de los align-items del padre (stretch por default).</li>
+    </ul>
+    <h3>PROPIEDADES DE ALINEACIÓN (ALIGN-CONTENT</h3>
+    <ul>
+        <li>Alineamos los elementos de una caja a lo largo de su eje principal con justify-content o del eje transversal
+            con align-items.</li>
+        <li>Para controlar el alineamiento de los elementos flex cuando ocupan varias líneas, se utiliza la propiedad
+            align-content</li>
+        <li>Propiedades de Alineación</li>
+        <ul>
+            <li>FLEX-START: Alinea los ítems arriba.</li>
+            <li>FLEX-END: Alinea los ítems abajo.</li>
+            <li>CENTER: Alinea los ítems al centro del contenedor.</li>
+            <li>STRETCH: Alinea los ítems estirándolos al tamaño del contenedor.</li>
+            <li>SPACE-BETWEEN: Alinea los ítems arriba y abajo dejando espacio en el centro.</li>
+            <li>SPACE-AROUND: Alinea los ítems dejando el mismo espacio arriba, en el centro y abajo.</li>
+        </ul>
+    </ul>
+    <h3>ESPACIOS, ESPACIO ENTRE FILAS, ESPACIO ENTRE COLUMNAS</h3>
+    <ul>
+        <li>La propiedad gap se utiliza para generar espacios entre filas y columnas.</li>
+        <li>gap: 10px: espaciado en filas y columnas internas.</li>
+        <li>gap: 30px: espacio en filas y columanas internas.</li>
+        <li>gap: 10px 30px: 10px filas 30 px columnas.</li>
+    </ul>
+    <h3>FLEX-BASIS</h3>
+    <ul>
+        <li>Esta propiedad especifica la base flexible, que es el tamaño inicial de un elemento flexible.</li>
+        <li>Esta propiedad determina el tamño de una caja de contenidos.</li>
+    </ul>
+    <h3>FLEX-GROW</h3>
+    <ul>
+        <li>Define la capacidad de un artículo flexible para crecer si es necesario.</li>
+        <li>Acepta un valor sin unidades que sirve como proporción.</li>
+        <li>Dicta la cantidad de espacio disponible dentro del contenedor que debe ocupar el artículo.</li>
+        <li>Si todos los elementos se establecieron en 1, esl espacio restante del contenedor se distriburirá por igual
+            a todos los hijos.</li>
+        <li>Si uno de los hijos tiene un valor de 2, el espacio restante ocuparía el doble de espacio que los demás.
+        </li>
+    </ul>
+    <h3>FLEX-SHRINK</h3>
+    <ul>
+        <li>Especifica el factor de contracción de un flex ítem.</li>
+        <li>Los flex ítems se encogerán para llenar el contenedor a su número flex-shrink</li>
+        <li>flex-shrink:1; (default value)</li>
+        <li>flex-shrink:2: (el objeto se contraerá y los demás aumentarán para mantener el mismo espacio.</li>
+        <li>flex-shrink:3: (el objeto se contraerá más aún y los demás aumentarán más aún para mantener el mismo
+            espacio.</li>
+    </ul>
+    <h2>GRIDS</h2>
+    <ul>
+        <li>Es un sistema de maquetación web que divide la página en una cuadrícula o rejilla, grid, para posicionar los
+            elementos.</li>
+        <li>Por su practicidad es un estandar.</li>
+        <li>Casi cualquier navegador soporta este código.</li>
+    </ul>
+    <h3>ELEMENTOS</h3>
+    <ul>
+        <li><b>CONTENEDOR:</b> El elemento padre contenedor que definirá la cuadrícula.</li>
+        <li><b>ÍTEM:</b> Cada uno de los hijos que contiene la cuadrícula.</li>
+        <li><b>CELDA (GRID CELL):</b> Cada uno de los cuadritos, unidad mínima de la cuadrícula.</li>
+        <li><b>ÁREA (GRID AREA):</b> Conjunto de celdas de la cuadrícula.</li>
+        <li><b>BANDA (GRID TRACK):</b> Banda horizontal o vertical de celdas de la cuadrícula.</li>
+        <li><b>LÍNEA (GRID LINE):</b> Separador horizontal o vertical de las celdas de la cuadrícula.</li>
+    </ul>
+    <div class="grid">
+        <p>(div class="grid") (contenedor)</p>
+        <p>(div class="a")Item 1(/div) (cada uno de los ítems del grid)</p>
+        <p>(div class="b")Item 2(/div)</p>
+        <p>(div class="c")Item 3(/div)</p>
+        <p>(div class="d")Item 4(/div)</p>
+        <p>(/div)</p>
+    </div>
+    <h3>VENTAJAS DE CSS GRID:</h3>
+    <ul>
+        <li>Controla los elementos en las 2 diminsiones.</li>
+        <li>Menos código, menos bugs, revisiones más sencillas y menor probabilidad de bugs.</li>
+        <li>Optimiza recursos: Código más simple y consistente.</li>
+        <li>Responsive más sencillo. Se puede crear elementos dinámicos que se adaptan a diferentes tamaños sin
+            complicaciones.</li>
+    </ul>
+    <h3>COMO APLICAR CSS GRID</h3>
+    <ul>
+        <li>Hay que utilizar sobre el elemento contenendor la propiedad display y especificar el valor grid o
+            inline-grid.</li>
+        <li>TIPO DE ELEMENTO: Descripción</li>
+        <li>INLINE-GRID: Establece una cuadrícula con ítems en línea, de forma equivalente a inline-block.</li>
+        <li>GRID: Establece una cuadrícula con ítems en bloque, de forma equivalente a block.</li>
+    </ul>
+    <h3>GRID CON FILAS Y COLUMNAS</h3>
+    <ul>
+        <li>Es posible crear cuadrículas con un tamaño explícito.</li>
+        <li>PROPIEDADES: Valor. Descripción</li>
+        <li>GRID-TEMPLATE-COLUMNS: [col1] [col2]... Establece el SIZE de cada columna</li>
+        <li>GRID-TEMPLATE-ROWS: [fila1] [fila2]... Establece el SIZE de cada fila</li>
+    </ul>
+    <h3>Grid con filas y columnas:</h3>
+    <p>.grid {</p>
+    <p>display: grid;</p>
+    <p>grid-template-columns: 50px 300px 1fr;</p>
+    <p>grid-template-rows: 200px 2fr 5% 1fr;</p>
+    <p>}</p>
+    <ul>
+        <li>Con estas propiedades definimos el número de columnas (grid-template-columns) y fílas (grid-template-rows)
+        </li>
+        <li>En el ejemplo tenemos 3 columnas y 4 filas.</li>
+        <li>La unidad fraccionaria (fr) es una unidad relativa que nos permite definir un cierto porcentaje de la
+            totalidad del contenendor.</li>
+        <li>Si tengo 2 columnas (1fr, 3fr) se debe sumar las dimensiones que será la totalidad del contenedor</li>
+    </ul>
+    <h3>ESPACIOS EN GRIDS</h3>
+    <ul>
+        <li><b>ROW-GAP:</b> Podemos definir espacios entre filas. Solo debemos indicar un valor numérico.
+            Ej:rows-gap:10px;</li>
+        <li><b>COLUMNS-GAP:</b> Con esta propiedad podemos definir espacios entre columnas, sólo debemos indicar un
+            valor numérico. Ej: columns-gap:10px;</li>
+        <li><b>GAP</b> Definir espacios entre filas y columnas en unidades relativas (%, em, rem, etc) y
+            absolutas(px,etc)</li>
+        <li>Hay que definir un valor para los espacios de filas y otro para columnas.</li>
+        <li>Ej: gap:10px 20px;</li>
+    </ul>
+    <h3>GRID-TEMPLATE-AREAS:</h3>
+    <p>Define una plantilla de cuadrícula haciendo referencia a los nombres de las áreas de cuadrícula que se
+        especifican con la propiedad grid-area.</p>
+    <h2>MEDIA QUERIES</h2>
+    <ul>
+        <li>CONSULTAS DE MEDIOS: Para modificar la web o app en función del tipo de dispositivo o de características y
+            parámetros específicos como la pantalla o el ancho del viewport del navegador.</li>
+        <li>Ej: @media screen and (min-width: 500px) and (max-width: 800px) {...}</li>
+    </ul>
+    <h3>META VIEWPORT</h3>
+    <p>(meta name="viewport" content="width=device-width, initial-scale=1.0")</p>
+    <h4>QUE ES METAVIEWPORT</h4>
+    <ul>
+        <li>Indica como se verá en los dispositivos móviles.</li>
+        <li>Apple la creó para decirle al Iphone como debería renderizar el doc, convirtiendose en un estandar.</li>
+        <li>Define que área de pantalla está disponible al renderizar un doc, nivel de escalado y el zoom.</li>
+        <li>(meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1")</li>
+    </ul>
+    <h3>BREAK POINTS</h3>
+    <ul>
+        <li><b>MOBILE SITE</b></li>
+        <ul>
+            <li>320x480 Smartphones</li>
+            <li>480x320 Smartphones</li>
+        </ul>
+        <li><b>IPAD APPS</b></li>
+        <ul>
+            <li>768x1024 Tablets/Smartphones</li>
+            <li>1024x768 Tablets/Netbooks</li>
+        </ul>
+        <li><b>WEBSITE</b></li>
+        <ul>
+            <li>1680x1050 Netbooks/Desktops</li>
+        </ul>
+    </ul>
+    <h3>QUE SON LOS BREAK POINTS</h3>
+    <ul>
+        <li>Las medidas de anchura para el diseño responsive.</li>
+        <li>Se aplican estilos CSS concretos para unas determinadas media queries.</li>
+        <li>Son los saltos en los que la pantalla cambia de layout.</li>
+    </ul>
+    <h2>PSEUDOCLASES PARA ENLACES</h2>
+    <ul>
+        <li><b> selector:pseudoclase</b></li>
+        <li><b>a:active</b> Se refiere a aquellos enlaces en las que se han hecho clic y están activos. </li>
+        <li><b>a:link</b> Sirve para apuntar a enlaces normales de la página web (no accedidos).</li>
+        <li><b>a:hover</b> Definimos el estilo para enlaces cuando el cursor se encuentra sobre dichos enlaces.</li>
+        <li><b>a:visited</b> apuntaremos a los enlaces visitados o accedidos por el usuario.</li>
+    </ul>
+    <h3>LA PROPIEDAD CURSOR</h3>
+    <p>Para establecer la forma de cursor que queremos sobre nuestro elemento</p>
+    <ul>
+        <li><b>valores:</b> definición</li>
+        <li><b>default:</b> en forma de flecha.</li>
+        <li><b>help:</b> flecha acompañada de un signo de interrogación.</li>
+        <li><b>crosshair:</b> puntero en forma de cruz.</li>
+        <li><b>move:</b> cruz pero con flechas en cada extremo. Simbolo de expansión.</li>
+        <li><b>pointer:</b> manito con el índice señalando.</li>
+    </ul>
+    <h3>PSEUDOCLASES Y PSEUDOELEMENTOS</h3>
+    <p>Su objetivo es el de ampliar la capacidad de especificar aquello que necesitamos seleccionar cuando no podemos
+        hacerlo a través de selectores comunes como CLASS, ID o SELECTOR DE ATRIBUTOS.</p>
+    <ul>
+        <li><b>PSEUDO-ELEMENTOS:</b> Para establecer un estilo a partes específicas de un elemento. Ej: la 1ª línea de
+            un texto, la 1ª letra de un texto, etc.</li>
+        <ul>
+            <li><b>::after</b> Inserta algo después del contenido del elemento.</li>
+            <li><b>::before</b> Inserta algo antes del contenido del elemento.</li>
+            <li><b>::first-letter</b> Selecciona la primer letra del elemento.</li>
+            <li><b>::first-line</b> Selecciona la primer línea del elemento.</li>
+            <li><b>::selection</b> Selecciona la parte de un elemento seleccionada por el usuario.</li>
+        </ul>
+        <li><b>PSEUDO-CLASES:</b> Para seleccionar contenido bajo determinadas condiciones, que cumple una
+            característica determinada. Ej: first-child o :last-child</li>
+        <ul>
+            <li><b>::active</b> Seleciona el link activo.</li>
+            <li><b>::checked</b> Selecciona los (imput) de tipo radio o checkbox y (option) dentro de un select que está
+                marcado o conmutado a un estado on.</li>
+            <li><b>::empty</b> Selecciona cada elemento seleccionado que no tiene hijos.</li>
+            <li><b>::first-child</b> Selecciona cada elemento que sea primer hijo de su padre.</li>
+            <li><b>::first-of-type</b> Selecciona el primer elemento de tipo seleccionado dentro de un contenendor.</li>
+            <li><b>::focus</b> Selecciona el elemento cuando esta en foco.</li>
+            <li><b>::hover</b> Selecciona enlaces al pasar el ratón por encima.</li>
+            <li><b>::invalid</b> Selecciona todos los elementos seleccionados con un valor no válido.</li>
+            <li><b>::last-child</b> Selecciona el último elemento seleccionado que sea primer hijo de su padre.</li>
+            <li><b>::last-of-type</b> Selecciona el último elemento de tipo seleccionado dentro de un contenendor.</li>
+            <li><b>::link</b> Selecciona todos los enlaces no visitados.</li>
+            <li><b>::not(selector)</b> Selecciona cualquier elemento que no sea el seleccionado.</li>
+            <li><b>::nth-child(n)</b> Selecciona uno o más elementos en función de su posición entre un grupo de
+                hermanos.</li>
+            <li><b>::optional</b> Selecciona elementos sin el atributo "required"</li>
+            <li>::target</li>
+        </ul>
+    </ul>
+    <h2>TRANSICIONES EN CSS</h2>
+    <ul>
+        <li>Es el evento entre el estado inicial y final.</li>
+        <li>El cambio de estado de alguna característica o propiedad de un elemento HTML.</li>
+    </ul>
+    <h3>COMO PONER TRANSICIONES EN CSS3</h3>
+    <ul>
+        <li>Con el selector se apunta al elemento a transicionar.</li>
+        <li>Las propiedades de transición se determina: </li>
+        <ul>
+            <li><b>Transition-property</b> la propiedad a cambiar</li>
+            <li><b>Transition-duration</b> la duración</li>
+            <li><b>Trantition-timing-funtion</b> la función de tiempo</li>
+            <li><b>Tratition-delay</b> el retraso</li>
+        </ul>
+        <li>selector {propiedades:valores;}</li>
+    </ul>
+    <h3>TRANSFORM CSS</h3>
+    <p>Las transformaciones de CSS3 son cambios de una determinada característica de un elemento que se encuentra dentro
+        de la estructura del HTML.</p>
+    <ul>
+        <li><b>ROTATE</b> Rotar</li>
+        <li><b>SKEW</b> Efecto torre de pisa</li>
+        <li><b>SCALE</b> Escalar</li>
+        <li><b>TRANSLATE</b> Trasladar</li>
+    </ul>
+    <h2>CSS ANIMATION</h2>
+    <p>Cambiar el estilo de un elemento de forma controlada.</p>
+    <ul>
+        <li>Cambie de color</li>
+        <li>Cambie de dimensión, etc.</li>
+    </ul>
+    <h3>FILTROS</h3>
+    <h4>QUE SON Y PARA QUE SIRVEN LOS FILTROS EN CSS3</h4>
+    <ul>
+        <li>Para aplicar efectos visuales a un elemento.</li>
+        <li>Apuntamos al elemento, definimos la propiedad filter.</li>
+    </ul>
+    <p>#imagen{</p>
+    <p>filter:grayscale(50%);</p>
+    <p>}</p>
+    <h4>TIPO DE FILTROS DE CSS3</h4>
+    <ul>
+        <li>grayscale(50%);</li>
+        <li>sepia(0.5);</li>
+        <li>blur(4px);</li>
+        <li>brightness(70%);</li>
+        <li>drop-shadow(50%);</li>
+        <li>hue-rotate(120deg);</li>
+        <li>opacity(0.5);</li>
+        <li>invert</li>
+        <li>none</li>
+        <li>saturate</li>
+    </ul>
+    <img id="grayscale" src="img/img-1.jpg" alt="Rio Movido">
+    <figcaption>grayscale 50%</figcaption>
+    <img id="sepia" src="img/img-1.jpg" alt="Rio Movido">
+    <figcaption>sepia 0.5</figcaption>
+    <img id="blur" src="img/img-1.jpg" alt="Rio Movido">
+    <figcaption>blur 4px</figcaption>
+    <img id="huerotate" src="img/img-1.jpg" alt="Rio Movido">
+    <figcaption>hue-rotate 120deg</figcaption>
+    <img id="brightness" src="img/img-1.jpg" alt="Rio Movido">
+    <figcaption>brightness 70%</figcaption>
+    <img id="opacity" src="img/img-1.jpg" alt="Rio Movido">
+    <figcaption>opacity 0.5</figcaption>
+</ul>
+</body>
+</html>

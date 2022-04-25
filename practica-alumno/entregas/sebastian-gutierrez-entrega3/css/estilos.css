@@ -1,0 +1,23 @@
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkcyan;
+    font-style: italic;
+    text-align: center;
+}
+ol {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkcyan;
+    font-style: italic;
+}
+.uno{
+    background-color: aquamarine;
+    border: 3px solid black;
+}
+form {
+    background-color: bisque;
+    width: auto;
+    height: auto;
+}
+.dos {
+    background-color:cyan;
+}

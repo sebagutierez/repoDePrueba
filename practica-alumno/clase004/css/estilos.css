@@ -1,0 +1,42 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+</style>
+:root{
+    font1:roboto, cursive;
+}
+div{
+    height: auto;
+    width: auto;
+    line-height: 30px;
+    background-color: orange;
+    background-image: linear-gradient( red , orgage );
+    background-image: linear-gradient(to left, red , orange);
+    background-image: linear-gradient(to top, red , orange);
+    background-image: linear-gradient(to bottom, red , orange);
+    background-image: linear-gradient(70deg, #ff0000 , orange, yellow);
+    background: repeating-linear-gradient(45deg, red, red 5px, white 5px, white 10px);
+    background: repeating-linear-gradient(-135deg, red, blue 20%, white 50%);
+    background: radial-gradient(pink, red , orange);
+    background-image: linear-gradient(to right top, #d16ba519, #c777b825, #b983ca35, #aa8fd846, #9a9ae155, #8aa7ec63, #79b2f46b, #69bff82d, #52d0fe32, #41dfff0a, #46eefa32, #5ffbf126);
+    visibility: visible;
+    /* display: none; */
+    /* opacity: 0.5; */
+    background-image: url(/img/flowers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-style: cursive;
+    font-weight: bolder;
+}
+p{
+    opacity: 1;
+    color: yellow;
+    text-shadow: 0 0 10px black;
+    font-size: 30px;
+    font-family: serif;
+    font-family: cursive;
+    font-family: fantasy;
+    font-family: var(--font1);
+    text-transform: uppercase;
+}

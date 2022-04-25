@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enlaces</title>
+    <style>
+     
+        
+        div{
+            height: 400px;
+            width: 100%;
+            background: #ae0ae0;
+            border: 2px solid #000;
+        }
+        
+        #contacto{
+            background-color: darkorange;
+        }
+        a{
+            color: red;
+        }
+        
+    </style>
+    
+    
+</head>
+<body>
+   
+    <h1>ENLACES</h1>
+    <a href="enlaces.html">inicio</a>
+    <h2>enlaces relativos</h2>
+<!--    son aquellos que apuntan a páginas ubicadas dentro del mismo proyecto-->
+    <a href="html/contacto.html">galeria</a> <br>
+    <a href="img/fondo3.jpg">imagen</a>
+    
+    <h2>enlaces absolutos</h2>
+<!--    son aquellos cuyo destino apunta a un documento que está fuera del sitio-->
+    <a href="https://caniuse.com/">Can I Use(en una misma pestaña)</a><br>
+    <a href="https://caniuse.com/" target="_self">Can I Use(en una misma pestaña)</a><br>
+    <a href="https://caniuse.com/" target="_blank">Can I Use (en otra pestaña)</a><br>
+    
+    <h2>enlaces internos o enlaces de ancla</h2>
+<!--    permiten referenciar secciones de tu página-->
+    <a href="#contacto1">contacto</a><br>
+<!--------------------------------------------------------------------------------->
+   <a href="galeria.html#parte2">Enlace a una parte dentro de otro archivo </a><br>
+   <a href="https://caniuse.com/#usage_note" target="_blank" >enlace a Can I Use (pero va directo a un determinado sector) </a>
+    
+<!---------------------------------------------->
+<!---------------------------------------------->
+<!---------------------------------------------->
+<!---------------------------------------------->
+    <br><br>
+    
+    <div>
+        <h2>PARTE 1</h2>
+    </div>
+    <div id="parte1">
+        <h2 id="titulo2">PARTE 2</h2>
+    </div>
+    <div>
+        <h2>PARTE 3</h2>
+    </div>
+    <div id="contacto1">
+        <h2>CONTACTO</h2>
+    </div>
+
+</body>
+</html>

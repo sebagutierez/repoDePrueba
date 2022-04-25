@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ajusta el ancho de los dispositivos-->
+
+    <title>index.html</title>
+</head>
+
+<body>
+    <h1>FULL STACK - Clase 001 HTML</h1>
+
+    <h2>1. EXTENSIONES & AJUSTES</h2>
+    <P><b>1.1 Live server:</b> Launch a development local server with live reload feature for static & dynmic page.</P>
+    <p><b>1.2 Spanish language pack for VSC.</b></p>
+    <P><b>1.3 Prettier:</B> Ordena el código. Corrige saltos de línea innecesarios.</P>
+    <p><b>1.4 Auto Rename Tag:</b> Extensión para modificar la etiqueta de cierre o de inicio.</p>
+    <P><b>1.5 indent-rainbow:</b> Extensión para marcar la identación.</p>
+
+    <p><b> 1.6 Ajuste de ancho del texto:</b> //Menu/Ver/Ajuste de palabra. Ajusta el ancho del texto al ancho de la
+        ventana del editor. Atajo: Alt + Z</P>
+
+    <h2>2. BASES</h2>
+    <P>2.1 Se puede escribir las etiquetas en mayúsculas, pero no es una buena práctica.</P>
+    <p>2.2 Las etiquetas en celeste son propiedades o atributos.</p>
+    <p>2.3 Las etiquetas en marrón son los valores de las propiedades o atributos.</p>
+    <p>2.4 Sólo se debe escribir dentro de las etiquetas head o body.</p>
+    <p>2.5 La propiedad (html lang="es") especifica que el idioma es español o en inglés lang="en".</p>
+    <p>2.6 En head se detalla la información del sitio. Etiquetas meta, title, script, etc. Estas etiquetas no serán
+        visualizadas en el sitio.</p>
+    <p>2.7 Dentro de la etiqueta body se incluye lo que será visualizado en la web.</p>
+    <p>2.8 (meta charset="UTF-8"): Charset= Tipo de codificación. UTF-8 Permite la utilización de caracteres españoles.
+    </p>
+    <p>2.9 (meta name="viewport" content="width=device-width, initial-scale=1.0") Especifica que el ancho se adapte a
+        los dispositivos que visualizarán el contenido.</p>
+    <p>2.10 La etiqueta HTML contiene las etiquetas HEAD y BODY.</p>
+    <p>2.11 Las carpetas y los archivos no deberían contener ni mayúsculas ni espacios, utilizando guión bajo o medio,
+        para evitar incompatibilidades o errores.</p>
+    <p>2.12 index.html Siempre debe ser hijo directo y las demás páginas y archivos dentro una carpeta.</p>
+    <p>2.13 No es una buena práctica generar varios niveles en las carpetas, para que la arquitectura no sea compleja ya
+        que el usuario debe hacer muchos clics. Hasta 3 clics hace un usuario para que se vaya. Por eso existen web que
+        tiene todo el contenido en la landing page, para que el usuario no tenga que hacer muchos clics.</p>
+    <p>2.14 Es una buena práctica crear un sólo h1</p>
+
+    <h2>3. ESTRUCTURA BÁSICA DE UN DOCUMENTO HTML</h2>
+    <p>(!DOCTYPE)</p>
+    <p>(html)</p>
+    <p>(head)</p>
+    <p>Información para el navegador</p>
+    <p>(/head)</p>
+    <p>(body)</p>
+    <p>Contenido visible de la pagina web</p>
+    <p>(/body)</p>
+    <p>(/html)</p>
+
+    <P>HTML: Es un lenguaje de estructurado.</P>
+    <p>CSS: Es un lenguaje de diseño gráfico</p>
+
+    <h2>4. DOM - DOCUMENT OBJECT MODEL</h2>
+    <P>Es la representación de los elementos HTML en el navegador.</P>
+    <p>Tiene características y funcionalidades propias de HTML5 para cada etiqueta.</p>
+    <p>Su estructura es de TIPO ARBOL y cada uno de los elementos representa un nodo.</p>
+
+    <p>1. (document)</p>
+    <p>2. (html)</p>
+    <p>3. (head) ; (body)</p>
+    <p>4. (meta) (title) ; (h1) (ul) (a)</p>
+    <p>5. "text" ; (li) href</p>
+
+    <h2>5. ESTRUCTURA DE UNA ETIQUETA</h2>
+    <P>(p nombre-atrituto="valor-atributo")Texto(/p)</P>
+
+    <h2>6. COMENTARIOS EN HTML</h2>
+    <p>(!--Comentarios--)</p>
+
+    <h2>7. DUPLICAR</h2>
+    <p>shift + option + flecha hacia abajo</p>
+
+    <h2>8. ETIQUETAS DE PÁRRAFO Y SEMÁNTICAS</h2>
+    <ul>
+        <li> <b>(b): Negrita</b></li>
+        <li> <b> (strong):</b> <strong>Se visualiza de la misma manera que b, pero con mayor relevancia en el
+                posicionamiento del SEO para los buscadores.</strong></li>
+        <li> <b>(i):</b><i> italic o cursiva</i></li>
+        <li> <b>(em):</b><em> enfasis.</em> Se visualiza de la misma manera que i, pero con mayor relevancia en el
+            posicionamiento del SEO para los buscadores.</li>
+        <li> <b>(u):</b> <u>subrayado</u></li>
+        <li> <b>(mark):</b><mark> Resaltado</mark></li>
+        <li> <b>(small):</b><small> letra más pequeña</small></li>
+        <li> <b>(sup):</b> e<sup>2</sup>Superíndice</li>
+        <li> <b>(sub):</b> e<sub>2</sub>Subíndice</li>
+        <li> <b>(ins):</b><ins> Para texto insertado</ins></li>
+        <li> <b>(big):</b><big> texto grande</big></li>
+        <li>Según validator.w3.org <b>big</b> es un elemento obsoleto y se debería usar CSS.</li>
+        <li> <b>(del):</b> <del>tachado</del></li>
+        <li> <b>br:</b><br> Salto de linea</li>
+        <li>
+            <hr><b>hr</b> horizontal ruler
+        </li>
+    <li><b>(code)</b> Es similar a la etiqueta (pre) pero está pensada para la escritura en código. Normalmente se
+        usa cuando se quiere hacer referencia a un código en un artículo web.</li>
+    </ul>
+        <pre><b>(pre): </b>considera los saltos de linea del editor 
+            Esta etiqueta nos permite mantener la estructura del texto que ingresamos tal cual lo ingresamos
+            consectetur adipisicing elit. Vitae, cum. Veritatis distinctio in porro quo repellat sequi obcaecati neque modi consequuntur velit hic, inventore excepturi quasi a reiciendis nulla aliquam.</pre>
+        <p><b>lorem10:</b> completa con 10 palabras.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, minus!</p>
+        
+
+    <code>
+                body{
+                    color:red;
+                }
+            </code>
+
+    <h3>8.1 ETIQUETAS DE TIPO:</h3>
+    <ul>
+        <li><b> BLOQUE:</b> Los objetos se ubican sólos en una línea sin otros objetos.</li>
+        <li>Los títulos y subtítulos</li>
+        <li><b>LINEA:</b> Los objetos se ubican unos al lado de los otros en una misma línea.</li>
+    </ul>
+
+    <h2>9. (OL) LISTAS ORDENADAS</h2>
+    <ol type="A">
+        <li >(type="A")</li>
+        <li>ol: Etiqueta de Apertura de Ordered List.</li>
+    </ol>
+    <ol type="a">
+        <li>(type="a")</li>
+        <li>(li: list item)</li>
+    </ol>
+    <ol type="I">
+        <li>(type="I")</li>
+        <li>numeros romanos mayúsculas</li>
+    </ol>
+    <ol type="i">
+        <li>(type="i")</li>
+        <li>numeros romanos minúsculas</li>
+    </ol>
+    <ol>
+        <li>(sin type)</li>
+        <li>numeros</li>
+    </ol>
+
+    <h2>10. (UL) LISTAS DESORDENADAS</h2>
+    <ul>
+        <li> Por defecto sin type.</li>
+    </ul>
+        <ul type="square">
+            <li> square</li>
+        </ul>
+        <ul type="disc">
+            <li> type="disc"</li>
+        </ul>
+        <ul type="circle">
+            <li> type="circle"</li>
+        </ul>
+        <ul type="circle">
+            <li> circle</li>
+        </ul>
+        <ul type="square">
+            <li> type="square"</li>
+        </ul>
+    
+    <h2>11. (DL) LISTAS DE DEFINICIÓN</h2>
+    <dl>
+        <dt><b> (dl) Definition List:</b></dt>
+        <dd>(dl) es la etiqueta de apertura.
+        <dd><b> (dt) definition term:</b> es la etiqueta para determinar el término a explicar.</dd>
+        <dd>(dt): Genera una sangría para discriminar el término a explicar de la explicación.</dd>
+        <dd><b> (dd) definition definition:</b> Es la etiqueta para pederminar el campo de la explicación.</dd>
+    </dl>
+</body>
+</html>

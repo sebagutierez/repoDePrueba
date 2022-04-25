@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resumen.css">
+    <style>
+        h1 {
+            color: brown;
+        }
+    </style>
+    <title>RESUMEN HTML & CSS</title>
+</head>
+
+<body>
+    <h1 class="anchor">HTML & CSS</h1>
+
+    <h2>HTML: ETIQUETAS & ATRIBUTOS</h2>
+    <ul>
+        <li>TAGS: built for a specific purpose.</li>
+        <li>ATTRIBUTES: Tags additional properties or characteristics that are defined.</li>
+    </ul>
+
+    <h3>ETIQUETAS DE TEXTO</h3>
+    <ul>
+        <li><b>Texto en negrita</b></li>
+        <li><em>Enfatizar texto</em></li>
+        <li><i>Texto en cursiva</i></li>
+        <li><u>Texto subrayado</u></li>
+        <li><strong>Textos importantes</strong></li>
+        <li><big>Texto grande</big></li>
+        <li><small>Texto pequeño</small></li>
+        <li><sub>Texto subíndice</sub></li>
+        <li><sup>Texto superíndice</sup></li>
+        <li><ins>Texto insertado</ins></li>
+        <li><del>Texto borrado</del></li>
+        <li><mark>Texto marcado</mark></li>
+    </ul>
+
+    <h3>ETIQUETAS DE FORMATEO</h3>
+    <pre>
+        [pre]: Mantiene la estrctura del texto tal cual lo ingresamos.
+        [code]: Similar a pre para hacer referencia a un código.
+    </pre>
+
+    <h3>ETIQUETAS DE SALTO</h3>
+    <ul>
+        <li>[br]: Saltos de texto en un párrafo o generar espacio entre HTML.</li>
+        <li>[hr]: Crea una línea gris claro que ocupa el total del ancho del navegador.</li>
+    </ul>
+    <hr>
+
+    <h2>HTML: LISTAS</h2>
+
+    <h3>LISTAS ORDENADAS</h3>
+    <ol>
+        <li>[ol]: ordered list</li>
+        <li>[li]: list item</li>
+    </ol>
+
+    <h3>LISTAS DESORDENADAS</h3>
+    <ul>
+        <li>[ul]: unordered list</li>
+        <li>[li]: list item</li>
+    </ul>
+
+    <h3>LISTAS DE DEFINICIÓN</h3>
+    <dl>
+        <dt>[dl]: DEFINITION LIST</dt>
+        <dd>Etiqueta de creación de una lista de definición.</dd>
+        <dt>[dt]: DEFINITION TERM</dt>
+        <dd>Etiqueta para el término a definir.</dd>
+        <dt>[dd]: DEFINITION DEFINITION</dt>
+        <dd>Etiqueta de la definición del término.</dd>
+    </dl>
+    <hr>
+
+    <h2>HTML: ETIQUETAS SEMÁNTICAS ESTRUCTURALES</h2>
+    <pre>
+        [header][/header]
+        [nav][/nav]
+        [aside][/aside]
+        [section][/section]
+        [article][/article]
+        [footer][/footer]
+    </pre>
+
+    <h2>HTML: MULTIMEDIA</h2>
+    <div>
+        <audio src="url-del-audio" preload="auto""metadata""none" autoplay loop muted controls></audio>
+
+        <video src="url-del-video" poster="url-de-la-imagen" preload="auto""metadata""none" autoplay loop muted controls
+            width="ancho" height="alto"></video>
+
+        <img src="https://pixabay.com/es/photos/cascada-otoño-epic-naturaleza-luz-7091641/"
+            alt="texto-si-el-enlace-se-rompe">
+
+        <iframe id="music"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.066899472313!2d-58.39032515777996!3d-34.60373858735044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1sen!2sar!4v1649444415127!5m2!1sen!2sar"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7pcHPXwH2wU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <iframe src="spotify" frameborder="0"></iframe>
+    </div>
+    <hr>
+
+    <h2>HTML: TABLAS</h2>
+    <table border="2" cellspacing="5" cellpadding="5">
+        <thead>
+            <tr>
+                <th>ETIQUETA</th>
+                <th>FUNCIÓN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>[TABLE]:</td>
+                <td>Etiqueta de creación de una tabla</td>
+            </tr>
+            <tr>
+                <td>[tr]:TABLE ROW: </td>
+                <td>Etiqueta para cada linea</td>
+            </tr>
+            <tr>
+                <td>[th]: TABLE HEAD: </td>
+                <td>Cabecera</td>
+            </tr>
+            <tr>
+                <td>[td]: TABLE DATA</td>
+                <td>Etiqueta de datos</td>
+            </tr>
+            <tr>
+                <td>[th colspan="2"]</td>
+                <td>Para unir 2 columnas</td>
+            </tr>
+            <tr>
+                <td>[td rowspan="3"]</td>
+                <td>Para unir 3 filas</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+    <hr>
+
+    <h2>ETIQUETA ENLACE</h2>
+
+    <h3>ENLACES ABSOLUTOS</h3>
+    <a href="http://www.google.com">Ir a Google</a>
+
+    <h3>ENLACES INTERNOS</h3>
+    <ol>
+        <li><a href="index.html">Enlace a un archivo en el mismo nivel</a></li>
+        <li><a href="css/estilos.css">Enlace a un archivo dentro de una carpeta</a></li>
+        <li><a href="../clase003/img/img-1.jpg">Enlace interno a un nivel superior y despues al destino</a></li>
+    </ol>
+
+    <h3>COMO CONSTRUIR UNA BARRA DE NAVEGACIÓN</h3>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+                <a href="#music">Music</a>
+                <a href="multimedia/videos.html#billie-eilish">Billie Eilish</a>
+                <a href="pages/contacto.html">Contacto</a>
+                <a href="pages/Servicios.html">Servicios</a>
+                <a href="pages/Nosotros.html">Nosotros</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h3>UTILIZACIÓN DE LOS SELECTORES CLASS</h3>
+    <div>
+        <section class="nombre1 nombre2"></section>
+        <section class="nombre2"></section>
+        <section class="nombre1"></section>
+    </div>
+    <hr>
+
+    <h2>FORMULARIOS</h2>
+    <form action="enviar.php" method="post" enctype="text/plain" netlify>
+        <fieldset>
+            <legend>FORMULARIO</legend>
+            <label for="nombre">Nombre:</label>
+            <input name="nombre" type="text" placeholder="Nombre" required><br>
+
+            <label for="mail">email:</label>
+            <input name="mail" type="email" placeholder="e-mail"><br>
+
+            <label for="tel">Teléfono:</label>
+            <input name="tel" type="number" placeholder="Teléfono"><br>
+
+            <label for="pass">Password:</label>
+            <input name="pass" type="password" placeholder="Password"><br>
+
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea name="comentarios" cols="30" rows="10" placeholder="Comentarios"></textarea>
+
+            <p>TYPE=RADIO:</p>
+            <input name="genero" type="radio">
+            <label for="masculino">Masculino</label>
+
+            <input name="genero" type="radio">
+            <label for="masculino">Femenino</label>
+
+            <p>TYPE CHECKBOX:</p>
+            <input name="ba" type="checkbox" checked>
+            <label for="ba">BA</label>
+
+            <input name="otra" type="checkbox">
+            <label for="otra">Otra</label>
+
+            <p>TYPE=BUTTON</p>
+            <input type="submit">
+            <input type="submit" value="Enviar">
+            <input type="reset">
+            <input type="submit" value="Restablecer">
+            <input type="button" value="Botón">
+
+            <h3>MENU DESPLEGABLE</h3>
+            <p>[SELECT NAME="VALOR"][OPTION]</p>
+            <select name="Lenguajes">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>JQuery</option>
+                <option>PHP</option>
+                <option>React</option>
+            </select>
+        </fieldset>
+    </form>
+    <br>
+
+    <h2>CSS</h2>
+    <ol>
+        <li>
+            <p style="color: blue;">CSS EN LÍNEA (no recomendado)</p>
+        </li>
+        <li>
+            <pre>CSS INCRUSTADO EN EL DOCUMENTO HTML
+        [html]
+        [head]
+            [style]
+                p{
+                    text-align: center;
+                    color: red;
+                }
+            [/style]
+        [/head]
+        [/html]
+        </pre>
+        </li>
+        <li>
+            <pre>CSS EN UN DOCUMENTO CSS EXTERNO
+            
+            <b>index.html</b>
+            [link rel="stylesheet" href="estilos.css"]
+            
+            <b>estilos.css</b>
+            p{
+                text-align:center;
+                color: red;
+            }
+        </pre>
+        </li>
+    </ol>
+
+    <h3>SELECTORES CSS</h3>
+    <ul>
+        <li> Nivel 5: {HTML: [p]} {CSS: p}</li>
+        <li> Nivel 4: {HTML: [div][p]} {CSS: div p}</li>
+        <li> Nivel 3: {HTML: [p class="uno"]} {CSS: .uno}</li>
+        <li> Nivel 2: {HTML: [p id="dos"]} {CSS: #dos}</li>
+        <li> Nivel 1: {HTML: [div id="tres"][p]} {CSS: #tres p}</li>
+    </ul>
+
+    <h3>SELECTOR UNIVERSAL</h3>
+    <pre>
+    eslilos.css
+    *{
+        margin: 10;
+        padding: 10;
+    }
+    </pre>
+
+    <h3>COMENTARIOS</h3>
+    <p>[!--COMENTARIOS EN HTML--></p>
+    <p>/*COMENTARIOS EN CSS*/</p>
+
+    <h3>DIMENSIONES EN CSS</h3>
+    <ul class="dim">
+        <li>{height: 10px;} Propiedad alto. </li>
+        <li>{width: 10px;} Propiedad ancho. </li>
+        <li>{min- height: 10px;} Propiedad mínima altura para que no desborde.</li>
+        <li>{max-width: 20px;} Propiedad máximo ancho.</li>
+        <li>{line-height: 20px;} Interlineado.</li>
+        <li>{font-size: 30px;} Tamaño del texto. 16px = 1rem = 1em = 100%</li>
+        <li>{color: black;} Color del texto.</li>
+        <li>{text-align: center;} Alineación del texto.</li>
+        <li>{background-color: black;} Color de fondo</li>
+        <li>{border: 2px solid black;} Linea de borde a un background.</li>
+    </ul>
+
+    <h3>DEGRADADOS EN CSS</h3>
+    <div>
+        <pre class="lineal">
+        .lineal {
+            width: 250px;
+            line-height: 250px;
+            background: linear-gradient(red, yellow, blue, green);
+        }
+    </pre>
+        <pre class="cero">
+        class="cero"
+        height: 100vh;
+        background-image: linear-gradient(red, orange);
+    </pre>
+        <pre class="uno">
+        class="uno"
+        height: auto;
+        background-image: linear-gradient(to left (o right), red, orange);
+    </pre>
+        <pre class="dos">
+        class="dos"
+        height: auto;
+        background-image: linear-gradient(to top (o to bottom), red, orange);
+    </pre>
+        <pre class="tres">
+        class="tres"
+        height: auto;
+        background-image: linear-gradient(to top left, red, orange);
+    </pre>
+        <pre class="cuatro">
+        class="cuatro"
+        height: auto;
+        background-image: linear-gradient(70deg (degree), red, orange);
+    </pre>
+        <pre class="cinco">
+        class="cinco"
+        height: auto;
+        background-image: linear-gradient(360deg (degree), red, orange);
+    </pre>
+        <pre class="seis">
+        class="seis"
+        height: auto;
+        background-image: linear-gradient(red, orange 70%);
+    </pre>
+        <pre class="siete">
+        class="siete"
+        height: auto;
+        background-image: url(flowers.jpg);
+    </pre>
+        <pre class="ocho">
+        class="ocho"
+        height: auto;
+        background-image: url(flowers.jpg);
+        background-size: cover;
+        background-position: center;
+    </pre>
+        <pre class="nueve">
+        class="nueve"
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        background-image: linear-gradient(to right, rgba(255, 255, 255,1), rgba(255, 255, 255,0)), url(flowers.jpg);
+    </pre>
+        <pre class="diez">
+        class="diez"
+        height: auto;
+        color: black;
+        background: repeating-linear-gradient(45deg, red, red 5px, white 5px, white 10px);
+    </pre>
+        <pre class="once">
+        class="once"
+        height: auto;
+        color: whitesmoke;
+        background: repeating-linear-gradient(-135deg, red 40%, blue 50%, white 10%);
+    </pre>
+        <pre class="doce">
+        class="doce"
+        height: auto;
+        color: whitesmoke;
+        background: repeating-radial-gradient(red 40%, blue 50%, white 10%);
+}
+    </pre>
+        <pre class="trece">
+        class="trece"
+        height: auto;
+        color: black;
+        background-image: radial-gradient(red 40%, blue 50%, white 10%);
+    </pre>
+        <pre class="catorce">
+        class="catorce"
+        height: auto;
+        color: black;
+        background: radial-gradient(red 40%, blue 50%, white 10%);
+    </pre>
+        <pre class="quince">
+        class="quince"
+        height: auto;
+        color: black;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    </pre>
+        <pre class="dieciseis">
+        class="dieciseis"
+        height: auto;
+        background-image: url(flowers.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+    </pre>
+        <pre class="diecisiete">
+        class="diecisiete"
+        height: auto;
+        background-image: url(flowers.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.1;
+    </pre>
+        <pre class="dieciocho">
+        class="dieciocho"
+        height: auto;
+        background-image: url(flowers.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.9;
+    </pre>
+        <div class="diecinueve">
+            <p>
+            <pre>
+            class="diecinueve"
+            height: 110px;
+            background-image: url(flowers.jpg);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.9;
+}
+p{
+    opacity: 0.7;
+}
+</pre>
+            </p>
+        </div>
+        <pre class="veinte">
+        class="veinte"
+        height: auto;
+        background-image: url(flowers.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.9;
+    </pre>
+        <pre class="veintiuno">
+        class="veintiuno"
+        height: 160px;
+        width: 400px;
+        background-image: url(flowers.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.9;
+    </pre>
+        <pre class="veintidos">
+        class="veintidos"
+        height: 160px;
+        width: 480px;
+        background-image: url(flowers.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    </pre>
+        <pre class="veintitres">
+        veintitres
+        height: 160px;
+        width: 480px;
+        background-image: url(flowers.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+    </pre>
+        <pre class="veinticuatro">
+        veinticuatro
+        height: 160px;
+        width: 480px;
+        background-image: url(flowers.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+    </pre>
+        <pre class="veinticinco">
+        class="veinticinco"
+        height: 160px;
+        width: 480px;
+        background-image: url(flowers.jpg);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+    </pre>
+        <pre class="veintiseis">
+        class="veintiseis"
+        height: 160px;
+        width: 480px;
+        background-image: url(flowers.jpg);
+        background-position: top;
+        background-size: cover;
+        background-attachment: fixed;
+        efecto paralax
+    </pre>
+        <pre class="veintisiete">
+        class="veintisiete"
+        color:#41dfff;
+        text-shadow: 0 0 2px black;
+        font-size: 23px;
+        font-family: sans-serif;
+        font-family: cursive;
+    </pre>
+        <pre class="veintiocho">
+        class="veintiocho"
+        font-family: monospace;
+    </pre>
+        <pre class="veintinueve">
+        class="veintinueve"
+        font-family: fantasy;
+    </pre>
+        <pre class="treinta">
+        class="treinta"
+        color:darkgoldenrod;
+        text-shadow: 0 0 2px black;
+        font-size: 23px;
+        font-family: 'Grape Nuts', cursive;
+    </pre>
+        <pre class="treintiuno">
+        class="treintiuno"
+        color:darkgoldenrod;
+        text-shadow: 0 0 2px black;
+        font-size: 23px;
+        font-family: 'Roboto', sans-serif;
+    </pre>
+        <pre class="treintidos">
+        class="treintidos"
+        color:darkgoldenrod;
+        text-shadow: 0 0 2px black;
+        font-size: 23px;
+        font-family: var(--mifont1);
+    </pre>
+        <pre class="treintitres">
+        class="treintitres"
+        color:darkgoldenrod;
+        text-shadow: 0 0 2px black;
+        font-size: 23px;
+        font-family: var(--mifont1);
+        font-variant: small-caps;
+    </pre>
+        <pre class="treinticuatro">
+        class="treinticuatro"
+        color:darkgoldenrod;
+        text-shadow: 0 0 2px black;
+        font-size: 23px;
+        font-family: var(--mifont1);
+        text-transform: uppercase;
+    </pre>
+    </div>
+
+    <h3>PROPIEDAD VISIBILITY</h3>
+    <div>
+        <p><b> visibility: hidden;</b> (oculta el objeto pero mantiene el espacio ocupado por el objeto oculto.</p>
+        <p><b>display: none;</b> A difenencia de visibility, oculta el objeto y libera el espacio para hacer subir los
+            objetos que estuvieran debajo.</p>
+        <p class="treinticinco">class="treinticinco"</p>
+        <p class="treintiseis">class="treintiseis"</p>
+    </div>
+
+    <h3>PROPIEDAD BACKGROUND</h3>
+    <div>
+        <p class="treintisiete">class="treintisiete" background-repeat: no-repeat;</p>
+        <p class="treintiocho">class="treintiocho" background-size: cover;</p>
+        <p class="treintinueve">class="treintinueve" background-position: center;</p>
+        <p class="cuarenta">class="cuarenta" background-position: center; background-size: cover;</p>
+        <p class="cuarentiuno">class="cuarentiuno" background-attachment: fixed;</p>
+    </div>
+
+    <h2>BOX MODELING</h2>
+</body>
+
+</html>

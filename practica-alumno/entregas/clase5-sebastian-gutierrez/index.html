@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Clase 005</title>
+</head>
+
+<body>
+    <h1>CLASE 005 FONTS</h1>
+    <h2>TEXT</h2>
+
+    <h3>1. TEXT-DECORATION: COLOR;</h3>
+    <p class="texta">text-decoration: underline orange wavy;</p>
+    <p class="textb">text-decoration: underline red dotted;</p>
+    <p class="textc">text-decoration: underline blue double;</p>
+    <p class="textd">text-decoration: underline yellowgreen dashed;</p>
+    <p class="texte">text-decoration: underline magenta line-through;</p>
+    <p class="textf">text-decoration: underline magenta line-through;</p>
+
+    <h3>2. TEXT-TRANSFORM: CAPITALIZE;</h3>
+    <p class="a">text-transform: LOWERCASE</p>
+    <p class="b">text-transform: uppercase</p>
+    <p class="c">text-transform: capitalize</p>
+
+    <h3>3. TEXT-SHADOW: 5PX 5PX 5PX BLUE;</h3>
+    <p class="d">text-shadow: eje x eje y (desenfoque 5px) color;</p>
+    <p class="e">text-shadow: eje x eje y (desenfoque -5px) color;</p>
+    <p class="f">text-shadow: eje x (eje y 5px) desenfoque 0 color;</p>
+    <p class="g">text-shadow: eje x (eje y -5px) desenfoque o color;</p>
+    <p class="h">text-shadow: (eje x 5px) eje y desenfoque 0 color;</p>
+    <p class="i">text-shadow: (eje x -5px) eje y desenfoque 0 color;</p>
+    <p class="j">text-shadow: (eje x 4px) (eje y 4px) desenfoque 0 color;</p>
+    <p class="k">text-shadow: (eje x 4px) (eje y 4px) desenfoque 4px color;</p>
+
+    <h2>STYLE LINKS</h2>
+    <h3>4. @FONT-FACE font-family: name;</h3>
+    <p class="l">@font-face {font-family: nombre-de-la-fuente; src:url(url-de-la-fuente)}
+        p.nombre-del-class{font-family: passion;}</p>
+
+    <h3>5. @IMPORT font-family: 'name';</h3>
+    <p class="m">@IMPORT URL(fonts.google.com/..);</p>
+
+    <h3>6. @IMPORT url(./fonts.css);</h3>
+    <pre>
+    .nombre-de-la-class{
+        font-family: 'nombre-del-font';
+    }
+    </pre>
+    <p>Vincula el archivo estilos.css con otro archivo, tomando el codigo que haya en el otro archivo.</p>
+    <p>Se utiliza cuando hay mucho código.</p>
+
+    <h2>LETTER STYLING</h2>
+    <h3>7. LETTER-SPACING: 10px;</h3>
+    <p class="n">letter-spacing: 10px;</p>
+    <p class="ñ">letter-spacing: -3px;</p>
+
+    <h3>8. WORD-SPACING: 10px;</h3>
+    <p class="o">word-spacing: 10px;</p>
+    <p>word-spacing: opx;</p>
+    <p class="p">word-spacing: -3px;</p>
+
+    <h3>9. WORD-WRAP: VALOR;</h3>
+    <div class="uno">
+        <p>WORD-WRAP: word-wrap: break-word; (ajusta el texto) normal; (no hace nada)</p>
+    </div>
+
+    <h2>LIST-STYLE-TYPE</h2>
+    <ul class="square">
+        <li>list-style-type: square;</li>
+    </ul>
+    <ul class="disc">
+        <li>list-style-type: disc;</li>
+    </ul>
+    <ul class="circle">
+        <li>list-style-type: circle;</li>
+    </ul>
+    <ul class="upper">
+        <li> list-style-type: upper-roman;</li>
+        <li> list-style-type: upper-roman;</li>
+    </ul>
+    <ul class="latin">
+        <li>list-style-type: upper-latin;</li>
+        <li>list-style-type: upper-latin;</li>
+    </ul>
+    <ul class="georgian">
+        <li>list-style-type: georgian;</li>
+        <li>list-style-type: georgian;</li>
+    </ul>
+    <ul class="armenian">
+        <li>list-style-type: armenian;</li>
+        <li>list-style-type: armenian;</li>
+    </ul>
+    <ul class="leading-zero">
+        <li>list-style-type: decimal-leading-zero;</li>
+        <li>list-style-type: decimal-leading-zero;</li>
+    </ul>
+    <ul class="lower-alpha">
+        <li>list-style-type: lower-alpha;</li>
+        <li>list-style-type: lower-alpha;</li>
+    </ul>
+    <ul class="upper-alpha">
+        <li>list-style-type: upper-alpha;</li>
+        <li>list-style-type: upper-alpha;</li>
+    </ul>
+    <ul class="lower-roman">
+        <li>list-style-type: lower-roman;</li>
+        <li>list-style-type: lower-roman;</li>
+    </ul>
+    <ul class="lower-latin">
+        <li>list-style-type: lower-latin;</li>
+        <li>list-style-type: lower-latin;</li>
+    </ul>
+    <ul class="lower-greek">
+        <li>list-style-type: lower-greek;</li>
+        <li>list-style-type: lower-greek;</li>
+    </ul>
+    <ul class="inside">
+        <li>list-style-position: inside;</li>
+        <li>list-style-position: inside;</li>
+    </ul>
+    <ul class="outside">
+        <li>list-style-position: outside;</li>
+        <li>list-style-position: outside;</li>
+    </ul>
+
+    <h2>ESTILOS PARA TABLAS</h2>
+    <table>
+        <tr>
+            <th>PROPIEDADES</th>
+            <th>VALORES</th>
+            <th>OTROS</th>
+        </tr>
+        <tr>
+            <td class="inherit">border-collapse: inherit;</td>
+            <td class="separate">border-collapse: separate;</td>
+            <td class="collapse">border-collapse: collapse;</td>
+        </tr>
+        <tr>
+            <td colspan="3">class="spacing" border-spacing: separate;</td>
+        </tr>
+        <tr>
+            <td colspan="3">class="show" empty-cells: show;</td>
+        </tr>
+        <tr>
+            <td colspan="3">class="caption" caption-side: top; (bottom)</td>
+        </tr>
+        <tr>
+            <td colspan="3">class="hidden" empty-cells: hidden;</td>
+        </tr>
+        <tr>
+            <td class="auto">table-layout: auto;</td>
+            <td class="fixed">table-layout: fixed;</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2>PROPIEDAD OVERFLOW</h2>
+    <div class="ovisible">
+        <h3>visible</h3>
+        <p>overflow: visible; overflow: hidden; overflow:scroll; overflow: auto;</p>
+    </div>
+
+    <div class="ohidden">
+        <h3>hidden</h3>
+        <p>overflow: visible; overflow: hidden; overflow:scroll; overflow: auto;</p>
+    </div>
+
+    <div class="oscroll">
+        <h3>scroll</h3>
+        <p>overflow: visible; overflow: hidden; overflow: scroll; overflow: auto;</p>
+    </div>
+
+    <div class="oauto">
+        <h3>auto</h3>
+        <p>overflow: visible; overflow: hidden; overflow:scroll; overflow: auto;</p>
+    </div>
+
+    <h2>/*estilos del scroll en los distintos navegadores*/</h2>
+
+    <h3>/*mozilla*/</h3>
+    <pre>
+        ::-moz-scrollbar-track
+        {
+            -moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            background-color: #f5f5f5;
+        }
+    </pre>
+    <h3>/*opera*/</h3>
+    <pre>
+        ::-o-scrollbar
+        {
+            width: 12px;
+            background-color: #f5f5f5;
+        }
+    </pre>
+    <h3>/*chrome y safari*/</h3>
+    <pre>
+        ::-webkit-scrollbar-thumb
+        {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: darkgray;
+        }
+    </pre>
+    <h3>/*Microsoft*/</h3>
+    <pre>
+        ::-ms-scrollbar-thumb
+        {
+            border-radius: 10px;
+            -ms-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: darkgray;
+        }
+    </pre>
+
+
+    <h2>BOX MODEL</h2>
+
+    <p class="border-solid">border: 5px solid;</p>
+    <p class="border-width">border-width: 5px; border: solid;</p>
+    <p class="border-style">border-style: dashed;</p>
+    <p class="border-dotted">border-style: dotted;</p>
+    <p class="border-double">border-style: double;</p>
+    <p class="border-ridge">border-style: ridge;</p>
+    <p class="border-mix">border-left: 15px ridge blue; (top 10, right , botom)</p>
+    <p class="border-groove">border-style: groove;</p>
+    <p class="border-padding">padding: 10px;</p>
+    <p class="padding-left">padding-left: 10px;</p>
+    <p class="padding-top">padding-top: 10px;</p>
+    <p class="padding-right">padding-right: 10px;</p>
+    <p class="padding-bottom">padding-bottom: 10px;</p>
+    <p class="padding">padding: top 10px right 20px bottom 30px left 40px;</p>
+    <p class="margin-0">margin: 0;</p>
+    <p class="margin-top">margin: 0;</p>
+    <p class="margin-right">margin: 0;</p>
+    <p class="margin-bottom">margin: 0;</p>
+    <p class="margin-left">margin: 0;</p>
+
+    <h3>box-sizing: border-box;</h3>
+    <pre>
+        *{
+            box-sizing: border-box;
+        }
+    </pre>
+    <P>Para tener un tamaño uniforme en altura y ancho sin extenderse por fuera.</P>
+    <p>Se aplica la propiedad box-sizing en el selector universal</p>
+
+    <h2>BORDER-RADIUS: 50%;</h2>
+    <ol class="radius-50">
+        <li>radius-50</li>
+        <li>margen</li>
+        <li>borde</li>
+        <li>padding</li>
+        <li>elemento</li>
+    </ol>
+
+    <ul class="radius-20">
+        <li>radius-20</li>
+        <li>height: 300px;</li>
+        <li>width: 300px;</li>
+        <li>background-color: fuchsia;</li>
+        <li>border-width: 20px;</li>
+        <li>border-style: ridge;</li>
+        <li>border-color: aqua;</li>
+        <li>padding: 30px;</li>
+        <li>border-radius: 20px;</li>
+        <li>box-shadow: 5px 0px 0px 0px black;</li>
+        <li>float: right;</li>
+        <li>background-image:url(../img/flowers.jpg);</li>
+    </ul>
+
+    <ul class="radius-21">
+        <li>radius-21</li>
+        <li>border-radius: 20px 0;</li>
+        <li>background-size: cover;</li>
+    </ul>
+
+    <h2>BOX SHADOW</h2>
+    <section class="radius-22">radius-22: box-shadow: 5px px 5px px b; desenfoque right</section>
+    <section class="radius-23">radius-23: box-shadow: px 5px px px b; bottom</section>
+    <div class="radius-24">radius-24: box-shadow: px px 5px px b; desenfoque</div>
+    <div class="radius-25">radius-25: box-shadow: px px px 5px b; propagacion</div>
+    <span class="radius-26">radius-26: box-shadow: px px 5px 5px b propagacion desenfocado;</span>
+    <span class="radius-27">radius-27: box-shadow: px 5px px 5px b; bottom propagacion</span>
+    <div class="radius-28">radius-28: box-shadow: 5px px px 5px b; right propagacion</div>
+    <p class="radius-29">radius-29: box-shadow: 5px 5px 5px 5px b; right desenfoque propagacion </p>
+    <div class="radius-30">radius-30: box-shadow: varias capas </div>
+
+    <h2>float: left; & display: inline-block;</h2><br>
+
+    <p class="float-left">1 float: left;</p>
+    <p class="float-center">2 float: center;</p>
+    <p class="float-right">3 float: right;</p><br>
+
+    <div class="float-left">4 float: left;</div>
+    <div class="float-center">5 float: center;</div>
+    <div class="float-right">6 float: right;</div><br>
+
+    <section class="float-left">10 float: left;</section>
+    <section class="float-center">11 float: center;</section>
+    <section class="float-right">12 float: right;</section>
+
+    <span class="float-left">7 float: left;</span>
+    <span class="float-center">8 float: center;</span>
+    <span class="float-right">9 float: right;</span>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.dos{
+    font-family: serif;
+    color: rgb(255, 196, 0) !important;
+    font-family: cursive;
+    color: blueviolet;
+}
+ul p{
+    color: rgb(243, 140, 6);
+}
+.tres{
+    color: antiquewhite;
+    font-size: 18px;
+}
+section .cuatro {
+    color: rgb(67, 71, 71);
+    font-weight: 900;
+}
+.cinco {
+    background-color: cyan;
+    color:darkgoldenrod;
+    min-height: 350px;
+    min-width: 100%;
+    height: 150px;
+    width: 300px;
+    border: 5px solid blanchedalmond;
+    line-height: 40px;
+}
+.seis {
+    background-color: black;
+    color:cyan;
+    min-height: 350px;
+    min-width: 100%;
+    height: 150px;
+    width: 300px;
+    border: 5px solid cyan;
+    text-align: center;
+    line-height: 350px;
+}

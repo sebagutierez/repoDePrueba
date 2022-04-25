@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+/* @import url('./css/reset.css'); */
+
+@font-face {
+    font-family: wall;
+    src: url(fonts/brick.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-size: 40px;
+    text-align:center;
+    text-decoration: underline orange dashed;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 10px #f00;
+    font-family: wall;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+}
+p{
+    text-align: center;
+    font-family: 'Square Peg', cursive;
+}
+
+div{
+    height: 350px;
+    width: 350px;
+    background-color: #f00;
+    /* word-wrap: break-word; */
+    /* overflow: auto; */
+    border: 10px solid #ff0;
+    border-width: 20px;
+    border-style: ridge;
+    border-color: aqua;
+    /* border-right: 10px dashed #ff0; */
+    /* padding: 20px 50px 100px 70px; */
+    /* margin: 0 auto; */
+    padding: 50px;
+    border-radius: 20px 0px;
+    background-image: url(img/strawberry-g0ffa2143b_1920.jpg);
+    background-size: cover;
+    color: aliceblue;
+    box-shadow: 0px 0px 10px 10px #333,
+                10px 10px 10px 10px #333,
+                20px 20px 10px 10px #333;
+
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+
+span{
+    height: 100px;
+    width: 150px;
+    background-color: #f00;
+    border: 1px solid #ff0;
+    /* display: block; */
+    display: inline-block;
+}
+
+section{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid #000;
+    display: inline-block;
+
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--comentarios-->
+    <title>CLASE Nº3 CSS</title>
+    <style>
+        /**comentario**/
+        body {
+            background-color: teal;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: cursive;
+            text-decoration: underline;
+            color: yellow;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: yellowgreen;
+            font-size: 1.5rem;
+            padding: 0 2%;
+        }
+
+        #uno {
+            text-align: justify;
+            color: #fff;
+            font-size: 1.0rem;
+            padding: 0 2%;
+        }
+    </style>
+</head>
+<!--comentarios-->
+
+<body>
+    <!--comentarios-->
+    <h1 style="color: goldenrod;">CLASE Nº3 CSS</h1>
+    <h2>EJEMPLO DE CÓDIGO HTML CON CSS</h2>
+    <div id="uno">
+        <p>(head) </p>
+        <p>(Style)</p>
+        <p> body{background-color: teal;</p>
+        <p> }</p>
+        <div class="dos">
+            <p>h1 {</p>
+            <p>text-align: center;</p>
+            <p>font-family: cursive;</p>
+            <p>text-decoration: underline;</p>
+            <p>}</p>
+        <div class="cuatro">
+            <p>p {</p>
+            <p>text-align: justify;</p>
+            <p>color: white;</p>
+            <p>font-size: 1.5rem;</p>
+            <p>padding: 0 2%;</p>
+            <p>}</p>
+        </div>
+        </div>
+        <p>(/style)</p>
+        <p>(/head)</p>
+    </div>
+    <h2>3 MANERAS DE UTILIZAR CSS</h2>
+    <ol class="dos">
+        <li>CSS en línea empleando un atributo (método menos recomendado)</li>
+            <p class="tres">(p style="color: blue;") Este es un párrafo(/p)</p>
+        <li>CSS incrustado en el documento HTML</li>
+            <p class="tres">(style)p{text-align: center; Color: red;}(/style)</p>
+        <section>
+            <li>CSS en un documento CSS externo</li>
+                <h3>HTML</h3>
+                <p>(ETIQUETA ATRIBUTO="VALOR" ATRIBUTO="VALOR")</p>
+                <p class="tres">(link rel="stylesheet" href="estilos.css")</p>
+                <h3>CSS</h3>
+                <p>SELECTOR {PROPIEDAD:VALOR; PROPIEDAD:VALOR;}</p>
+                <p class="tres">p{text-align: center; color: red;}</p>
+        </section>
+    </ol>
+    <h2 class="seis">SELECTOR UNIVERSAL</h2>
+    <div class="cinco">
+        <h3>CSS RESET</h3>
+        <p>Para resetear las propiedades del navegador</p>
+        <p>CSS: *{margin: 0; padding: 0;}</p>
+        <h3>CSS NORMALIZE</h3>
+        <p>Como archivo normalize.css bajandolo de www.necolas.github.io/normalize.css</p>
+    </div>
+</body>
+
+</html>

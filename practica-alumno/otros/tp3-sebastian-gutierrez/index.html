@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>TP3 Sebastian Gutierrez</title>
+</head>
+
+<body>
+    <div class="uno">
+        <h1>TAREA TP.3</h1>
+        <ol>
+            <li>Creación de un formulario con lo visto en la clase 2.</li>
+            <li>Aplicar estilos CSS al formulario</li>
+            <li>Crear y vincular a index.html estilos.css</li>
+            <li>En CSS usar en body background-color algún color en inglés.</li>
+            <li>Enviar en una carpeta zip o rar con el formato: nombre_apellido_entrega3</li>
+        </ol>
+    </div>
+    <form action="enviar.php" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>FORMULARIO</legend>
+            <label for="nombre">Nombre:</label>
+            <input name="nombre" type="text" placeholder="Nombre"><br>
+            <label for="fecha">Fecha:</label>
+            <input name="fecha" type="date"><br>
+            <label for="mail">e-mail:</label>
+            <input name="mail" type="email" placeholder="e-mail"><br>
+            <label for="tel">Teléfono:</label>
+            <input name="tel" type="number" placeholder="Tefénono"><br>
+            <label for="file">Adjuntar archivo:</label>
+            <input name="file" type="file"><br>
+            <label for="pass">Password:</label>
+            <input name="pass" type="password" placeholder="Password"><br>
+            <br>
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea name="comentarios" cols="30" rows="5" placeholder="Escribe tu comentario" required></textarea><br>
+            <label for="Lenguajes">Lenguajes:</label>
+            <select name="Lenguajes">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>JQuery</option>
+                <option>PHP</option>
+                <option>React</option>
+            </select>
+            <p>Seleccione el genero:</p>
+            <input name="genero" type="radio">
+            <label for="masculino">Masculino</label><br>
+            <input name="genero" type="radio">
+            <label for="fememino">Femenino</label><br>
+            <input name="provincia" type="checkbox">
+            <label for="ba">BA</label>
+            <input name="provincia" type="checkbox" checked>
+            <label for="otra">Otra Provincia</label><br>
+            <input type="submit">
+            <input type="reset">
+            <input type="button" value="Botón">
+        </fieldset>
+    </form>
+    <!--Formulario alternativo según código de: https://html.spec.whatwg.org/multipage/forms.html-->
+    <form action="enviar2.php" method="post" enctype="text/plain">
+        <fieldset class="dos">
+            <legend>Formulario Alternativo</legend>
+
+            <p><label>Nombre:<input type="text" name="nombre" placeholder="Nombre" required></label></p>
+
+            <p><label>Fecha:<input type="date" name="fecha"></label></p>
+
+            <p><label>e-mail:<input type="email" name="mail" placeholder="e-mail"></label></p>
+
+            <p><label>Teléfono: <input type="number" name="telefono" placeholder="Teléfono"> </label></p>
+
+            <p><label>Adjuntar archivo <input type="file" name="archivos"> </label></p>
+
+            <p><label>Password: <input type="password" name="password" placeholder="Password"> </label></p>
+
+            <p><label>Comentarios: <br> <textarea name="comentarios" cols="30" rows="10"
+                        placeholder="Escribe tu comentario"></textarea> </label></p>
+
+            <h4>Seleccione un lenguaje:</h4>
+            <p><label>Lenguajes: <select name="Lenguajes">
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JavaScript</option>
+                        <option>JQuery</option>
+                        <option>PHP</option>
+                        <option>React</option>
+                    </select> </label></p>
+
+            <h4>Seleccione el genero:</h4>
+            <p><label>Femenino: <input type="radio" name="femenino"> </label></p>
+            <p><label>Masculino: <input type="radio" name="masculino"> </label></p>
+            <h4>Seleccione su localidad:</h4>
+            <p><label>BA: <input type="checkbox" name="ba"> </label> </p>
+            <p><label>Otra: <input type="checkbox" name="otra"> </label></p>
+
+            <input type="submit">
+            <input type="reset">
+            <input type="button" value="Botón">
+        </fieldset>
+    </form>
+</body>
+
+</html>

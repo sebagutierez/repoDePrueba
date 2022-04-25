@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02</title>
+
+    <style>
+        section{
+            height: 500px;
+            width: 100%;
+            background-color: aqua;
+            border: 2px solid #000;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>clase2</h1>
+    <h2>etiquetas semanticas</h2>
+    <div class="header"></div> 
+    <div class="nav"></div> 
+    <div class="main"></div> 
+    <div class="aside"></div> 
+    <div class="article"></div> 
+    <div class="section"></div> 
+    <div class="footer"></div>
+    
+    <header></header>
+    <nav></nav>
+    <main></main>
+    <aside></aside>
+    <article>
+        <header></header>
+        <main></main>
+        <footer></footer>
+    </article>
+
+    <div></div>
+
+    <h2>multimedia</h2>
+
+    <h3>mi imagen</h3>
+    <img src="img/flowers.jpg" alt="flowers">
+    <h3>mi video</h3>
+    <video src="video/sunflowers.mp4" controls autoplay>
+        <source src="video/sunflowers.mp4">
+        <source src="video/sunflowers.mp4">
+        tu navegador no soporta este formato
+    </video>
+    <audio src="audio/spirit-blossom.mp3" controls></audio>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h3PBGG3hgik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878894897!2d-58.383759084745776!3d-34.60373446500615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1648044335751!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <h3>tablas</h3>
+    <table border="2" cellspacing="10" cellpadding="20">
+        <tr>
+            <th>lunes</th>
+            <th>martes</th>
+            <th>miercoles</th>
+            <th>jueves</th>
+            <th>viernes</th>
+        </tr>
+        <tr>
+            <td>no hay clases</td>
+            <td>no hay clases</td>
+            <td>hay clases</td>
+            <td>no hay clases</td>
+            <td>no hay clases</td>
+        </tr>
+    </table>
+
+    <h3>enlaces</h3>
+    <h4>enlaces relativos</h4>
+    <a href="img/flowers.jpg">ir a imagen</a><br>
+    <a href="pages/contacto.html">ir a contacto</a><br>
+    <a href="servicios.html">ir a servicios</a>
+
+    <h4>enlaces absolutos o externos</h4>
+    <a href="https://pixabay.com/">ir a pixabay</a><br>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">inicio</a>
+                <a href="#contacto"> ir a contacto 2</a>
+                <a href="pages/contacto.html">contacto</a>
+                <a href="pages/contacto.html">contacto</a>
+                <a href="pages/contacto.html">contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="nombre1 nombre2"></section>
+    <section class="nombre2"></section>
+    <section class="nombre1 nombre2"></section>
+    <section></section>
+    <section></section>
+    <section id="contacto"></section>
+
+    <form action="enviar.php" method="post" enctype="text/plain" >
+        <fieldset>
+            <legend>mi formulario</legend>
+        <label for="nombre">nombre</label>
+        <input name="nombre" type="text" required><br>
+        <label for="correo">mail</label>
+        <input name="correo" type="mail"><br>
+        <label for="tel">tel</label>
+        <input name="tel" type="number"><br>
+        <label for="pass">pass</label>
+        <input name="pass" type="password"><br>
+        <label for="">comentarios</label><br>
+        <textarea name="" id="" cols="30" rows="5" placeholder="escribe tu comentario" required></textarea>
+
+        <p>selecciona tu genero</p>
+        <input name="sexo" type="radio">
+        <label for="">masculino</label><br>
+        <input name="sexo" type="radio">
+        <label for="">femenino</label>
+
+        <input type="checkbox">
+        <label for="">bs as</label>
+        <input type="checkbox" checked>
+        <label for="">otra provincia</label>
+
+        <input type="submit">
+        <input type="reset">
+        <input type="button" value="sin accion">
+        </fieldset>
+    </form>
+
+</body>
+</html>

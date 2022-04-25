@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASE 003 CSS</title>
+</head>
+<body>
+    <h1>QUE ES CSS</h1>
+    <ul>
+        <li><b>CSS:</b> Cascading Style Sheets. hojas de estilo en cascada.</li>
+        <li>Es el lenguaje que define el estilo de los elementos de un documento HTML.</li>
+        <li>Es el lenguaje para controlar el diseño y apariencia de las webs hechas en HTML.</li>
+        <li>En 1998 se publica CSS NIVEL 2. </li>
+        <li>La Versión (2009) 2.1 es la que utilizan hoy en día todos los navegadores</li>
+        <li>Por el momento ningún navegador tiene soporte completo de CSS 2.1</li>
+    </ul>
+    <h2>VENTAJAS DE USAR CSS</h2>
+    <h3>1. SEPARACIÓN DEL CONTENIDO Y PRESENTACIÓN</h3>
+    <ul>
+        <li>Las hojas de estilo generalmente se encuentran en archivos separados del código principal.</li>
+        <li>Esto permite que un equipo de trabajo pueda hacer tareas del código principal independientemente del diseño.</li>
+    </ul>
+    <h3>2. FLEXIBILIDAD</h3>
+    <ul>
+        <li>Se puede modificar el archivo de estilo y diseño sin cambiar el contenido.</li>
+    </ul>
+    <h3>UNIFICACIÓN DEL DISEÑO DE LAS PAGINAS DEL SITIO</h3>
+    <ul>
+        <li>Permite mantener una misma apariencia en cada una de las páginas y modificarlas en un mismo proceso.</li>
+        <li>Ya que todas las paginas están enlazadas a la hoja de estilo, agilizando el proceso y minimizando el trabajo.</li>
+    </ul>
+    <h3>4. OPTIMIZACIÓN DE LOS TIEMPOS DE CARGA Y DE TRAFICO EN EL SERVIDOR</h3>
+    <ul>
+        <li>Al haber dividido contenido se obtienen archivos más ligeros, reportando:</li>
+        <ol>
+            <li>reducir notablemente el tiempo de carga del sitio en el navegador.</li>
+            <li>reducir el volumen de tráfico del servidor</li>
+        </ol>
+    </ul>
+    <h3>5. PRECISIÓN O ELASTICIDAD</h3>
+    <ul>
+        <li>el tamaño y posicionamiento de los elementos podrá ser exacto.</li>
+        <li>se puede indicar al navegador en que píxel debe colocar un diseño.</li>
+        <li>se puede usar medidas variables o relativas que permitan expandir o reducir el contenido de la ventana de navegación.</li>
+    </ul>
+    <h3>6. ACCESIBILIDAD Y ESTRUCTURACIÓN</h3>
+    <ul>
+        <li>la combinación de CSS y marcadores descriptivos permite que la página se vea corectamente con o sin hoja de estilos, ya que la información se mantendrá estructurada y ordenada.</li>
+        <li>será accesible sin ningún tipo de problemas tanto por navegadores antiguos o sin soporte CSS, como para personas con algún tipo de discapacidad.</li>
+    </ul>
+    <h3>7. LIMPIEZA DEL CÓDIGO FUENTE</h3>
+    <ul>
+        <li>si escribimos una hoja de estilo independiente, el código fuente va a resultar más agil las tareas de localización de las líneas que busquemos.</li>
+    </ul>
+    <h3>8. COMPATIBILIDAD Y CONTINUIDAD</h3>
+    <ul>
+        <li>las reglas establecidad en CSS-1 se mantienen en CSS-2.</li>
+        <li>Por lo que la compatibilidad de las especificaciones CSS anteriores estará siempre garantizada.</li>
+    </ul>
+    <h3>9. ESTANDARIZACIÓN</h3>
+    <ul>
+        <li>la adopción de estándares por la W3C ofrece la ventaja de la compatibilidad del código entre los diferentes navegadores web.</li>
+        <li>el uso del estándar CSS de la W3C evita visualizaciones incorectas de las web en los distintos navegadores.</li>
+    </ul>
+    <h3>10. PERMITE LA DIFERENCIACIÓN DE ESTILOS PARA IMPRIMIR (VISUALIZAR EN PANTALLA)</h3>
+    <ul>
+        <li>CSS permite maquetar separadamente el contenido de la web para mostrarlo en la pantalla.</li>
+    </ul>
+
+    <h2>COMO UTILIZO CSS</h2>
+    <p>Existen 3 maneras de utilizar CSS</p>
+    <ol>
+        <li><b> CSS en línea empleando un atributo (método menos recomendado</b></li>
+        <ul>
+            <li>(p style="color: blue;") Ese es un párrafo(/p)</li>
+            <p style="color: blue;"> Ese es un párrafo</p>
+        </ul>
+        <li><b> CSS incrustado en el documento HTML</b></li>
+        <p>(style)</p>
+        <p>p{</p>
+        <p>text-align: center;</p>
+        <p>color: red;</p>
+        <p>}</p>
+        <p>(/style)</p>
+        </ul>
+        <li><b>CSS en un documento CSS externo</b></li>
+        <p><b>HTML</b></p>
+        <P>(html)</P>
+        <p>(head)</p>
+        <p>(title)MI TITULO(/title)</p>
+        <p style="color: red;">(link rel="stylesheet" href="estilos.css"</p>
+        <p>(/head)</p>
+        <p>(/body)</p>
+        <P>(/html)</P>
+        <p><b>CSS</b></p>
+        <p>p{</p>
+        <p>text-align: center;</p>
+        <p>color: red;</p>
+        <p>}</p>
+    </ol>
+    <h2>CUAL ES LA SINTAXIS CSS</h2>
+    <p>Se considera sintaxis al orden y relación de los elementos que componen una correcta instrucción CSS así como las funciones que cumples.</p>
+<h2>SELECTORES CSS</h2>
+<h3>Selector de clase</h3>
+<p>.nombreDeLaClase</p>
+<p>se puede aplicar diferentes elementos el mismo diseño si comparten el nombre de la clase</p>
+<h3>Selector de ID</h3>
+<p>no se repiten, es como el DNI</p>
+<p>se pueden combinar selectores</p>
+</body>
+</html>

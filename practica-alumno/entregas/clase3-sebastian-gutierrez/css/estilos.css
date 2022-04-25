@@ -1,0 +1,21 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.dos{
+    font-family: serif;
+    color: rgb(255, 196, 0) !important;
+    font-family: cursive;
+    color: blueviolet;
+}
+ul p{
+    color: rgb(243, 140, 6);
+}
+.tres{
+    color: antiquewhite;
+    font-size: 18px;
+}
+section .cuatro {
+    color: rgb(67, 71, 71);
+    font-weight: 900;
+}

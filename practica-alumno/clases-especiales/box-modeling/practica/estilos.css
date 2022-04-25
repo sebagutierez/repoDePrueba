@@ -1,0 +1,71 @@
+.card {
+    border: 1px solid black;
+    height: 275px;
+    width: 220px;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+}
+.card-image {
+    border: 1px solid black;
+    height: 175px;
+    width: 220px;
+    object-fit: cover;
+}
+.card-data {
+    list-style: none;
+    color: white;
+}
+.card-data-titles {
+    color: lightgray;
+}
+.card-data-alias {
+    color: red;
+}
+.card-button {
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+}
+.card-button:hover {
+    background-color: white;
+    color: red;
+}
+.figcaption ul li {
+    margin-bottom: 15px;
+}
+
+.card-image2 {
+    border: 1px solid black;
+    height: 175px;
+    width: 220px;
+    object-fit: cover;
+}
+.card-data2 {
+    list-style: none;
+    color: white;
+}
+.card-data-titles {
+    color: lightgray;
+}
+.card-data-alias2 {
+    color: blue;
+}
+.card-button2 {
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+}
+.card-button2:hover {
+    background-color: white;
+    color: blue;
+}
+
+.contenedor {
+    display: flex;
+}
