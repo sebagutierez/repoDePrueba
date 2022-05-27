@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bilbo&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <title>CLASE ESPECIAL FLEXBOX</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="https://hipertextual.com/wp-content/uploads/2021/05/dart-vader.jpeg" alt="prancing pony">
+                </a>
+                <a href="#">
+                    <h1>The Prancing Pony</h1>
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li><a href="#drinks">Drinks</a>
+                </li>
+                <li><a href="#">Hostel Service</a>
+                </li>
+                <li><a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+
+        </section>
+        <section id="drinks">
+
+        </section>
+    </main>
+
+
+    <section style="display: flex;">
+        <figure class=" card">
+            <img src="https://hipertextual.com/wp-content/uploads/2021/05/dart-vader.jpeg" alt="darth vader"
+                class="card-image">
+            <figcaption>
+                <ul class="card-data">
+                    <li>
+                        <span class="card-data-titles">Alias: </span>
+                        <span class="card-data-alias">Darth Vader</span>
+                    </li>
+                    <li>
+                        <span class="card-data-titles">Orden: </span>Sith
+                    </li>
+                    <li>
+                        <span class="card-data-titles">Nombre real: </span>
+                        <button class="card-button">Spoiler!!</button>
+                    </li>
+                </ul>
+            </figcaption>
+        </figure>
+    </section>
+    <div class="contenedor">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+    display: flex;
+    justify-content: center;
+    <div class="uno">
+        <div class="box1">1</div>
+        <div class="box2">1.2</div>
+        <div class="box3">1.3</div>
+    </div>
+    justify-content:space-around;
+    <div class="dos">
+        <div class="box1">2</div>
+        <div class="box2">2.2</div>
+        <div class="box3">2.3</div>
+    </div>
+    justify-content:space-between;
+    <div class="tres">
+        <div class="box1">3</div>
+        <div class="box2">3.2</div>
+        <div class="box3">3.3</div>
+    </div>
+    justify-content:flex-end;
+    <div class="cuatro">
+        <div class="box1">4</div>
+        <div class="box2">4.2</div>
+        <div class="box3">4.3</div>
+    </div>
+    justify-content:flex-start;
+    align-items: flex-end;
+    <div class="cinco">
+        <div class="box1">5</div>
+        <div class="box2">5.2</div>
+        <div class="box3">5.3</div>
+    </div>
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    <div class="seis">
+        <div class="box1">6</div>
+        <div class="box2">6.2</div>
+        <div class="box3">6.3</div>
+    </div>
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    <div class="siete">
+        <div class="box1">7.1</div>
+        <div class="box2">7.2</div>
+        <div class="box3">7.3</div>
+    </div>
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    <div class="ocho">
+        <div class="box1">8.1</div>
+        <div class="box2">8.2</div>
+        <div class="box3">8.3</div>
+    </div>
+    flex-direction: row-reverse;
+    <div class="nueve">
+        <div class="box1">9.1</div>
+        <div class="box2">9.2</div>
+        <div class="box3">9.3</div>
+    </div>
+    flex-direction: column-reverse;
+    <div class="diez">
+        <div class="box1">10.1</div>
+        <div class="box2">10.2</div>
+        <div class="box3">10.3</div>
+    </div>
+    <div class="once">
+        <div class="once-1">11.1</div>
+        <div class="once-2">11.2</div>
+        <div class="once-3">11.3</div>
+    </div>
+    flex-wrap: wrap;
+    <div class="doce">
+        <div class="doce-1">12.1</div>
+        <div class="doce-2">12.2</div>
+        <div class="doce-3">12.3</div>
+        <div class="doce-4">12.4</div>
+        <div class="doce-5">12.5</div>
+        <div class="doce-6">12.6</div>
+    </div>
+    flex-flow:row wrap; = flex-wrap: wrap; + flex-direction: row;
+    <div class="trece">
+        <div class="doce-1">13.1</div>
+        <div class="doce-2">13.2</div>
+        <div class="doce-3">13.3</div>
+        <div class="doce-4">13.4</div>
+        <div class="doce-5">13.5</div>
+        <div class="doce-6">13.6</div>
+    </div>
+    flex-basis: 120px; flex-shrink: 1;
+    <div id="catorce">
+        <div class="box" style="background-color: red;">A</div>
+        <div class="box" style="background-color: lightblue;">B</div>
+        <div class="box" style="background-color: yellow;">C</div>
+        <div class="box1" style="background-color: brown;">D</div>
+        <div class="box1" style="background-color: lightseagreen;">E</div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Clase 008 Bootstrap</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dar navbar-dark" id="bg-color"=>
+            <!-- brand -->
+            <a class="navbar-brand" href="#">home</a>
+
+            <!-- toggler/collapsibe buttom -->
+            <button class="navbar-toggler" type="button" data-toggle="collaps" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#responsive" class="nav-link">Responsive</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tablas" class="nav-link">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#formularios" class="nav-link">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#botones" class="nav-link">Botones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#imagenes" class="nav-link">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#dropdown" class="nav-link">Dropdown</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#breadcrumb" class="nav-link">Breadcrumb</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cards" class="nav-link">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#carousel" class="nav-link">Carousel</a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="responsive">
+            <h2>Responsive</h2>
+            <div class="container contenedor1">
+                <!-- container: es una clase propia de bootstrap -->
+                <div class="row">
+                    <header class="col-12">1. (div class="container) header class="col-12") width 80%</header>
+                </div>
+            </div>
+            <div class="container-fluid contenedor2">
+                <div class="row">
+                    <header class="col-12">2. (div class="container-fluid) (header class="col-12") width 100%</header>
+                </div>
+            </div>
+            <div class="container-fluid contenedor3">
+                <div class="row">
+                    <section class="col-9">3. (div class="container-fluid) (section class="col-9")</section>
+                    <aside class="col-3">4. aside class="col-3"</aside>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row contenedor5">
+                    <article class="col-sm-3">5. article class="col-sm-3"</article>
+                    <article class="col-sm-3">article.col-sm-3{mi articulo$}*4</article>
+                    <article class="col-sm-3">mi articulo3</article>
+                    <article class="col-sm-3">mi articulo4</article>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row contenedor6">
+                    <article class="col-sm-3 col-md-4">6. article class="col-sm-3 col-md-4"</article>
+                    <article class="col-sm-3 col-md-4">mi articulo2</article>
+                    <article class="col-sm-3 col-md-4">mi articulo3</article>
+                    <article class="col-sm-3 col-md-12">article class="col-sm-3 col-md-12</article>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row contenedor7">
+                    <article class="col-xs-4">7. article class="col-xs-4"</article>
+                    <article class="col-xs-4">mi articulo2</article>
+                    <article class="col-xs-4">mi articulo3</article>
+                    <article class="col-xs-4">mi articulo4</article>
+                </div>
+            </div>
+            <div class="container-fluid contenedor8">
+                <div class="row ">
+                    <article class="col-sm-4">8. article class="col-sm-4"</article>
+                    <article class="col-sm-4">mi articulo2</article>
+                    <article class="col-sm-4">mi articulo3</article>
+                    <article class="col-sm-4">mi articulo4</article>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row contenedor9">
+                    <article class="col-md-4">9. article class="col-md-4"</article>
+                    <article class="col-md-4">mi articulo2</article>
+                    <article class="col-md-4">mi articulo3</article>
+                    <article class="col-md-4">mi articulo4</article>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row contenedor10">
+                    <article class="col-lg-4">10. article class="col-lg-4"</article>
+                    <article class="col-lg-4">mi articulo2</article>
+                    <article class="col-lg-4">mi articulo3</article>
+                    <article class="col-lg-4">mi articulo4</article>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row contenedor11">
+                    <article class="col-xl-4">11. article class="col-xl-4"</article>
+                    <article class="col-xl-4">mi articulo2</article>
+                    <article class="col-xl-4">mi articulo3</article>
+                    <article class="col-xl-4">mi articulo4</article>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row contenedor12">
+                    <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">12. xs-12,sm-6,md-4,lg-3,xl-2
+                    </article>
+                    <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">mi articulo2</article>
+                    <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">mi articulo3</article>
+                    <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">mi articulo4</article>
+                    <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">mi articulo5</article>
+                    <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">mi articulo6</article>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row contenedor13">
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1">13. xs-12,sm-6,md-4,lg-3,xl-2
+                    </article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1">articulo2</article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1">articulo3</article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1">articulo4</article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1">articulo5</article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1">articulo6</article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1">articulo7</article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1">articulo8</article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1">articulo9</article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1">articulo10</article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1">articulo11</article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1">articulo12</article>
+                </div>
+            </div>
+        </section>
+        <section id="tablas">
+            <section>
+                <h2>Tablas</h2>
+                <div class="container">
+                    <h3>Tabla 1 - table</h3>
+                    <table class="table">
+                        <tr>
+                            <th>nombre</th>
+                            <th>apellido</th>
+                        </tr>
+                        <tr>
+                            <td>nombre1</td>
+                            <td>apellido1</td>
+                        </tr>
+                        <tr>
+                            <td>nombre2</td>
+                            <td>apellido2</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h3>Tabla 2 - class="table table-warning table hover"</h3>
+                    <table class="table table-warning table hover">
+                        <tr>
+                            <th>nombre</th>
+                            <th>apellido</th>
+                        </tr>
+                        <tr>
+                            <td>nombre1</td>
+                            <td>apellido1</td>
+                        </tr>
+                        <tr>
+                            <td>nombre2</td>
+                            <td>apellido2</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h3>Tabla 3 - class="table table-dark table hover"</h3>
+                    <table class="table table-dark table hover">
+                        <tr>
+                            <th>nombre</th>
+                            <th>apellido</th>
+                        </tr>
+                        <tr>
+                            <td>nombre1</td>
+                            <td>apellido1</td>
+                        </tr>
+                        <tr>
+                            <td>nombre2</td>
+                            <td>apellido2</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h3>Tabla 4 - class="table table-danger table hover"</h3>
+                    <table class="table table-danger table hover">
+                        <tr>
+                            <th>nombre</th>
+                            <th>apellido</th>
+                        </tr>
+                        <tr>
+                            <td>nombre1</td>
+                            <td>apellido1</td>
+                        </tr>
+                        <tr>
+                            <td>nombre2</td>
+                            <td>apellido2</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h3>Tabla 5 - class="table table-success table hover"</h3>
+                    <table class="table table-success table hover">
+                        <tr>
+                            <th>nombre</th>
+                            <th>apellido</th>
+                        </tr>
+                        <tr>
+                            <td>nombre1</td>
+                            <td>apellido1</td>
+                        </tr>
+                        <tr>
+                            <td>nombre2</td>
+                            <td>apellido2</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </section>
+        <section id="formularios">
+            <div class="container">
+                <h2 class="form">Formularios</h2>
+                <form action="">
+                    <div class="form-group">
+                        <label for="email">email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña"
+                            name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" class="checkbox1" name="checkbox1">
+                        <label for="checkbox1">Recordar contraseña</label>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="botones">
+            <h2>Botones</h2>
+            <button type="submit" class="btn btn-danger">
+                danger
+            </button>
+            <button type="submit" class="btn btn-dark">
+                dark
+            </button>
+            <button type="submit" class="btn btn-success">
+                success
+            </button>
+            <button type="submit" class="btn btn-warning">
+                warning
+            </button>
+        </section>
+        <section id="imagenes">
+            <h2>Imágenes</h2>
+            <div class="container">
+                <h3>class=“img-thumbnail"</h3>
+                <img src="img-1.jpg" alt="mar de fondo" class="img-thumbnail">
+            </div>
+            <div class="container">
+                <h3>class=“rounded”</h3>
+                <img src="img-1.jpg" alt="mar de fondo" class=“rounded”>
+            </div>
+        </section>
+        <section id="dropdown">
+            <h2>Dropdown</h2>
+            <div class="dropdown">
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                    Elige una opción:
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#" class="drowpdown-item">Opción uno</a>
+                    <a href="#" class="drowpdown-item">Opción dos</a>
+                    <a href="#" class="drowpdown-item">Opción tres</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Elige una opción:
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#" class="drowpdown-item">Opción uno</a>
+                    <a href="#" class="drowpdown-item">Opción dos</a>
+                    <a href="#" class="drowpdown-item">Opción tres</a>
+                </div>
+            </div>
+        </section>
+        <section id="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Nosotros</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                <!-- pagina en la que se encuentra -->
+            </ol>
+        </section>
+        <section id="cards">
+            <h2>Cards</h2>
+            <div class="card col-md-3" style="width:200px">
+                <img src="img-1.jpg" alt="card image" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-danger color1">Botton</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+    <section id="carousel">
+        <h2>Carousel</h2>
+        <div class="caro">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img-1.jpg" alt="Los Angeles">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img-1.jpg" alt="Chicago">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img-1.jpg" alt="New York">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

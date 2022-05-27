@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>transiciones</title>
+    
+    <style>
+        
+        .transition{
+            height: 50px;
+            width: 500px;
+            background-color: yellow;
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+            font-family: sans-serif;
+            border: 2px solid #000;
+        }
+        #t1{
+            transition: height 2.7s;
+
+        }
+        
+        #t1:hover{
+            height: 200px;
+        }
+        
+        #t2{
+            transition: height 2s, width 0.5s;
+        }
+        
+        #t2:active{
+            height: 200px;
+            width: 800px;
+        }
+        #t3{
+            transition: all 2s;
+        }
+        
+        #t3:hover{
+            height: 100px;
+            width: 800px;
+            font-family: cursive;
+            font-size: 50px;
+            background-color: darkviolet;
+        }
+        
+        form h1{
+            text-transform: uppercase;
+            font-family: cursive;
+            color: red;
+        }
+        
+        input{
+            transition: all 2s;
+        }
+        
+        input:focus{
+            font-size: 60px;
+            border: 5px dotted #ff0000;
+            color: green;
+        }
+        
+        input::placeholder{
+            color: red;
+        }
+        
+    </style>
+    
+</head>
+<body>
+   <div class="transition" id="t1">Transition1</div>
+   <div class="transition" id="t2">Transition2</div>
+   <div class="transition" id="t3">Transition3</div>
+   <br>
+   <form action="">
+       <h1>nombre:</h1>
+       <input type="text" placeholder="escribe tu nombre">
+   </form>
+    
+</body>
+</html>

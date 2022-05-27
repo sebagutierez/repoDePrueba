@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aqua;
+        }
+        
+        .miestilo {
+            background-color: green;
+            height: 600px;
+            width: 100%;
+            color: white;
+            text-shadow: 5px 5px 5px #333;
+            font-size: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 600px;
+        }
+
+        @media (max-width: 768px) {
+            .miestilo {
+                background-color: red;
+                color: yellow;
+            }
+            
+        }
+        
+        @media (max-width: 500px){
+            .caja{
+                background-color: black !important;
+/*                background-color: orange;*/
+            }
+        }
+        
+          /*  la orientaciones pueden ser horizontal: landscape o vertical: portrait      */
+        @media (max-width: 600px) and (orientation: portrait){
+            .miestilo {
+                text-align: left;
+                background-color: darkviolet;
+            }
+        }
+        
+        .miestilo2{
+            height: auto;
+            width: 100%;
+            background-color: gray;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            line-height: 300px;
+        }
+        
+        .caja{
+            background-color: crimson;
+            min-height: 300px;
+            min-width: 300px;
+            border: 2px solid #000;
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+
+  <div class="miestilo">este es mi div</div>
+  <div class="miestilo2">
+      <div class="caja">1</div>
+      <div class="caja">2</div>
+      <div class="caja">3</div>
+      <div class="caja">4</div>
+      
+  </div>
+
+</body>
+</html>

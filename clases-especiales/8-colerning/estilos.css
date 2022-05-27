@@ -1,0 +1,94 @@
+.navbar{
+    background-color: green;
+}
+.jumbotron{
+    background-image: url(img/ejercicios-logica-program.png);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    color: springgreen;
+    text-shadow: 0 0 5px black;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+h2{
+    text-align: center;
+    background-color: springgreen;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fila1{
+    height: 450px;
+}
+.nleft{
+    background-image: url(img/ejercicios-logica-program.png);
+    background-size: cover;
+    background-position: center;
+}
+.nright p::selection{
+    background-color: springgreen;
+    color: black;
+}
+.nright h3{
+    text-align: center;
+}
+.nright p{
+    text-align: justify;
+}
+.btn-success{
+    background-color: springgreen;
+    color: black;
+}
+.btn-success :hover{
+    background-color: rgba(4, 63, 34, 0.027);
+    color: black;
+}
+.prod{
+    height: 300px;
+    border: 2px solid;
+}
+.prod1{
+    background-image: url(img/ejercicios-logica-program.png);
+    background-size: cover;
+    background-position: center;
+}
+.prod2{
+    background-image: url(img/ejercicios-logica-program.png);
+    background-size: cover;
+    background-position: center;
+}
+.prod3{
+    background-image: url(img/ejercicios-logica-program.png);
+    background-size: cover;
+    background-position: center;
+}
+.prod4{
+    background-image: url(img/ejercicios-logica-program.png);
+    background-size: cover;
+    background-position: center;
+}
+.prod5{
+    background-image: url(img/ejercicios-logica-program.png);
+    background-size: cover;
+    background-position: center;
+}
+.prod6{
+    background-image: url(img/ejercicios-logica-program.png);
+    background-size: cover;
+    background-position: center;
+}
+.prod7{
+    background-image: url(img/ejercicios-logica-program.png);
+    background-size: cover;
+    background-position: center;
+}
+.prod8{
+    background-image: url(img/ejercicios-logica-program.png);
+    background-size: cover;
+    background-position: center;
+}
+.prod9{
+    background-image: url(img/ejercicios-logica-program.png);
+    background-size: cover;
+    background-position: center;
+}

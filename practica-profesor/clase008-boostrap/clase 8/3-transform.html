@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>transformaciones</title>  
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: darkblue;
+        }
+        .contenedor{
+            height: auto;
+            width: 90%;
+            background-color: dimgray;
+            padding: 50px;
+            margin: auto;
+        }
+        .contenedor h1{
+            text-align: center;
+            font-size: 40px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            color: #333;
+            text-shadow: 5px 5px 5px #ff0000;
+        }
+        .cuadrado{
+            height: 200px;
+            width: 200px;
+            background-color: darkviolet;
+            text-align: center;
+            font-size: 40px;
+            line-height: 200px;
+            border: 5px solid #fff;
+            font-family: sans-serif;
+            color: #fff;
+        }
+        .c1{
+            background-color: chartreuse;
+            transform: translate(250px, 50px);
+/*            transform: translate(ejex, ejey);*/
+        }
+        .c2{
+            background-color: blue;
+/*            background-image: url(img/background-pizza.jpg);*/
+            transform: rotate(-180deg);
+/*            transform: rotate(valor en grados);*/
+        }
+        .c3{
+            background-color: coral;
+            transform: rotateX(180deg);
+        }
+        .c4{
+            background-color: crimson;
+            transform: rotateY(180deg);
+        }
+        .c5{
+            background-color: darkturquoise;
+/*            background-image: url(img/background-pizza.jpg);*/
+            transform: rotateZ(90deg);
+        }
+        .c6{
+            background-color: firebrick;
+            transform: scale(1.6);
+            transform: scale(2);
+            transform: scale(0.2);
+            transform: scale(-1.2);
+            transform: scaleX(2);
+            transform: scaleY(2);
+            transform: scale(2, 1);
+/*            transform: scale(ejeX, ejeY);*/ 
+        }
+        .c7{
+            background-color: deeppink;
+            transform: skewX(10deg);
+        }
+        .c8{
+            background-color: dodgerblue;
+            transform: skewY(10deg);
+        }
+        .c9{
+            background-color: #21ed21;
+            transform: skew(10deg, 20deg);
+/*            transform: skew(ejeX, ejeY);*/
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="contenedor">
+        <h1>transformaciones</h1>
+        <div class="cuadrado c1">Translate</div>
+        <div class="cuadrado c2">Rotate</div>
+        <div class="cuadrado c3">RotateX</div>
+        <div class="cuadrado c4">RotateY</div>
+        <div class="cuadrado c5">RotateZ</div>
+        <div class="cuadrado c6">scale</div>
+        <div class="cuadrado c7">skewX</div>
+        <div class="cuadrado c8">skewY</div>
+        <div class="cuadrado c9">skew</div>
+    </div>
+</body>
+</html>

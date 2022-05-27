@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+       .header{
+            background-color: orange;
+            min-height: 60px;
+
+       }
+       .logo{
+           color: #fff;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           float: left;
+           font-size: 25px;
+           font-weight: bold;
+       }
+       .logo span{
+           color: #333;
+       }
+       nav{
+           float: right;
+           
+       }
+       nav ul{
+        list-style: none;
+        
+       }
+       nav ul li{
+        display: inline-block;
+        margin-right: 15px;
+        text-transform: capitalize;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+       nav a{
+           text-decoration: none;
+           color: #fff;
+           font-size: 25px;
+       }
+       main{
+           height: 100vh;
+           width: 100%;
+           background-color: #333;
+           background-image: url(img/pizza1.jpg);
+           background-size: cover;
+           background-position: center;
+       }
+
+       h2{
+           background-color: orange;
+           text-align: center;
+       }
+       .sec{
+           height: 500px;
+           width: 100%;
+           background-color: #333;
+           color: #fff;
+       }
+
+       footer{
+           background-color: orange;
+           color: #fff;
+           font-size: 20px;
+           text-align: center;
+           font-variant: small-caps;
+       }
+
+       .caja{
+           height: 120px;
+           width: 120px;
+           background-color: orange;
+           border: 2px solid #fff;
+           text-align: center;
+           line-height: 120px;
+       }
+
+       .caja4{
+           order: 2;
+           flex-basis: 120px;
+           flex-grow:2;
+           flex-shrink: 3;
+       }
+
+       .caja7{
+           order: 0;
+           flex-grow: 4;
+           flex-shrink: 6;
+       }
+
+
+       .sec1{
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           flex-flow: row nowrap;
+           justify-content: space-evenly;
+           align-content: space-evenly;
+       }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Coder <span>pizza</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#sec1">item1</a></li>
+                <li><a href="#sec2">item2</a></li>
+                <li><a href="#sec3">item3</a></li>
+                <li><a href="#sec4">item4</a></li>
+                <li><a href="#sec5">item5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <h2 class="h2">seccion1</h2>
+    <section class="sec sec1" id="sec1">
+        <div class="caja caja1">caja1</div>
+        <div class="caja caja2">caja2</div>
+        <div class="caja caja3">caja3</div>
+        <div class="caja caja4">caja4</div>
+        <div class="caja caja5">caja5</div>
+        <div class="caja caja6">caja6</div>
+        <div class="caja caja7">caja7</div>
+        <div class="caja caja8">caja8</div>
+        <div class="caja caja9">caja9</div>
+        <div class="caja caja10">caja10</div>
+    </section>
+    <h2 class="h2">seccion2</h2>
+    <section class="sec sec2" id="sec2">seccion2</section>
+    <h2 class="h2">seccion3</h2>
+    <section class="sec sec3" id="sec3">seccion3</section>
+    <h2 class="h2">seccion4</h2>
+    <section class="sec sec4" id="sec4">seccion4</section>
+    <h2 class="h2">seccion5</h2>
+    <section class="sec sec5" id="sec5">seccion5</section>
+    <footer>
+        <p>todos los derechos son reservados por copyright 2022</p>
+    </footer>
+    
+</body>
+</html>

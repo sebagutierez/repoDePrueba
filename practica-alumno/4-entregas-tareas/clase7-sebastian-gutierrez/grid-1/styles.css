@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    /* position: fixed; */
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-menu{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-right: 1rem;
+}
+.nav-menu li{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+    text-decoration: none;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+span{
+    color: red;
+    font-weight: bolder;
+}
+h2{
+    text-align: center;
+}
+main{
+    min-height: 1000px;
+    width: 100%;
+    padding: 1.5rem;
+    box-shadow: 5px 5px 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 210px 180px 1fr;
+    grid-template-areas: "tarea tarea" 
+                        "grid elemento"
+                        "activacion activacion"
+    ;
+    gap: 1px;
+}
+#homework{
+    grid-area: tarea;
+}
+#grids{
+    grid-area: grid;
+}
+#elements{
+    grid-area: elemento;
+}
+#activations{
+    grid-area: activacion;
+}
+@media screen and (max-width: 768px) {
+    .nav{
+        height: 90px;
+        padding: 1rem;
+    }
+    .nav-menu{
+        padding-right: 1.5rem;
+        justify-content:space-around;
+    }
+    main{
+        min-height: 1000px;
+        padding: 1rem;
+        grid-template-columns: 100%;
+        grid-template-rows: 220px 200px 150px 1fr;
+        grid-template-areas: "tarea" 
+                            "grid"
+                            "elemento"
+                            "activacion"
+        ;
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .nav{
+        height: 90px;
+        padding: 1rem;
+    }
+    .nav-menu{
+        padding-right: 1rem;
+        justify-content:center;
+    }
+    main{
+        min-height: 1000px;
+        padding-right: 2rem;
+        grid-template-columns: 100%;
+        grid-template-rows: 220px 200px 150px 1fr;
+        grid-template-areas: "tarea" 
+                            "grid"
+                            "elemento"
+                            "activacion"
+        ;
+        gap: 30px;
+    }
+}

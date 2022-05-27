@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Flexbox</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">Flex<span>box</span></div>
+            <ul>
+                <li><a href="#tipografias">Tipografía</a></li>
+                <li><a href="#contenedores">Contenedores</a></li>
+                <li><a href="#posicionamientos">Posicionamiento</a></li>
+                <li><a href="#flexbox">Flexbox</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="tipografias tipocont">
+            <h2 id="tipografias">Tipografías</h2>
+            <div class="tipo float-right">
+                <p class="float"><span><b>1. float:</b> left; </span> Alinea los elementos a: left, center o right.</p>
+            </div>
+            <div class="tipo item2">
+                <p><span><b>2. letter-spacing:</b> 20px; </span> Modifica el espaciado entre letras.</p>
+                </p>
+            </div>
+            <div class="tipo item3">
+                <p><span><b>3. list-style:</b> none; </span> Quita las viñetas a la lista desordenada.</p>
+            </div>
+            <div class="tipo item4">
+                <p><span><b>4. display:</b> inline-block; </span> Convierte la columna de una lista desordenada en una
+                    fila.</p>
+            </div>
+            <div class="tipo item5">
+                <p><span><b>5. margin-right:</b> 20px; </span> Boxmodel: Aumenta la separación entre palabras.</p>
+            </div>
+            <div class="tipo item6">
+                <p><span><b>6. text-decoration:</b> none; </span> Quita el underline al elemento a.</p>
+            </div>
+            <div class="tipo item7">
+                <p><span><b>7. text-transform:</b> capitalize; </span> Convierte en mayúscula la primer letra de cada
+                    palabara.</p>
+            </div>
+            <div class="tipo item8">
+                <p><span><b>8. text-align:</b> center; </span> Alinea el texto en sentido horizontal: left, center or
+                    right.</p>
+            </div>
+            <div class="tipo item9">
+                <p><span><b>9. font-variant:</b> small-caps; </span> Genera pequeñas mayúsculas.</p>
+            </div>
+        </section>
+
+        <section class="contenedores">
+            <h2 id="contenedores">Contenedores</h2>
+            <div class="cont cont1"><span><b>1. height:</b> calc(50vh - 75px); </span> Calcula el 50% de la pantalla y
+                la resta 75px del
+                header. </div>
+            <div class="cont cont2"><span><b>2. margin:</b> 0; </span> Convierte en 0 los margenes del elemento
+                seleccionado.</div>
+            <div class="cont cont3"><span><b>3. padding:</b> 0; </span> Convierte en 0 los espacios interiores del
+                elemento seleccionado.</div>
+            <div class="cont cont4"><span><b>4. box-sizing:</b> border-box; </span> Para que no sume los px del header.
+            </div>
+            <div class="cont cont5"><span><b>5. padding-bottom:</b> 10px;</span> Da un espaciado interno debajo.</div>
+            <div class="cont cont6"><span><b>6. https://cdnjs.com/</b>libraries/font-awesome</span> Web que contiene
+                librerías para utilizar
+                los íconos como caracteres optimizando el peso de los objetos.</div>
+            <div class="cont cont7"><span><b>7. https://fontawesome.com</b> /icons</span> Web que contiene íconos.</div>
+            <div class="cont cont8"><span><b>8. border-radius:</b> 50%;</span> Redondea los bordes del objeto.</div>
+            <div class="cont cont9"><span><b>9. line-height:</b> 50px;</span> Determina la ubicación vertical de los
+                objetos.</div>
+        </section>
+
+        <section class="posicionamientos">
+            <h2 id="posicionamientos">Posicionamientos</h2>
+            <div class="posi posi1"><span><b>1. position:</b> fixed;</span> El objeto queda fijado.</div>
+            <div class="posi posi2"><span><b>2. position:</b> absolute;</span> El ojeto queda por encima de lo
+                declarado.</div>
+            <div class="posi posi3"><span><b>3. position:</b> sticky;</span> El objeto queda pegado en una determinada
+                ubicación.</div>
+            <div class="posi posi4"><span><b>4. position:</b> relative;</span> El objeto queda ubicado en una posición
+                relativa.</div>
+            <div class="posi posi5"><span><b>5. bottom:</b> 40px;</span> El objeto queda ubicado a 40px del extremo
+                inferior.</div>
+            <div class="posi posi6"><span><b>6. right:</b> 40px;</span> El objeto queda ubicado a 40px del extremo
+                derecho.</div>
+            <div class="posi posi7"><span><b>7. scroll-behavior:</b> smooth;</span> Desplazamientos suaves.</div>
+        </section>
+        <section class="flexbox">
+            <h2 id="flexbox">Flexbox & Grid</h2>
+            <div class="flexit flex1">
+                <p><span><b>1. display:</b> flex; </span>Ubica a los elementos uno al lado del otro y varia su ancho
+                    dependiendo del screen (flexbox).</p>
+                <div class="display-flex">
+                    <div class="box box1">1</div>
+                    <div class="box box2">2</div>
+                    <div class="box box3">3</div>
+                </div>
+            </div>
+            <div class="flexit flex2">
+                <p><span><b>2. flex-direction:</b> row;column;column-reverse;row-reverse;</span> Define la dirección
+                    según los ejes.</p>
+                <div class="flex-direction">
+                    <div class="box box1">1</div>
+                    <div class="box box2">2</div>
+                    <div class="box box3">3</div>
+                </div>
+            </div>
+            <div class="flexit flex3">
+                <p><span><b>3. flex-wrap:</b> wrap;</span> Los elementos que no entran en el ancho según el screen, los
+                    desplaza hacia debajo. wrap-reverse; los elementos se posicionan en el bottom. nowrap; elimina la
+                    funcion wrap.</p>
+                <!--ubica los elementos que no entran en el screen debajo. wrap-reverse; los elementos se posicionan en el bottom. nowrap; elimina la funcion wrap. -->
+                <div class="flex-wrap">
+                    <div class="box-wrap box1">1</div>
+                    <div class="box-wrap box2">2</div>
+                    <div class="box-wrap box3">3</div>
+                </div>
+            </div>
+            <div class="flexit flex-flow">
+                <div class="box-flow box1"><span><b>4. flex-flow:</b> column wrap;</span></div>
+                <div class="box-flow box2"> = flex-direction + flex-wrap</div>
+                <div class="box-flow box3">= flex-direction + flex-wrap</div>
+            </div>
+            <div class="flexit flex5">
+                <p><span><b>5. justify-content:</b> flex-start;</span> Alieaciones horizontales: flex-start; default.
+                    center; flex-end; left. space-around; espacios alrededor. space-between; espacios internos.
+                    space-evenly; espacios simétricos.</p>
+                <!-- alieaciones horizontales: flex-start (default), center, flex-end, space-around (espacios alrededor), space-between (espacios internos) y space-evenly (espacios simetricos) -->
+                <div class="flex-start">
+                    <div class="box box5-1">flex-start</div>
+                </div>
+                <div class="center">
+                    <div class="box box5-2">center</div>
+                </div>
+                <div class="flex-end">
+                    <div class="box box5-3">flex-end</div>
+                </div>
+                <div class="space-between">
+                    <div class="box box4">space-between</div>
+                    <div class="box box4">space-between</div>
+                    <div class="box box4">space-between</div>
+                </div>
+                <div class="space-around">
+                    <div class="box box4">space-around</div>
+                    <div class="box box4">space-around</div>
+                    <div class="box box4">space-around</div>
+                </div>
+                <div class="space-evenly">
+                    <div class="box box4">space-evenly</div>
+                    <div class="box box4">space-evenly</div>
+                    <div class="box box4">space-evenly</div>
+                </div>
+            </div>
+            <div class="flexit flex6">
+                <!-- <div class="align-items-flex-start"> -->
+                <div><span><b>6. align-items:</b> center;</span> Alineación vertical: flex-start; top=default.
+                    center;
+                    flex-end; bottom. stretch; elementos ocupan la altura del contenedor. baseline; alinea los
+                    textos de
+                    los elementos</div>
+                <!-- </div> -->
+                <!-- alineación vertical: flex-start; top=default. center; flex-end; (bottom). stretch; elementos ocupan la altura del contenedor. baseline;  -->
+                <!-- <div class="align-items-center">
+                    <div class="box box1">align-items-center</div>
+                </div>
+                <div class="align-items-flex-end">
+                    <div class="box box1">align-items-flex-end</div>
+                </div> -->
+            </div>
+            <div class=" flex6-2">
+                <div class="box-por-3 align-items-flex-start">
+                    <div class="box">align-items: flex-start</div>
+                </div>
+                <div class="box-por-3 align-items-flex-end">
+                    <div class="box">align-items: flex-end</div>
+                </div>
+                <div class="box-por-3 flex-stretch">
+                    <div class="box6-3">align-items: stretch</div>
+                </div>
+            </div>
+            <div class="flexit flex7">
+                <p><span><b>7. align-self</b></span> </p>
+                <div class="flex7">
+                    <div class="box align-self-flex-end">align-self: flex-end</div>
+                    <div class="box align-self-center">align-self: center</div>
+                    <div class="box align-self-flex-start">align-self: flex-start</div>
+                </div>
+            </div>
+            <div class="flexit flex8">
+                <p><span><b>8. align-items: </b> baseline;</span> Alinea verticalmente el texto a pesar de estar los
+                    elementos desalineados.
+                </p>
+                <div class="ocho">
+                    <div class="box box8-1">1 display: flex;</div>
+                    <div class="box box8-2">2 align-items: baseline;</div>
+                    <div class="box box8-3">3 line-height: 60px;</div>
+                </div>
+            </div>
+            <div class="flexit flex8b">
+                <p><span><b>8b. line-height: </b> 80px;</span> Modifica la alineación vertical del texto.</p>
+                <div class="ochob">
+                    <div class="box box8b-1">1 display: flex;</div>
+                    <div class="box box8b-2">2 align-items: none;</div>
+                    <div class="box box8b-3">3 line-height: 80px;</div>
+                </div>
+            </div>
+
+            <div class="flexit flex9">
+                <p><span><b>9. align-content:</b> center;</span> Alinea verticalmente todos los objetos del contenedor.
+                    flex-start; ubica en top. flex-end; ubica en bottom. space-around; espacios alrededor.
+                    space-between; espacios internos. space-evenly; espacios simétricos.</p>
+                <!-- alineación vertical -->
+                <div class="nueve">
+                    <div class="box box9-1">1 display: flex;</div>
+                    <div class="box box9-2">2 flex-flow: row wrap;</div>
+                    <div class="box box9-3">3 justify-content: center
+                    </div>
+                    <div class="box box9-4">4 align-items: center;</div>
+                    <div class="box box9-5">5 align-content: center;</div>
+                    <div class="box box9-6">6 flex-end</div>
+                </div>
+            </div>
+
+            <div class="flexit flex10">
+                <p class="flex10-0"><span><b>10. flex-basis:</b> 150px;</span> flex-shrink: 5; flex-grow: 5; Establece
+                    una base en relación al
+                    ancho.
+                </p>
+                <div class="flex-basis shrink">
+                    <div class="box flex10-1">1 flex-shrink: 1;</div>
+                    <div class="box flex10-2">2 flex-shrink: 3;</div>
+                    <div class="box flex10-3">3 flex-shrink: 5;</div>
+                    <div class="box flex10-4">4 flex-grow: 5;</div>
+                </div>
+                <div class="flex-basis shrink">
+                    <div class="box flex10-5">5 flex-shrink: 5;</div>
+                    <div class="box flex10-6">6 flex-shrink: 3;</div>
+                    <div class="box flex10-7">7 flex-shrink: 1;</div>
+                    <div class="box flex10-8">8 flex-grow: 5;</div>
+                </div>
+            </div>
+            <div class="flexit flex11">
+                <p><span><b>11. order:</b> 3;</span> Ordena los elementos en forma numérica.</p>
+                <div class="once">
+                    <div class="box box11-1">order 1</div>
+                    <div class="box box11-2">order 2</div>
+                    <div class="box box11-3">order 3</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos son reservados por copyright</p>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+    </footer>
+    <a href="#" class="subir">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+</body>
+
+</html>

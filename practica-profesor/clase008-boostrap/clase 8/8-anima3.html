@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            background-color: lightskyblue;
+        }
+      
+        .circle{
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            line-height: 200px;
+            font-size: 50px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 2px solid #000;
+            border-radius: 100px;
+            margin: auto;
+/*            background-image: radial-gradient( yellow 5%, orange 50%, red );*/
+            animation-name: rebotar;
+            animation-duration: 10s;
+            background-image: url(img/ball.png);
+            background-position: center;
+            background-size: cover;
+            color: red;
+        }
+        
+        .pasto{
+            background-color: green;
+            height: 100vh;
+            width: 100%;
+        }
+        
+        @keyframes rebotar{
+            0%{
+                opacity: 0;
+            }
+            1%{
+                transform: translateY(150px);
+                box-shadow: 0px 10px 10px 10px #000;
+            }
+            
+            10%{
+                opacity: 1;
+                transform: translateY(150px);
+            }
+            11%{
+                box-shadow: 0px 10px 10px 10px #000;
+            }
+            20%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+            21%{
+                box-shadow: none;
+            }
+            30%{
+                opacity: 1;
+                transform: translateY(150px);
+            }
+            31%{
+                box-shadow: 0px 10px 10px 10px #000;
+            }
+            40%{
+                opacity: 1;
+                transform: translateY(0px);
+                box-shadow: none;
+            }
+            50%{
+                opacity: 1;
+                transform: translateY(150px);
+                box-shadow: 0px 10px 10px 10px #000;
+            }
+            60%{
+                opacity: 1;
+                transform: translateY(0px);
+                box-shadow: none;
+            }
+            70%{
+                opacity: 1;
+                transform: translateY(150px);
+                box-shadow: 0px 10px 10px 10px #000;
+            }
+            80%{
+                opacity: 1;
+                transform: translateY(50px);
+                box-shadow: none;
+            }
+            90%{
+                opacity: 1;
+                transform: translateY(130px);
+                box-shadow: none;
+                transform: rotate(-280deg);
+            }
+            
+            100%{
+                transform: rotate(-560deg);
+                transform: translate(10px, 150px);
+                box-shadow: 0px 10px 10px 10px #000;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="circle">Nike</div>
+   <div class="pasto"></div>
+    
+</body>
+</html>

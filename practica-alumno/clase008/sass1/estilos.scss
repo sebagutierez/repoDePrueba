@@ -1,0 +1,39 @@
+// SassScript soporta 6 tipos de datos::after
+// Números 
+// Cadenas de texto con o sin comillas simples o dobles ("foo", ´bar´, baz)
+// Colores
+// Valores lógicos o booleanos
+// Valores nulos (null)
+// Listas de valores, separados por espacios en blanco o comas (1.5em 1em 0.2em, arial)
+// Pares formados por una clave y un valor separados por: (key1: value1, key2: value2)
+
+// paleta de colores
+$color1: violet;
+$color2: purple;
+
+// fonts
+$font1: cursive;
+$font2: monospace;
+
+body{
+    background-color: $color2;
+    color: $color1;
+}
+
+header{
+    height: 200px;
+    width: 100%;
+    background-color: crimson;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+
+    span{
+        color: yellow;
+        // color: $color1;
+    }
+}
+
+@import "_menu"

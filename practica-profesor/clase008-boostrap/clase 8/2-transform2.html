@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Transformaciones con CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scaleble=no, initial-scale=1, maximum-scale=1, minimum=1">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body{
+  margin:0;
+  background:#ddd;
+}
+
+.contenedor{
+  display:flex;
+  justify-content:center;
+}
+
+.caja{
+  margin: 150px 15px;
+  width: 150px;
+  height: 150px;
+  background: crimson;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  line-height: 150px;
+  transition: all 1s;
+  
+}
+
+.caja:nth-child(1) {
+  display: block;
+  transform-origin: bottom center;
+}
+
+.caja:nth-child(1):hover {
+  transform: translateX(100px);
+} 
+.caja:nth-child(2) {
+  display: block;
+  transform-origin: bottom center;
+}
+
+.caja:nth-child(2):hover {
+  transform: rotate(1turn);
+} 
+
+.caja:nth-child(3) {
+  display: block;
+  transform-origin: bottom center;
+}
+
+.caja:nth-child(3):hover {
+  transform: scale(2);
+} 
+
+caja:nth-child(4) {
+  display: block;
+  transform-origin: bottom center;
+}
+
+.caja:nth-child(4):hover {
+  transform: skew(20deg);
+    
+    
+ </style>
+    
+    
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="caja">Translate</div>
+        <div class="caja">Rotate</div>
+        <div class="caja">Scale</div>
+        <div class="caja">Skew</div>
+    </div>
+
+</body>
+</html>

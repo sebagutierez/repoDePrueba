@@ -1,0 +1,464 @@
+body{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+/* declaracion de variable */
+:root{
+    --color1: #E4F0FF;
+    --color2: #5E80C2;
+    --color3: #96B5FB;
+    --color4: #846CB7;
+    --color5: #B24588;
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav{
+    background-color: var(--color1);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* objetos alineados */
+    align-items: center;
+    padding: 20px;
+}
+.logo{
+    font-size: 42px;
+    font-family: var(--font1);
+    font-weight: bold;
+    color: var(--color5);
+}
+.logo span{
+    color: var(--color2);
+}
+.nav ul{
+    list-style: none; /* quita las viñetas */
+}
+.nav ul li{
+    display: inline-block; /* para convertir en fila los li */
+    font-size: 18px;
+}
+.nav a{
+    text-decoration: none; /* quita el underline al elemento a */
+    color: var(--color5);
+    font-family: var(--font1);
+    font-weight: bold;
+    margin-right: 16px; /* boxmodel separacion entre palabras */
+    text-transform: capitalize; /* capitalizar la primer letra de cada palabara */
+    /* align-items: center; */
+}
+.nav a:hover{
+    color: var(--color2); /* modificar el color al pasar el cursor */
+}
+.tipografias{
+    background-color: var(--color5);
+    color: var(--color1);
+    /*height: 50vh;  50vh: ocupar el 50% de la pantalla del dispositivo */
+    min-height: 550px;
+    height: 750px; /* calcula el 50% de la pantalla - 150px del header */
+    width: 100%;
+}
+.tipografias h2{
+    color: var(--color5);
+    height: 60px;
+    width: 300px;
+    background-color: var(--color4);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+.tipografias span{
+    color: var(--color3);
+}
+.tipocont{
+    display: flex;
+    flex-direction: column;
+}   
+.tipo{
+    height: 40px;
+    width: 100%;
+    border: 1px solid;
+    box-shadow: 0 0 1px 2px var(--color4);
+    margin: 15px;
+}
+.float-right{
+    float: right;
+}
+
+.contenedores{
+    background-color: var(--color4);
+    color: var(--color1);
+    min-height: 550px;
+    height: 800px;
+    width: 100%;
+}
+.contenedores h2{
+    color: var(--color4);
+    height: 60px;
+    width: 300px;
+    background-color: var(--color5);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+.contenedores span{
+    color: var(--color3);
+}
+.contenedores div{
+    height: 60px;
+    width: 100%;
+    border: 1px solid;
+    box-shadow: 0 0 1px 2px var(--color4);
+    margin: 15px;
+}
+.posicionamientos{
+    background-color: var(--color2);
+    color: var(--color1);
+    height: 700px;
+    min-height: 320px;
+    width: 100%;
+}
+.posicionamientos h2{
+    color: var(--color2);
+    height: 60px;
+    width: 300px;
+    background-color: var(--color3);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+.posicionamientos span{
+    color: var(--color5);
+}
+.posicionamientos div{
+    height: 60px;
+    width: 100%;
+    border: 1px solid;
+    box-shadow: 0 0 1px 2px var(--color4);
+    margin: 15px;
+}
+h2{
+    /* text-align: center;alinear el texto a la derecha */
+    font-variant: small-caps;/* genera pequeñas mayúsculas */
+    /* padding-bottom: 10px; */
+    font-size: 28px;
+}
+p{
+    padding-bottom: 8px;
+}
+section{
+    padding: 20px;
+    font-family: var(--font1);
+    font-size: 1rem;
+    
+}
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: var(--color1);
+    color: var(--color5);
+    text-align: center;
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+    font-family: var(--font1);
+    margin: 20px;
+}
+footer i{
+    color: var(--color5);
+    font-size: 30px;
+    letter-spacing: 20px;
+}
+.subir{
+    height: 50px;
+    width: 50px;
+    background-color: var(--color3);
+    border: 2px solid var(--color5);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    box-shadow: 0 0 5px 3px var(--color4);
+    color: var(--color5);
+}
+.flexbox{
+    background-color: var(--color5);
+    color: var(--color1);
+    height: 2000px; /* calcula el 50% de la pantalla - 150px del header */
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.flexbox h2{
+    color: var(--color5);
+    height: 60px;
+    width: 300px;
+    background-color: var(--color4);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+.flexbox span{
+    color: var(--color3);
+}
+.flexit{
+    height: 110px;
+    min-height: 70px;
+    width: 100%;
+    border: 1px solid;
+    box-shadow: 0 0 1px 2px var(--color4);
+    margin: 8px;
+}
+.box{
+    height: 18px;
+    width: 200px;
+    border: 1px solid;
+    margin: 1px;
+    text-align: center;
+}
+
+/* 1.display:flex */
+
+.display-flex{
+display: flex;
+}
+
+/* 2.flex-direction */
+
+.flex-direction{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.flex2{
+    height: 130px;
+}
+/* 3.flex-wrap */
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}  
+.box-wrap{
+    height: 18px;
+    min-width: 275px;
+    width: 300px;
+    border: 1px solid;
+    margin: 1px;
+    text-align: center;
+}
+.flex3{
+    height: 125px;
+}
+/* 4.flex-flow */
+
+.flex-flow{
+    display: flex;
+    flex-flow: column wrap;
+}
+.box-flow{
+    height: 18px;
+    min-height: 50px;
+    min-width: 275px;
+    width: 300px;
+    border: 1px solid;
+    margin: 1px;
+}
+
+/* 5. Justify-content */
+.flex5{
+    height: 220px;
+}
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+.center{
+    display: flex;
+    justify-content: center;
+} 
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.space-around{
+    display: flex;
+    justify-content: space-around;
+}
+.space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* 6. align-items */
+
+.flex6{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.flex6-2{
+    display: flex;
+}
+.box-por-3{
+    height: 110px;
+    width: 33%;
+    border: 1px solid;
+    box-shadow: 0 0 1px 2px var(--color4);
+    margin: 8px;
+}
+.box6-3{
+width: 200px;
+border: 1px solid;
+margin: 1px;
+text-align: center;
+}
+.align-items-flex-start{
+    display: flex;
+    align-items: flex-start;
+}
+.align-items-flex-end{
+    display: flex;
+    align-items: flex-end;
+}
+.flex-stretch{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+/* 7. align-self */
+
+.align-self-flex-start{
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+}
+.align-self-center{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.align-self-flex-end{
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+}
+.flex7{
+    display: flex;
+}
+
+/* 8  */
+.flex8{
+    height: 140px;
+    
+}
+.ocho{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    line-height: 80px;
+}
+.box8-1{
+    align-items: none;
+}
+.box8-2{
+    line-height: 60px;
+}
+.box8-3{
+    line-height: 100px;
+}
+
+/* 8b  */
+.flex8b{
+    height: 170px;
+}
+.ochob{
+    display: flex;
+    justify-content: space-around;
+    line-height: 80px;
+}
+.box8b-2{
+    line-height: 60px;
+}
+.box8b-3{
+    line-height: 100px;
+}
+
+/* 9  */
+.flex9{
+    height: 170px;
+}
+.nueve{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.box9-2{
+    
+}
+.box9-3{
+    
+}
+/* 10. flex-basis */
+.flex-basis{
+    display: flex;
+}
+.shrink{
+    flex-basis: 120px;
+}
+.flex10-1{
+    flex-shrink: 1;
+}
+.flex10-2{
+    flex-shrink: 3;
+}
+.flex10-3{
+    flex-shrink: 5;
+}
+.flex10-4{
+    flex-grow: 5;
+}
+.flex10-5{
+    flex-shrink: 5;
+}
+.flex10-6{
+    flex-shrink: 3;
+}
+.flex10-5{
+    flex-shrink: 1;
+}
+.flex10-6{
+    flex-grow: 5;
+}
+
+/* 11. order */
+.once{
+    display: flex;
+}
+.box11-1{
+    order: 2
+}
+.box11-2{
+    order: 3
+}
+.box11-3{
+    order: 1
+}
+
+

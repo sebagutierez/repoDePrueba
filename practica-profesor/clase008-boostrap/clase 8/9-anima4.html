@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>animation-timing-function</title>
+    
+    <style>
+    
+        .caja{
+            height: 120px;
+            width: 250px;
+            background-color: green;
+            border: 2px solid yellow;
+            font-size: 40px;
+            font-family: sans-serif;
+            color: #fff;
+            text-align: center;
+            line-height: 120px;
+            
+        }
+        
+        #caja1{
+            animation-name: caja1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        
+        @keyframes caja1{
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(500px);
+            }
+        }
+        
+        #caja2{
+            animation-name: caja2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+        
+        @keyframes caja2{
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(500px);
+            }
+        }
+        
+        #caja3{
+            animation-name: caja3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        
+        @keyframes caja3{
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(500px);
+            }
+        }
+        #caja4{
+            animation-name: caja4;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+        
+        @keyframes caja4{
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(500px);
+            }
+        }
+        
+        #caja5{
+            animation-name: caja4;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        @keyframes caja5{
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(500px);
+            }
+        }
+    
+    </style>
+    
+</head>
+<body>
+    <div class="caja" id="caja1">linear</div> 
+<!--  mantiene la matiene reproduccion de la animacion de forma constante -->
+    <div class="caja" id="caja2">ease</div> 
+<!--    con ease el valor por defecto comienza la reproduccion lento, luego rapido y termina lentamente-->
+    <div class="caja" id="caja3">ease-in</div>
+<!--con ease-in tiene un comienzo lento-->
+    <div class="caja" id="caja4">ease-out</div>
+<!--con ease-out tiene un final lento-->
+    <div class="caja" id="caja5">ease-in-out</div>
+<!--con ease-in-out tiene un comienzo y final lento-->
+</body>
+</html>

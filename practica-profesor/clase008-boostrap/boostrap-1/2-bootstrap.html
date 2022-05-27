@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .color0 {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        .color1 {
+            background-color: darkcyan;
+            color: white;
+        }
+
+        .color2 {
+            background-color: beige;
+            color: #3a3a3a;
+        }
+
+        .color3 {
+            background-color: coral;
+        }
+
+        .color4 {
+            background-color: crimson;
+            color: white;
+        }
+        
+        
+    </style>
+
+</head>
+
+<body>
+
+    <header class="color4">
+        <div class="container row  color4">
+            <h1>header <small>(12 columnas)</small></h1>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <!--mostrar container-fluid (abarca todo el ancho)-->
+        <section class="row">
+
+            <article class="color3 col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                <h3>article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad recusandae quaerat asperiores quam, nemo id distinctio ea repudiandae? Tempora delectus corporis natus pariatur, aut, aliquid distinctio nulla aliquam nisi assumenda! </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo perferendis sequi, itaque at inventore sed repellendus consequuntur. Nostrum illo possimus nemo dolore quibusdam voluptatibus, nam quidem aut sunt, veritatis fugiat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error esse tenetur, fugiat ab. Unde, aut, aspernatur? Modi nulla, velit impedit eius illo accusamus. Omnis fugiat ut aut soluta optio, velit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit harum dolorum temporibus ullam, asperiores nesciunt excepturi ab dolor reiciendis voluptatibus sunt nihil aspernatur, rem quae error fugiat officiis itaque aperiam.</p>
+            </article>
+
+            <aside class="color4 col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                <h3>aside</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad recusandae quaerat asperiores quam, nemo id distinctio ea repudiandae? Tempora delectus corporis natus pariatur, aut, aliquid distinctio nulla aliquam nisi assumenda!</p>
+            </aside>
+
+        </section>
+
+        <div class="row">
+           
+            <div class="color1 col-xs-12 col-sm-6 col-md-3">
+                <h3>articulo (3 columnas)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor hic, maxime aperiam sequi beatae, tempora qui suscipit odio doloribus quis libero esse eveniet impedit voluptatibus explicabo perspiciatis, culpa non eaque.</p>
+            </div>
+            <div class="color2 col-xs-12 col-sm-6 col-md-3">
+                <h3>articulo (3 columnas)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor hic, maxime aperiam sequi beatae, tempora qui suscipit odio doloribus quis libero esse eveniet impedit voluptatibus explicabo perspiciatis, culpa non eaque.</p>
+            </div>
+            <div class="color1 col-xs-12 col-sm-6 col-md-3">
+                <h3>articulo (3 columnas)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor hic, maxime aperiam sequi beatae, tempora qui suscipit odio doloribus quis libero esse eveniet impedit voluptatibus explicabo perspiciatis, culpa non eaque.</p>
+            </div>
+            <div class="color2 col-xs-12 col-sm-6 col-md-3">
+                <h3>articulo (3 columnas)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor hic, maxime aperiam sequi beatae, tempora qui suscipit odio doloribus quis libero esse eveniet impedit voluptatibus explicabo perspiciatis, culpa non eaque.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="color0">
+        <div class="container row">
+            <h1>footer <small>(12 columnas)</small></h1>
+            
+        </div>
+    </footer>
+
+
+
+
+
+    <!--
+ <div class="container">
+     <header class="col-xs-12"><h1>header</h1><small>12columnas</small></header>
+     <article class="col-xs-12 col-sm-12 col-md-9 col-lg-9">article</article>
+ </div>
+-->
+
+    <!--
+    <button class="btn btn-danger">enviar</button>
+    
+    <form action="">
+        
+        <input type="file">
+    </form>
+-->
+
+<!--
+Pantalla                  Dimensiones    Prefijo de la clase   Ancho del contenedor
+Tamaño extra pequeño      < 576 px          .col-xs-              Ninguno (automático)
+Tamaño pequeño            ≥ 576 px          .col-sm-              540px
+Tamaño medio              ≥ 768 px          .col-md-              540px
+Tamaño grande             ≥ 992 px          .col-lg-              540px
+Tamaño extra grande       ≥ 1200 px         .col-xl-              1140px
+
+-->
+
+</body>
+</html>

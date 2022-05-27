@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>varios efectos</title>
+    
+    <style>
+        
+        div
+{
+    font-family: 'Arial';
+    background-color: #a8cf45;
+    margin: 2%;
+    position: relative;
+    padding: 3% 2%;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    width: 40%;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 18pt;
+}
+
+
+/* DESCOLGADO */
+.descolgado
+{
+	animation: 1s descolgado 1;
+	transform-origin: top left;
+}
+
+@keyframes descolgado
+{
+	20%, 60% { transform: rotate(80deg); }
+	40% { transform: rotate(60deg); }
+	80% { opacity: 1;  transform: rotate(60deg);}
+	100% { opacity: 0; transform: translateY(400px); }
+}
+
+/* VELOZ */
+.veloz 
+{
+	animation: 1s veloz 1;
+}
+
+@keyframes veloz
+{
+	0% 
+	{ 
+		opacity: 0;
+		transform: translateX(-200%) skewX(30deg); 
+	}
+
+	60% 
+	{
+		opacity: 1;
+		transform: translateX(20%) skewX(-30deg);
+	}
+
+	80%
+	{
+		transform: translateX(0%) skewX(15deg);
+	}
+}
+
+
+/* REDONDEAR BORDES */
+.esquinasRedondeadas
+{
+	transition-duration: 0.2s;
+}
+
+.esquinasRedondeadas:hover
+{
+	border-radius: 20px;
+}
+
+/* MENU */
+nav
+{
+	height: 40px;
+}
+
+li
+{
+	display: inline-block;
+	text-decoration: none;
+	margin: 0 10px;
+	padding: 5px;
+	transition-duration: 0.2s;
+}
+
+li:nth-of-type(1):hover { border-bottom: 3px dotted red; }
+li:nth-of-type(2):hover { border-bottom: 3px solid green; }
+li:nth-of-type(3):hover { border-bottom: 3px solid blue; }
+
+
+/* ESQUINA DOBLADA */
+.esquina { transform: translateX(0); }
+
+.esquina::before
+{
+	content: '';
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 0;
+	height: 0;
+	background: linear-gradient( 45deg, white 45%, #aaa 50%, #ccc 60%, white);
+	transition-duration: 0.3s;
+}
+
+.esquina:hover::before
+{
+	width: 30px;
+	height: 35px;
+}
+
+/* FLASH */
+.flash:hover { animation: 1s flash 1; }
+
+@keyframes flash
+{
+	50% { opacity: 1; }
+	25%, 75% { opacity: 0; }
+}
+
+/* VIBRAR */
+.vibrar:hover
+{
+	animation: 1s vibrar infinite;
+}
+
+@keyframes vibrar
+{
+	5%, 25%, 45%, 65%, 85% { transform: translateX(-10px); }
+	15%, 35%, 55%, 75%, 95% { transform: translateX(10px); }
+}
+
+/* APARICION */
+.aparicion { 
+	animation: 1s aparicion 1; 
+	transform-origin: top left;
+}
+
+@keyframes aparicion
+{
+	0% { opacity: 0; }
+	50% { opacity: 0.8; }
+}
+
+
+/* GIRO 3D */
+.giro:hover
+{
+	animation: 1.5s giro 1;
+	backface-visibility: visible;
+}
+
+@keyframes giro
+{
+	0% { opacity: 0.5; transform: perspective(200px) rotateX(90deg);  }
+	40% { transform: perspective(200px) rotateX(-20deg); }
+	70% { transform: perspective(200px) rotateX(20deg); }
+}
+
+
+.chicle:hover{
+    background: #F5A9A9;
+    -webkit-animation: 1s chicle 1;
+}
+
+@-webkit-keyframes chicle{
+    30%{
+        -webkit-transform: 
+            scaleX(1.25)
+            scaleY(0.75);
+    }
+    50%{
+        -webkit-transform: 
+            scaleX(0.75)
+            scaleY(1.25);
+    }
+    60%{
+        -webkit-transform: 
+            scaleX(1.15)
+            scaleY(0.85);
+    }
+}
+
+.rebote:hover{
+    background: red;
+    -webkit-animation: 2s rebote 1;
+}
+
+@-webkit-keyframes rebote{
+    20%, 50%, 70%, 90%{ 
+        -webkit-transform: translateY(0px);
+    }
+    40%{ 
+        -webkit-transform: translateY(-45px);
+    }
+    60%{ 
+        -webkit-transform: translateY(-25px);
+    }
+    80%{ 
+        -webkit-transform: translateY(-10px);
+    }
+    95%{ 
+        -webkit-transform: translateY(-5px);
+    }
+}
+
+.fade{
+    overflow: hidden;
+    -webkit-animation: 2s fade 1;
+}
+
+@-webkit-keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+}
+
+.tapa{
+    width: 100%;
+    top: 100%;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    background: white; 
+    margin: 0px;
+    z-index: 10;
+    -webkit-animation: 2s retirada 1;
+}
+
+@-webkit-keyframes retirada{
+    0%{
+        top: 0px;
+    }
+}
+
+.sombra_movil{
+    -webkit-transform: translateX(0);
+    -webkit-transition-duration: 0.3s;
+}
+
+.sombra_movil:hover:before{
+    opacity: 0.4;
+    -webkit-transform: translateY(6px);
+    -webkit-animation: 1.5s moversombra infinite;
+}
+
+@-webkit-keyframes moversombra{
+    50%{
+        opacity: 1;
+        -webkit-transform: translateY(3px);
+    }
+}
+
+.sombra_movil:hover{
+    -webkit-transform: translateY(-6px);
+    -webkit-animation: 1.5s movercaja infinite;
+}
+
+@-webkit-keyframes movercaja{
+    50%{
+        -webkit-transform: translateY(-1px);
+    }
+}
+
+.sombra_movil:before{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(
+        center, ellipse,
+        rgba(0,0,0,0.5) 0%,
+        rgba(0,0,0,0) 80%
+        );
+    -webkit-transition-duration: 0.3s;
+}
+
+.arrow:before{
+    -webkit-transition-duration:0.3s;
+    content: '';
+    /*caracteristicas del triangulo*/
+    border-color: transparent #a8cf45
+                    transparent transparent;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+
+    /*posicionamiento del triangulo*/
+    left:5px;
+    position: absolute;
+    top:50%;
+    margin-top: -15px;
+}
+
+.arrow:hover:before{
+    -webkit-animation: 2s moverflecha infinite;
+}
+@-webkit-keyframes moverflecha{
+    12%{
+        left: -25px;
+        -webkit-transform:rotate(0deg);
+    }
+    30%{
+        left: -25px;
+        -webkit-transform:rotate(180deg);
+    }
+    45%{
+        -webkit-transform:rotate(180deg);
+    }
+    50%{
+        left: 5px;
+    }
+}
+
+.arrow:after{
+    -webkit-transition-duration:0.3s;
+    content: '';
+    /*caracteristicas del triangulo*/
+    border-color: transparent transparent 
+                 transparent #a8cf45;
+    border-style: solid;
+    border-width: 15px 0 15px 15px;
+
+    /*posicionamiento del triangulo*/
+    right:5px;
+    position: absolute;
+    top:50%;
+    margin-top: -15px;
+}
+.arrow:hover:after{
+    -webkit-animation: 2s moverflecha2 infinite;
+}
+@-webkit-keyframes moverflecha2{
+    50%{
+        right: 5px;
+    }
+    62%{
+        right: -25px;
+        -webkit-transform:rotate(0deg);
+    }
+    80%{
+        right: -25px;
+        -webkit-transform:rotate(-180deg);
+    }
+    95%{
+        -webkit-transform:rotate(-180deg);
+    }
+}
+
+.giro:hover{
+    -webkit-animation: 1s giro infinite;
+    -webkit-backface-visibility: visible;
+}
+
+@-webkit-keyframes giro{
+    40%{
+        -webkit-transform: perspective(300px)
+                            translateZ(120px)
+                            rotateY(170deg);
+    }
+    50%{
+        -webkit-transform: perspective(300px)
+                            translateZ(120px)
+                            rotateY(190deg);
+    }
+    80%{
+        -webkit-transform: perspective(300px)
+                            translateZ(0px)
+                            rotateY(360deg);
+    }
+    100%{
+        -webkit-transform: perspective(300px)
+                            rotateY(360deg);
+    }
+}
+
+.balanceo:hover{
+    -webkit-animation: 2s balanceo 1;
+}
+@-webkit-keyframes balanceo{
+    20%{
+        -webkit-transform: scale(0.9) rotate(-3deg);
+    }
+    30%, 50%, 70%, 90%{
+        -webkit-transform: scale(1.1) rotate(3deg);
+    }
+    40%, 60%, 80%{
+        -webkit-transform: scale(1.1) rotate(-3deg);
+    }
+}
+
+.bote:hover{
+    -webkit-animation: 2s bote 1;
+}
+@-webkit-keyframes bote{
+    20%, 50%, 80%{
+        -webkit-transform: translateY(0);
+    }
+    40%{
+        -webkit-transform: translateY(-30px);
+    }
+    65%{
+        -webkit-transform: translateY(-15px);
+    }
+}
+
+.doble_click:hover{
+    -webkit-animation: 1s dobleclick 1;
+}
+@-webkit-keyframes dobleclick{
+    40%{
+        -webkit-transform: scale(1.1);
+    }
+    20%, 60%{
+        -webkit-transform: scale(0.8);
+    }
+}
+
+.intermitente:hover{
+    -webkit-animation: 2s intermitente 1;
+}
+@-webkit-keyframes intermitente{
+    50%{
+        opacity: 1;
+    }
+    25%, 75%{
+        opacity: 0;
+    }
+}
+
+.descarte:hover{
+    -webkit-animation: 2s descartar 1;
+}
+@-webkit-keyframes descartar{
+    0%{
+        -webkit-transform-origin: left bottom;
+        -webkit-transform: rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform-origin: right bottom;
+        -webkit-transform: rotate(-90deg);
+        opacity: 0;
+    }
+}
+
+.onda:hover{
+    -webkit-animation: 2s onda 1;
+}
+@-webkit-keyframes onda{
+    20%, 40%, 60%{
+        border-radius: 0% 0% 80% 0%;
+    }
+    30%, 50%, 70%{
+        border-radius: 0% 0% 0% 80%;
+    }
+}
+
+
+@media screen and (min-width: 767px){
+    body{
+        width: 80%;
+        margin-left: 10%;
+    }
+    div{
+        width: 18%;
+        margin: 3% 1%;
+        font-size: 20pt;
+        padding: 3% 2%;
+    }
+}
+
+.vibrador:hover{
+    -webkit-animation: 1s vibracion infinite;
+}
+@-webkit-keyframes vibracion{
+    10%, 30%, 50%, 70%, 90%{
+        -webkit-transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80%{
+        -webkit-transform: translateX(10px);
+    }  
+    15%, 35%, 55%, 75%, 95%{
+        -webkit-transform: translateY(-10px);
+    }
+    5%, 25%, 45%, 65%, 85%{
+        -webkit-transform: translateY(10px);
+    }
+    
+
+}
+    
+    
+    </style>
+    
+</head>
+<body>
+   
+   
+    <!-- Efectos con animaciones: APARICION -->
+<div class="aparicion">
+  <p>Aparición</p>
+</div>	
+
+<!-- Efectos con animaciones: DESCOLGADO -->
+<div class="descolgado">
+  <p>Descolgado</p>
+</div>	
+
+<!-- Efectos con animaciones: VELOZ -->
+<div class="veloz">
+  <p>Veloz</p>
+</div>	
+
+<!-- Efectos con el borde -->
+<div class="esquinasRedondeadas">
+  <p>Bordes redondos</p>
+</div>
+
+<!-- Efectos menú -->
+<nav>
+  <ul>
+    <li>Opción 1</li>
+    <li>Opción 2</li>
+    <li>Opción 3</li>
+  </ul>
+</nav>	
+
+<!-- Esquina doblada de una caja -->
+<div class="esquina">
+  <p>Esquina página</p>
+</div>
+
+<!-- Efectos con animaciones: FLASH -->
+<div class="flash">
+  <p>flash</p>
+</div>
+
+<!-- Efectos con animaciones: VIBRAR -->
+<div class="vibrar">
+  <p>Vibrar</p>
+</div>
+
+<!-- Efectos 3D: GIRO -->
+<div class="giro">
+  <p>GIRO</p>
+</div>
+
+<div class="chicle">
+	<p>Chicle</p>
+</div>
+
+<div class="rebote">
+	<p>Rebote</p>
+</div>
+
+<div class="fade">
+	<div class="tapa"></div>
+	<p>Aparicion</p>
+</div>
+
+<div class="sombra_movil">
+	<p>Sombra Movil</p>
+</div>
+
+<div class="arrow">
+	<p>Arrow</p>
+</div>
+
+<div class="giro">
+	<p>Giro 3D</p>
+</div>
+
+<div class="balanceo">
+	<p>Balanceo</p>
+</div>
+
+<div class="bote">
+	<p>Bote</p>
+</div>
+
+<div class="doble_click">
+	<p>DobleClick</p>
+</div>
+
+<div class="intermitente">
+	<p>Intermitente</p>
+</div>
+
+<div class="descarte">
+	<p>Descarte</p>
+</div>
+
+<div class="onda">
+	<p>Onda</p>
+</div>
+
+<div class="vibrador">
+	<p>Vibrador</p>
+</div>
+</body>
+</html>

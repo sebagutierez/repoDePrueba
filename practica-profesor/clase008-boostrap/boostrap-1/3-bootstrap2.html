@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<!-- enlaces a los archivos en internet CDN - incio -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- enlaces a los archivos en internet CDN - fin -->
+<!--
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+-->
+    
+
+    <style>
+        .color0 {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        .color1 {
+            background-color: darkcyan;
+            color: white;
+        }
+
+        .color2 {
+            background-color: beige;
+            color: #3a3a3a;
+        }
+
+        .color3 {
+            background-color: coral;
+        }
+
+        .color4 {
+            background-color: crimson;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="color0">
+        <div class="container row col-lg-12">
+            <h1>header <small>(12 columnas)</small></h1>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+       
+<!--
+    <header class="color0 col-md-12 row">
+            <h1>header <small>(12 columnas)</small></h1>
+    </header>
+-->
+        <!--mostrar container-fluid (abarca todo el ancho)-->
+        <section class=" row">
+
+            <article class="color3 col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                <h3>article</h3>
+                <img src="img/obelisco.jpg" alt="imagen" class="col-md-12 img-fluid">
+            </article>
+
+            <aside class="color4 col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                <h3>aside</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad recusandae quaerat asperiores quam, nemo id distinctio ea repudiandae? Tempora delectus corporis natus pariatur, aut, aliquid distinctio nulla aliquam nisi assumenda!</p>
+            </aside>
+
+        </section>
+
+        <div class="row">
+           
+            <div class="color1 col-xs-12 col-sm-6 col-md-3">
+                <h3>articulo (3 columnas)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor hic, maxime aperiam sequi beatae, tempora qui suscipit odio doloribus quis libero esse eveniet impedit voluptatibus explicabo perspiciatis, culpa non eaque.</p>
+            </div>
+            <div class="color2 col-xs-12 col-sm-6 col-md-3">
+                <h3>articulo (3 columnas)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor hic, maxime aperiam sequi beatae, tempora qui suscipit odio doloribus quis libero esse eveniet impedit voluptatibus explicabo perspiciatis, culpa non eaque.</p>
+            </div>
+            <div class="color1 col-xs-12 col-sm-6 col-md-3">
+                <h3>articulo (3 columnas)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor hic, maxime aperiam sequi beatae, tempora qui suscipit odio doloribus quis libero esse eveniet impedit voluptatibus explicabo perspiciatis, culpa non eaque.</p>
+            </div>
+            <div class="color2 col-xs-12 col-sm-6 col-md-3">
+                <h3>articulo (3 columnas)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor hic, maxime aperiam sequi beatae, tempora qui suscipit odio doloribus quis libero esse eveniet impedit voluptatibus explicabo perspiciatis, culpa non eaque.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="color0 container-fluid">
+<!--            <h1>footer <small>(12 columnas)</small></h1>-->
+      <div class="row">
+           <div class="col-xs-12 col-sm-6 col-md-4">
+               <h2 class="text-right">titulo1</h2>
+               <img src="img/obelisco.jpg" alt="imagen" class="img-fluid">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nam odio laboriosam quia quo atque eaque omnis ducimus ipsa, unde quam voluptatum. Nobis provident dicta dolorum aliquam maxime aperiam eos.</p>
+           </div>
+           <div class="col-xs-12 col-sm-6 col-md-4">
+               <h2 class="text-center">titulo2</h2>
+               <img src="img/obelisco.jpg" alt="imagen" class="img-fluid">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sint, ea atque nostrum, facere sit blanditiis dicta debitis aliquid aspernatur consequuntur illo! Ratione deserunt, eum quos quae illum blanditiis placeat!</p>
+           </div>
+           <div class="col-xs-12 col-sm-12 col-md-4">
+               <h2 class="text-left">titulo3</h2>
+               <img src="img/obelisco.jpg" alt="imagen" class="img-fluid">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus illum consectetur tempore ad, aliquam voluptatibus! Dolore minima nisi iure. Quidem aliquid dolorem obcaecati odit voluptatibus, libero ipsa. Incidunt, labore, illum!</p>
+           </div>
+
+       </div>
+    </section>
+    
+    <section class="color1 container-fluid">
+      <div class="row">
+           <div class="col-xs-12 col-sm-6 col-md-3 color4">
+               <h1>titulo1</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nam odio laboriosam quia quo atque eaque omnis ducimus ipsa, unde quam voluptatum. Nobis provident dicta dolorum aliquam maxime aperiam eos.</p>
+           </div>
+           <div class="col-md-3 offset-md-3 color4">
+               <h1>titulo2</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sint, ea atque nostrum, facere sit blanditiis dicta debitis aliquid aspernatur consequuntur illo! Ratione deserunt, eum quos quae illum blanditiis placeat!</p>
+           </div>
+           
+
+       </div>
+    </section>
+    
+    
+    <section class="container-fluid">
+        <div class="row">
+            <div class="color2 col-md-1">caja1</div>
+            <div class="color3 col-md-1">caja2</div>
+            <div class="color2 col-md-1">caja3</div>
+            <div class="color3 col-md-1">caja4</div>
+            <div class="color2 col-md-1">caja5</div>
+            <div class="color3 col-md-1">caja6</div>
+            <div class="color2 col-md-1">caja7</div>
+            <div class="color3 col-md-1">caja8</div>
+            <div class="color2 col-md-1">caja9</div>
+            <div class="color3 col-md-1">caja10</div>
+            <div class="color2 col-md-1">caja11</div>
+            <div class="color3 col-md-1">caja12</div>
+        </div>
+    </section>
+    
+        <section class="container-fluid">
+        <div class="row">
+            <div class="color0 col-md-2 col">caja1</div>
+            <div class="color1 col-md-2 col">caja2</div>
+            <div class="color0 col-md-2 col">caja3</div>
+            <div class="color1 col-md-2 col">caja4</div>
+            <div class="color0 col-md-2 col">caja5</div>
+            <div class="color1 col-md-2 col">caja6</div>
+        </div>
+    </section>
+    
+    <section class="container-fluid">
+        <div class="row">
+            <div class="color4 col-md-4">caja1</div>
+            <div class="color3 col-md-4">caja2</div>
+            <div class="color4 col-md-4">caja3</div>
+        </div>
+    </section>
+
+    <!--
+ <div class="container">
+     <header class="col-xs-12"><h1>header</h1><small>12columnas</small></header>
+     <article class="col-xs-12 col-sm-12 col-md-9 col-lg-9">article</article>
+ </div>
+-->
+
+    <!--
+    <button class="btn btn-danger">enviar</button>
+    
+    <form action="">
+        
+        <input type="file">
+    </form>
+-->
+
+<!--
+
+Pantallas grandes (lo que llaman LG) a partir de 1200 pixels
+Pantlallas medias (serán las MD) a partir de 992 pixels
+Pantallas tipo tablet (las SM) a partir de 768 pixels
+Pantallas móviles (o pantallas XS), por debajo de esa cifra.
+
+-->
+
+
+
+</body>
+</html>

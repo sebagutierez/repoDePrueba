@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>CLASE ESPECIAL BOX MODELING</title>
+</head>
+
+<body>
+    <style>
+        .uno {
+            border: 1px solid black;
+            height: 250px;
+            width: 200px;
+        }
+
+        .dos {
+            border: 1px solid black;
+            height: 250px;
+            width: 200px;
+        }
+
+        .tres {
+            border: 1px solid black;
+            height: 250px;
+            width: 200px;
+            margin: 50px;
+        }
+
+        .cuatro {
+            border: 1px solid black;
+            height: 250px;
+            width: 200px;
+        }
+
+        .cinco {
+            border: 1px solid black;
+            height: 250px;
+            width: 200px;
+            margin-bottom: 50px;
+        }
+
+        .seis {
+            border: 1px solid black;
+            height: 250px;
+            width: 200px;
+            margin-left: 50px;
+        }
+
+        .siete {
+            border: 1px solid black;
+            height: 250px;
+            width: 200px;
+            padding: 50px;
+        }
+
+        .ocho {
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+        }
+
+        .ocho-hija {
+            border: 1px solid black;
+            height: 400px;
+            width: 400px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .nueve {
+            background-color: cornflowerblue;
+            height: 500px;
+            width: 500px;
+        }
+
+        .nueve-hija {
+            background-color: orange;
+            height: 400px;
+            width: 400px;
+        }
+
+        .nueve-nieta {
+            background-color: green;
+            height: 300px;
+            width: 300px;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+    </style>
+
+    <section style="display: flex;">
+        <figure class="card">
+            <img src="https://hipertextual.com/wp-content/uploads/2021/05/dart-vader.jpeg" alt="darth vader"
+                class="card-image">
+            <figcaption>
+                <ul class="card-data">
+                    <li>
+                        <span class="card-data-titles">Alias: </span>
+                        <span class="card-data-alias">Darth Vader</span>
+                    </li>
+                    <li>
+                        <span class="card-data-titles">Orden: </span>Sith
+                    </li>
+                    <li>
+                        <span class="card-data-titles">Nombre real: </span>
+                        <button class="card-button">Spoiler!!</button>
+                    </li>
+                </ul>
+            </figcaption>
+        </figure>
+    </section>
+
+
+
+    <div class="uno">nada</div>
+    <div class="dos">nada</div>
+    <div class="tres">margin: 50px;</div>
+    <div class="cuatro">Hola Gandalf</div>
+    <div class="cinco">margin-bottom: 50px;</div>
+    <div class="seis">margin-left: 50px;</div>
+    <div class="siete">padding: 50px; <br> el espacio interno</div>
+
+    <h2>margin:50px;</h2>
+    <p>MARGEN: El espacio por fuera de la caja, empujando los objetos pero no los bordes del navegador.</p>
+    <p>margin: 50px; empuja los objetos en las 4 direcciones. </p>
+    <p>margin: 50px 20px; empuja los objetos arriba y abajo en 50 px e izquierda y derecha en 20px. </p>
+    <p>margin: uppx rightpx bottompx leftpx.</p>
+    <p>margin-top: 5px;</p>
+    <p>margin-right: 5px;</p>
+    <p>margin-bottom: 5px;</p>
+    <p>margin-left: 5px;</p>
+    <h2>MEDIDAS DISPONIBLES</h2>
+    <P>1rem=16px</P>
+    <h2>visibility: visible; hidden;</h2>
+    <p>Muestra u oculta según javascript, pero sigue ocupando el mismo lugar</p>
+    <p>display: none; tampoco se muestra, pero elimina el objeto y no modifica el entorno.</p>
+    <p>PADDING: Entre el borde y el contenido</p>
+
+    <div class="ocho">
+        <div class="ocho-hija"></div>
+    </div>
+
+    <div class="nueve">
+        <div class="nueve-hija">
+            <div class="nueve-nieta"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

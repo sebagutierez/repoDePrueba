@@ -1,0 +1,56 @@
+ body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    background-color: #bd9967;
+    display: flex;
+    justify-content: space-between;
+    font-family: bilbo;
+    padding: 0 1rem;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+    
+}
+.nav img {
+    height: 5rem;
+    margin-right: 1rem;
+}
+.nav div a {
+    /* text-decoration: none; */
+    color: #361c0D;
+}
+.nav div a h1 {
+    font-size: 2rem;
+    color: color: #361c0D;
+}
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav ul li {
+    margin: 0 1.5rem;
+    font-size: 1.7rem;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: #361c0D;
+}
+.nav ul li a:hover {
+    color: #ffffff;
+}
+#about {
+    background-color: palevioletred;
+    height: 1000px;
+}
+#drinks {
+    background-color: blue;
+    height: 1000px;
+}

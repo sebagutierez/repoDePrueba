@@ -1,0 +1,21 @@
+body {
+  background-color: purple;
+  color: violet;
+}
+
+header {
+  height: 200px;
+  width: 100%;
+  background-color: crimson;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+}
+
+h1 span {
+  color: yellow;
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>aos</title>
+    <!--    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">-->
+    <!--    <link rel="stylesheet" href="css/font-awesome.min.css" >-->
+    <!--    <link rel="stylesheet" href="min/wow.min.js">-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="wow/wow.js"></script>
+    <link rel="stylesheet" href="animate.css">
+
+    <style>
+        div {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 50px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: red;
+        }
+
+        #c1 {
+            color: deepskyblue;
+        }
+
+        #c2 {
+            color: green;
+        }
+
+        #c3 {
+            color: mediumspringgreen;
+        }
+
+        #c5 {
+            background-color: darkviolet;
+            height: 300px;
+            width: 70%;
+            margin: auto;
+            line-height: 300px;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+
+        <!--  entrar a este sitio web https://animate.style/  -->
+        <!--  o ver en la hoja de estilos las diferentes clases para utilizar-->
+
+        <div class="wow flip" id="c1">
+            Contenido para revelar aquí
+        </div>
+
+        <div class="wow flipInX" id="c2" data-wow-delay="2.5s">
+            Contenido para revelar aquí
+        </div>
+
+        <div class="wow fadeInDown" id="c3" data-wow-delay="3.5s">
+            Contenido para revelar aquí
+        </div>
+
+        <div data-aos="flip-left" id="c4" >
+            Contenido para revelar
+        </div>
+
+        <div class="wow backInUp" id="c5" data-wow-delay="5.5s">
+            Contenido para revelar aquí
+        </div>
+
+    </div>
+    <h3 data-aos="fade-down-right">animacion aos</h3>
+    <div class="caja" data-aos="flip-left">Lorem ipsum dolor sit amet.</div>
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, vitae nisi! Dicta beatae quas soluta vitae sit veniam nostrum quaerat cupiditate aperiam provident. Nihil cupiditate pariatur, in doloremque nulla magnam.</span>
+    <span>Molestiae eaque a cupiditate soluta laborum. Dolor impedit tempore, praesentium pariatur consectetur debitis deleniti explicabo possimus labore, deserunt soluta cumque quod est rem fugiat error odio officia. Alias, minus, voluptatibus.</span>
+    <span>Architecto commodi quas non accusantium repudiandae aliquam dolores totam in enim consectetur nulla iusto veritatis quo temporibus asperiores magnam, magni amet nihil iure ea dolore. Ullam ut quod veritatis repellat!</span>
+    <span>Saepe hic, quod magnam voluptatibus, at est, qui necessitatibus non id temporibus pariatur. Facilis impedit tempora repellat mollitia doloremque quas vitae. Sed nobis doloribus et amet aspernatur optio laboriosam quae.</span>
+    <span>Suscipit atque dicta rem veniam incidunt. Culpa, natus! Quod, magni obcaecati recusandae, neque voluptas cumque commodi, quidem ratione perspiciatis, autem ducimus? Natus assumenda ratione eius dicta nostrum magni, aliquam dolorum.</span>
+    <span>Quam, inventore. Dolorem animi rerum cum sed dolore, explicabo laborum corporis omnis est aspernatur. Suscipit dicta cum nostrum ipsa culpa. Vero excepturi asperiores perspiciatis delectus eligendi, aut error ad officia.</span>
+    <span>Quod fuga voluptatem maxime at magni, facere sed. Rerum explicabo officia minima tempore ipsam quos inventore omnis magni illo, consequatur quisquam repellendus, recusandae tenetur accusamus aut ullam reiciendis esse mollitia.</span>
+    <span>Nobis ipsam vel cupiditate quae dolor assumenda a, modi id molestiae asperiores doloremque fugiat illum, autem dolorem hic recusandae quia! Error quo quos voluptas, fugit modi deleniti vel voluptatibus nobis!</span>
+    <span>Amet, alias. Commodi ipsam soluta sit et hic, cumque repudiandae porro iste id aliquid illo vel praesentium eaque cupiditate repellendus fuga vitae labore dolor rerum corporis beatae obcaecati fugit est.</span>
+    <span>Reprehenderit eligendi sapiente laboriosam iste vero ullam magni aliquid ut labore consequatur voluptates mollitia cupiditate similique quae ab quidem totam, placeat ipsam ad nesciunt, fugiat dolor expedita. Vel, dicta, eum!</span></p>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="wow/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
